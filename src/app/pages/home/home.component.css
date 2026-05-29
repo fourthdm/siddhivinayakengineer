@@ -117,7 +117,6 @@ li {
 .Client {
     color: rgb(241, 111, 36);
     font-size: 2.5em;
-
     font-weight: 600;
 }
 
@@ -142,14 +141,12 @@ li {
 .hvacassesment {
     font-size: 20px;
     font-weight: 700;
-
     color: white;
 }
 
 .projecttext {
     font-size: large;
     color: white;
-
 }
 
 .Countsection {
@@ -191,17 +188,14 @@ li {
     .count {
         font-size: 2em;
         font-weight: 600;
-
         text-align: center;
     }
 
     .counttext {
         font-size: 1em;
         /* color: white; */
-
         text-align: center;
     }
-
 
     .industry {
         font-size: 18px !important;
@@ -232,6 +226,43 @@ li {
         color: #F16F24;
         cursor: pointer;
     }
+
+    .heading-area h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px !important;
+        /* color: #0e1a2b; */
+        color: #121821;
+        max-width: 700px;
+    }
+
+    .Subtitle {
+        font-size: 22px !important;
+        line-height: 30px;
+    }
+
+    .reviewheading-area h1 {
+        font-size: 28px !important;
+        font-weight: 700;
+        line-height: 36px !important;
+    }
+
+    .getheading-area .h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .mobilenumbers {
+        font-size: 22px !important;
+        line-height: 30px;
+        color: #000;
+    }
+
+    .mobilenumbers .bi {
+        font-size: 20px;
+        font-weight: 600;
+        color: #F16F24;
+    }
 }
 
 @media(min-width: 390px) and (max-width: 767px) {
@@ -261,7 +292,6 @@ li {
 
     .whychoosesection {
         padding: 0% 2% 0% 2%;
-
     }
 
     .line {
@@ -280,6 +310,56 @@ li {
         margin-top: -50%;
     }
 
+    .methodology-section .heading-area h1 {
+        font-size: 28px !important;
+        font-weight: 700;
+        line-height: 36px;
+        /* color: #0e1a2b; */
+        color: #121821;
+        max-width: 700px;   
+    }
+
+    .whychooseheading-area h1 {
+        font-size: 28px !important;
+        line-height: 36px;
+    }
+
+    .heading-area h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        /* color: #0e1a2b; */
+        color: #121821;
+        max-width: 700px;
+    }
+
+    .Subtitle {
+        font-size: 22px !important;
+        line-height: 30px;
+    }
+
+    .reviewheading-area h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .getheading-area .h1 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+
+    .mobilenumbers {
+        font-size: 22px;
+        line-height: 30px;
+        color: #000;
+    }
+
+    .mobilenumbers .bi {
+        font-size: 20px;
+        font-weight: 600;
+        color: #F16F24;
+    }
 }
 
 .mobilenumbertext {
@@ -655,6 +735,7 @@ li {
     font-weight: 800;
     line-height: 72px;
     color: #f8f9fa;
+    max-width: 720px;
 }
 
 .heading-area .h1 .start {
@@ -957,15 +1038,6 @@ li {
     float: right;
 }
 
-/* .industriallist {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    gap: 5px;
-    line-height: 26px;
-    color: 210 16% 96%;
-} */
-
-
 .industrialtexts {
     color: #F16F24;
     font-size: 11px;
@@ -984,22 +1056,6 @@ li {
     color: 210 16% 96%;
 
 }
-
-/* 
-.additionalsectortext {
-    font-size: 11px;
-    line-height: 16px;
-    font-weight: 500;
-    letter-spacing: 0.22em;
-}
-
-.additionalsectortext span {
-    display: inline-block;
-    height: 2px;
-    vertical-align: middle;
-    color: #566073;
-    width: 80%;
-} */
 
 .outcome span {
     display: inline-block;
@@ -1026,16 +1082,7 @@ li {
 .methodology-section {
     background: #0b1725;
     padding: 80px 70px;
-    /* color: #fff; */
-    /* min-height: 100vh; */
 }
-
-/* .containers{
-        padding: 0% 10% 0% 10%;
-    } */
-
-/* Heading */
-
 
 .small-title {
     color: #566073;
@@ -1044,14 +1091,12 @@ li {
     letter-spacing: 0.22em;
     font-weight: 500;
     margin-bottom: 20px;
-
 }
 
 .small-title span {
     display: inline-block;
     width: 30px;
     height: 2px;
-    /* background: #566073; */
     background: #F16F24;
     margin-right: 10px;
     vertical-align: middle;
@@ -1076,12 +1121,17 @@ li {
     vertical-align: middle;
 }
 
-.getheading-area h1 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 48px;
-
+.getheading-area {
+    max-width: 720px;
 }
+
+.getheading-area .h1 {
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+}
+
 
 .getheading-area .desc {
     font-size: 16px;
@@ -1123,7 +1173,6 @@ li {
     /* color: #0e1a2b; */
     color: #121821;
     max-width: 700px;
-
 }
 
 .heading-area h1 {
@@ -1132,7 +1181,7 @@ li {
     line-height: 48px;
     /* color: #0e1a2b; */
     color: #121821;
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .heading-area h1 .h1headline {
@@ -1153,7 +1202,6 @@ li {
     font-size: 16px;
     line-height: 26px;
     max-width: 500px;
-
 }
 
 .descindustries {
@@ -1161,7 +1209,6 @@ li {
     font-size: 16px;
     line-height: 26px;
     max-width: 800px;
-
 }
 
 .reviewheading-area h1 {
@@ -1205,18 +1252,6 @@ li {
 .whychooseheading-area h1 span {
     color: #F16F24;
 }
-
-
-/* .process-row {
-    margin-top: 90px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 0;
-    flex-wrap: nowrap;
-} */
-
-/* Process */
 
 .process-row {
     margin-top: 90px;
@@ -1356,7 +1391,7 @@ li {
     }
 
     .heading-area h1 {
-        font-size: 34px;
+        font-size: 28px;
     }
 
     .desc {
