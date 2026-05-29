@@ -1,0 +1,695 @@
+@font-face {
+    font-family: 'FontCustom';
+    src: url('/assets/font/Avenir Medium.ttf');
+}
+
+* {
+    font-family: 'FontCustom';
+}
+
+.aboutbackground {
+    background:
+        /* linear-gradient(rgba(5, 15, 30, 0.62),
+            rgba(5, 15, 30, 0.62)), */
+        url('/assets/header/Career-hero.jpeg');
+
+    background-size: cover;
+    background-position: center;
+    padding: 7%;
+}
+
+.heading-area h1 {
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 72px;
+    color: white;
+    letter-spacing: -0.02em;
+    max-width: 700px;
+}
+
+.heading-area h1 span {
+    color: #F16F24;
+}
+
+.small-title {
+    color: rgb(241, 111, 36);
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.22em;
+    font-weight: 500;
+}
+
+.heading-area .desc {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 700px;
+}
+
+.small-title span {
+    width: 32px;
+    height: 1px;
+    background: #F16F24;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+.btn-orange {
+    background: #F16F24;
+    color: #fff;
+    /* padding: 18px 34px; */
+    font-weight: 700;
+    margin-right: 1%;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+    /* border-radius: 0; */
+}
+
+.btn-orange:hover {
+    background: #D85F18;
+    color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 1px 0 0 rgba(22, 30, 42, 0.04);
+}
+
+
+.btn-chat {
+    font-weight: 700;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
+    line-height: 20px;
+
+    border: 1px solid #A8AEB8;
+    /* background-color: #FFFFFF; */
+    color: #FFFFFF;
+}
+
+.btn-chat:hover {
+    border: 1px solid #161E2A;
+    background: #F8F9FA;
+    color: #161E2A;
+}
+
+.whysection {
+    padding: 5%;
+}
+
+.why-title {
+    color: rgb(241, 111, 36);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.22em;
+}
+
+.why-title span {
+    width: 32px;
+    height: 1px;
+    background: #F16F24;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.whyheading h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+}
+
+.whyheading .desc {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+
+}
+
+.why {
+    padding: 2%;
+}
+
+.whycard {
+    padding: 0%;
+    margin: 0%;
+    border-right: 1px solid #DCE0E6;
+    border-bottom: 1px solid #DCE0E6;
+}
+
+.whycardbottom {
+    padding: 0%;
+    margin: 0%;
+    border-right: 1px solid #DCE0E6;
+}
+
+.whycards {
+    padding: 0%;
+    margin: 0%;
+    border-bottom: 1px solid #DCE0E6;
+}
+
+.content {
+    padding: 5%;
+}
+
+.content .bi {
+    color: #F16F24;
+    font-size: 32px;
+}
+
+.content .h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+
+}
+
+.content .description {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+
+}
+
+.role {
+    padding: 5%;
+    background-color: #F8FAFC;
+}
+
+.role-title {
+    color: rgb(241, 111, 36);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.22em;
+
+}
+
+.role-title span {
+    width: 32px;
+    height: 1px;
+    background: #F16F24;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.roleheading h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.roleheading .desc {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.rolecontent .h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    letter-spacing: -0.01em;
+
+}
+
+.rolecontent .description {
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 500;
+
+}
+
+.rolecontent .bi {
+    color: #F16F24;
+    font-size: 32px;
+}
+
+.rolecard {
+    padding: 0%;
+    margin: 0%;
+    border-right: 1px solid #DCE0E6;
+    border-bottom: 1px solid #DCE0E6;
+    background-color: #FFFFFF;
+}
+
+.rolecard:hover {
+    background-color: #F8FAFC;
+}
+
+.rolecards:hover {
+    background-color: #F8FAFC;
+}
+
+.rolecardbottom:hover {
+    background-color: #F8FAFC;
+}
+
+.rolecardbottomlast:hover {
+    background-color: #F8FAFC;
+}
+.rolecardbottomlast{
+    background-color: #FFFFFF;
+}
+.rolecardbottom {
+    padding: 0%;
+    margin: 0%;
+    border-right: 1px solid #DCE0E6; background-color: #FFFFFF;
+}
+
+.rolecards {
+    padding: 0%;
+    margin: 0%;
+    border-bottom: 1px solid #DCE0E6;
+    background-color: #FFFFFF;
+}
+
+.rolecontent {
+    padding: 5%;
+}
+
+.cardroles {
+    background-color: #F8FAFC;
+    padding: 2%;
+}
+
+.work {
+    padding: 5%;
+}
+
+.work-title {
+    color: rgb(241, 111, 36);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.22em;
+
+}
+
+.work-title span {
+    width: 32px;
+    height: 1px;
+    background: #F16F24;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.workheading h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+
+}
+
+.workheading .desc {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+
+}
+
+.works {
+    border-right: 1px solid #DCE0E6;
+}
+
+.workapproach {
+    padding: 3%;
+}
+
+.workpara {
+    padding: 2%;
+}
+
+.workpara .numbers {
+    color: #F16F24;
+    font-size: 11px;
+    font-weight: 400;
+
+}
+
+.workpara .workdescription {
+    font-size: 14px;
+
+}
+
+.workpara .bi {
+    font-size: 28px;
+}
+
+.workheadline {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color: black;
+}
+
+.openings {
+    padding: 5%;
+    background-color: #F8FAFC;
+}
+
+.opening-title {
+    color: rgb(241, 111, 36);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.22em;
+
+}
+
+.opening-title span {
+    width: 32px;
+    height: 1px;
+    background: #F16F24;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.openingheading h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+
+
+.openingcontent {
+    font-size: 16px;
+    /* font-weight: 400; */
+    text-align: justify;
+}
+
+.opening .locations {
+    font-size: 14px;
+}
+
+.opening .years {
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+.years .bi {
+    color: #F16F24;
+}
+
+.locations .bi {
+    color: #F16F24;
+}
+
+.opening .time {
+    color: #F16F24;
+    font-size: 11px;
+    letter-spacing: 0.15em;
+}
+
+.opening .position {
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+}
+
+.responsibilities .key {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    line-height: 35px;
+    color: #475569;
+}
+
+.responsibilities .reslines {
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.reslines span {
+    width: 5px;
+    height: 5px;
+    margin-right: 2%;
+    background: #F16F24;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.openings .card {
+    border: 1px solid #DCE0E6;
+    border-radius: 0%;
+}
+
+.applysection {
+    padding: 5%;
+}
+
+.apply-title {
+    color: rgb(241, 111, 36);
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.22em;
+}
+
+.apply-title span {
+    width: 32px;
+    height: 1px;
+    background: #F16F24;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.applyheading h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.applyheading .applydesc {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.applyheading .bi {
+    color: #F16F24;
+    font-weight: 500;
+}
+
+.formsection {
+    background-color: #F8FAFC;
+    border: 1px solid #DCE0E6;
+    border-radius: 0%;
+    padding: 1%;
+}
+
+.formsection label {
+    font-size: 11px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #475569;
+    background-color: #F8FAFC;
+}
+
+::placeholder {
+    font-size: 14px;
+}
+
+.form-select {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #475569;
+    background-color: #F8FAFC;
+    border-radius: 0%;
+}
+
+select option {
+    background-color: #F8FAFC;
+}
+
+.assessmentcontent {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 7px;
+    line-height: 22px;
+}
+
+
+
+
+
+
+
+
+.resume-upload-section {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.upload-label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.upload-box {
+    border: 1px dashed #cfcfcf;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #F8FAFC;
+}
+
+.upload-box:hover {
+    border-color: #ff6b1a;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #7d8793;
+    font-size: 15px;
+}
+
+.left-content i {
+    color: #ff6b1a;
+    font-size: 16px;
+}
+
+.browse-text {
+    color: #ff6b1a;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.para {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+}
+
+@media(max-width:439px) {
+
+    .btn-orange {
+        margin-bottom: 5%;
+    }
+
+    .heading-area h1 {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 44px;
+
+        color: white;
+        letter-spacing: -0.02em;
+    }
+
+    .whyheading h1 {
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .whycard {
+        padding: 0%;
+        margin: 0%;
+        border-right: none;
+        border-bottom: 1px solid #DCE0E6;
+    }
+
+    .whycardbottom {
+        padding: 0%;
+        margin: 0%;
+        border-right: none;
+        border-bottom: 1px solid #DCE0E6;
+    }
+
+    .whycards {
+        padding: 0%;
+        margin: 0%;
+        border-bottom: 1px solid #DCE0E6;
+    }
+
+    .rolecard {
+        padding: 0%;
+        margin: 0%;
+        border-right: none;
+        border-bottom: 1px solid #DCE0E6;
+    }
+
+    .rolecardbottom {
+        padding: 0%;
+        margin: 0%;
+        border-right: none;
+        border-bottom: 1px solid #DCE0E6;
+    }
+
+    .rolecards {
+        padding: 0%;
+        margin: 0%;
+        border-bottom: 1px solid #DCE0E6;
+    }
+
+    .works {
+        border: 1px solid #DCE0E6;
+    }
+
+    .workss {
+        border: 1px solid #DCE0E6;
+    }
+
+    .workheading h1 {
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .roleheading h1 {
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .openingheading h1 {
+        color: black;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .responsibilities .reslines {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+}
+
+
+textarea {
+    width: 100%;
+}
