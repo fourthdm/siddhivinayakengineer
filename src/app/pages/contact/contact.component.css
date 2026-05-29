@@ -301,7 +301,6 @@ input {
     line-height: 16px;
     font-weight: 400;
     color: #F16F24;
-
 }
 
 .paragraph {
@@ -358,7 +357,8 @@ textarea {
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -0.02em;
-
+    font-weight: 800;
+    max-width: 720px;
 }
 
 .plan {
@@ -478,6 +478,12 @@ textarea {
     display: block;
 }
 
+.perferspeak {
+    color: #000;
+    font-size: 28px;
+    line-height: 36px;
+}
+
 @media(max-width:439px) {
     .mobile {
         font-size: 22px;
@@ -527,9 +533,50 @@ textarea {
 
     .heading-area .desc {
         color: #e6e8eb;
-
         font-size: 16px;
         line-height: 26px;
         padding: 0% 0% 0% 0%;
     }
+
+    .paragraph {
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+    .share {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .heading-area .h1 {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+        font-weight: 800;
+        max-width: 720px;
+    }
+
+    .perferspeak {
+        color: #000;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+    }
+
+       .mobilenumbers {
+        font-size: 22px;
+        line-height: 30px;
+        color: #000;
+    }
+
+    .mobilenumbers .bi {
+        font-size: 20px;
+        font-weight: 600;
+        color: #F16F24;
+    }
+
 }
