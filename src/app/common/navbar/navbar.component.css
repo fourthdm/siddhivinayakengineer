@@ -60,13 +60,14 @@
     /* float: right; */
 }
 
-.con{
+.con {
     margin-left: 1em;
 }
 
 .bi-telephone {
     color: #F16F24;
 }
+
 /* 
 .active{
     color: #F16F24;
@@ -74,7 +75,7 @@
 .active-link {
     /* background-color: #5B4c75 !important; */
     /* Active clicked color */
-    border-bottom:2px solid #F16F24 !important;
+    border-bottom: 2px solid #F16F24 !important;
     /* border-left: 2px solid white; */
 }
 
@@ -82,6 +83,13 @@
     .navss {
         line-height: 18px;
         display: block !important;
+    }
+
+    .active-link {
+        /* background-color: #5B4c75 !important; */
+        /* Active clicked color */
+        border-bottom:none !important;
+      /* border-left: 2px solid white; */
     }
 
     .navbardaikins {
@@ -94,7 +102,7 @@
 
     .emailcontact {
         font-size: 11px;
-        margin-left: 0!important;
+        margin-left: 0 !important;
         /* float: right; */
     }
 
@@ -117,7 +125,7 @@
 
     .emailcontact {
         font-size: 11px;
-        margin-left:40rem;
+        margin-left: 40rem;
         /* float: right; */
     }
 

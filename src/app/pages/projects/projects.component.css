@@ -212,14 +212,12 @@
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000;
-
     max-width: 500px;
 }
 
 .heading-area h1 span {
     font-size: 40px;
     font-weight: 700;
-
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #F16F24;
@@ -347,9 +345,8 @@
     .slider-content {
         position: absolute;
         /* left: 5%;
-        right: 5%;
-        */
-        top: 4%; 
+        right: 5%; */
+        top: 4%;
         z-index: 10;
         color: #FFFFFF;
         max-width: 400px;
@@ -411,6 +408,54 @@
         line-height: 26px;
         max-width: 350px;
         margin-bottom: 35px;
+    }
+
+    .heading-area h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .heading-area h1 span {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .custom-pills .nav-link {
+        padding: 10px 10px;
+        font-size: 10px;
+    }
+
+    .insideheading h1 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+
+    .insideheading h1 span {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+
+    .casestudies h1 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+
+    .lastheading-area .h1 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+        letter-spacing: -0.02em;
+    }
+
+    .mobilenumbers {
+        font-size: 22px !important;
+        line-height: 30px !important;
+        color: #000;
+    }
+
+    .mobilenumbers .bi {
+        font-size: 20px !important;
+        font-weight: 600;
+        color: #F16F24;
     }
 
 }
@@ -610,19 +655,27 @@
 .insideheading h1 {
     font-size: 40px;
     font-weight: 700;
-
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000;
+    max-width: 450px;
+}
+
+.insideheading h1 span {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #F16F24;
 }
 
 .casestudies h1 {
     font-size: 40px;
     font-weight: 700;
-
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000;
+    max-width: 500px;
 }
 
 .insideheading .descindustries {
@@ -630,15 +683,6 @@
     font-weight: 500;
 
     line-height: 26px;
-}
-
-.insideheading h1 span {
-    font-size: 40px;
-    font-weight: 700;
-
-    line-height: 48px;
-    letter-spacing: -0.02em;
-    color: #F16F24;
 }
 
 .inside-title {
@@ -878,6 +922,7 @@
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -0.02em;
+    max-width: 720px;
 }
 
 .lastheading-area .desc {

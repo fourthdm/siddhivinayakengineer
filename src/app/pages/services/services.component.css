@@ -14,10 +14,10 @@
         url('/assets/header/hero_servies_page.jpeg'); */
 
     background:
-     linear-gradient(to right,
+        linear-gradient(to right,
             rgba(5, 15, 30, 0.62) 0%,
             rgba(27, 27, 27, 0) 100%,
-          
+
             transparent 0%),
         url('/assets/header/hero_servies_page.jpeg');
 
@@ -130,7 +130,6 @@
     font-weight: 700;
     line-height: 48px;
     color: #161E2A;
-
     max-width: 720px;
 }
 
@@ -138,7 +137,6 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
-
     color: #F16F24;
 }
 
@@ -181,7 +179,6 @@
     font-weight: 700;
     line-height: 48px;
     color: #161E2A;
-
     max-width: 720px;
 }
 
@@ -189,7 +186,6 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
-
     color: #F16F24;
 }
 
@@ -274,7 +270,6 @@
     font-size: 40px;
     line-height: 48px;
     letter-spacing: -0.02em;
-
 }
 
 .lastheading-area .desc {
@@ -642,7 +637,6 @@
     font-weight: 700;
     line-height: 48px;
     color: #161E2A;
-
     max-width: 500px;
     letter-spacing: -0.02em;
 }
@@ -651,7 +645,6 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
-
     color: #F16F24;
 }
 
@@ -686,7 +679,6 @@
         font-size: 36px;
         font-weight: 800;
         line-height: 44px;
-
         color: #FFFFFF;
         letter-spacing: -0.02em;
     }
@@ -696,9 +688,77 @@
         padding: 1px;
     }
 
-
     .card-img-top {
         height: 263px;
         width: 100%;
     }
+
+    .capabilityheading h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #161E2A;
+    }
+
+    .capabilityheading h1 span {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .enviromentheading h1 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #161E2A;
+        max-width: 720px;
+    }
+
+    .enviromentheading h1 span {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .capabilititle {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .clientheading {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #161E2A;
+        max-width: 500px;
+        letter-spacing: -0.02em;
+    }
+
+    .clientheading h1 span {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .lastheading-area .h1 {
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: -0.02em;
+    }
+
+    .mobilenumbers {
+        font-size: 22px;
+        line-height: 30px;
+        color: #000;
+    }
+
+    .mobilenumbers .bi {
+        font-size: 20px;
+        font-weight: 600;
+        color: #F16F24;
+    }
+
 }

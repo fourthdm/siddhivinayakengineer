@@ -257,13 +257,16 @@
 .rolecardbottomlast:hover {
     background-color: #F8FAFC;
 }
-.rolecardbottomlast{
+
+.rolecardbottomlast {
     background-color: #FFFFFF;
 }
+
 .rolecardbottom {
     padding: 0%;
     margin: 0%;
-    border-right: 1px solid #DCE0E6; background-color: #FFFFFF;
+    border-right: 1px solid #DCE0E6;
+    background-color: #FFFFFF;
 }
 
 .rolecards {
@@ -473,6 +476,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+    max-width: 250px;
 }
 
 .applyheading .applydesc {
@@ -609,8 +613,8 @@ select option {
     .whyheading h1 {
         color: black;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 28px;
+        line-height: 36px;
     }
 
     .whycard {
@@ -664,22 +668,22 @@ select option {
     .workheading h1 {
         color: black;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 28px;
+        line-height: 36px;
     }
 
     .roleheading h1 {
         color: black;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 28px;
+        line-height: 36px;
     }
 
     .openingheading h1 {
         color: black;
         font-weight: 700;
-        font-size: 30px;
-        line-height: 30px;
+        font-size: 28px;
+        line-height: 36px;
     }
 
     .responsibilities .reslines {
@@ -687,6 +691,11 @@ select option {
         line-height: 15px;
     }
 
+    .applyheading h1 {
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 700px;
+    }
 }
 
 

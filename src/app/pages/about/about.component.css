@@ -148,7 +148,6 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-
 }
 
 .whyheading .desc {
@@ -388,7 +387,6 @@
     font-weight: 500;
     letter-spacing: -0.01em;
     color: #000;
-
 }
 
 .texts {
@@ -442,7 +440,6 @@
     font-size: 28px;
     font-weight: 600;
     color: #000;
-
 }
 
 .mobilenumbers:hover {
@@ -519,7 +516,7 @@
 
 .assessmentcontent {
     /* color: #eeeff0; */
-         color: #A8AEB8;
+    color: #A8AEB8;
     font-size: 16px;
     padding-left: 7px;
     line-height: 26px;
@@ -611,7 +608,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-          color: #A8AEB8;
+    color: #A8AEB8;
     /* color: #e6e8eb; */
     /* color: #566073; */
 }
@@ -823,12 +820,50 @@
 }
 
 @media(max-width:439px) {
+
+    .whyheading h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .methoheading-area h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .whyheading h1 span {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .certificatewhyheading h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .certificatewhyheading h1 span {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
     .laptopview {
         display: none;
     }
 
     .mobileview {
         display: block !important;
+    }
+
+    .mobilenumbers {
+        font-size: 22px;
+        line-height: 30px;
+        color: #000;
+    }
+
+    .mobilenumbers .bi {
+        font-size: 20px;
+        font-weight: 600;
+        color: #F16F24;
     }
 
     .heading-area h1 {
@@ -843,4 +878,9 @@
     .btn-orange {
         margin-bottom: 5%;
     }
+
+}
+
+.modal-title {
+    color: #000;
 }
