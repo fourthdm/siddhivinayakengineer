@@ -245,6 +245,15 @@
 
 @media(max-width:439px) {
 
+.slider-content {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+    z-index: 10;
+    color: #fff;
+    /* max-width: 720px; */
+}
+
     .slider-content h1 {
         font-size: 36px;
         font-weight: 800;
