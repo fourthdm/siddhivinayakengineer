@@ -8,10 +8,12 @@
 }
 
 .aboutbackground {
+    /* linear-gradient(rgba(5, 15, 30, 0.62),
+        rgba(5, 15, 30, 0.62)), */
     background:
-        /* linear-gradient(rgba(5, 15, 30, 0.62),
-            rgba(5, 15, 30, 0.62)), */
-        url('/assets/header/Career-hero.jpeg');
+        url('/assets/header/2.jpg');
+    /* background:
+        url('/assets/header/Career-hero.jpeg'); */
 
     background-size: cover;
     background-position: center;
@@ -22,7 +24,8 @@
     font-size: 64px;
     font-weight: 800;
     line-height: 72px;
-    color: white;
+    /* color: white; */
+    color: #161E2A;
     letter-spacing: -0.02em;
     max-width: 700px;
 }
@@ -36,11 +39,13 @@
     font-size: 11px;
     line-height: 16px;
     letter-spacing: 0.22em;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .heading-area .desc {
-    color: #FFFFFF;
+    color: #000;
+    /* color: #161E2A; */
+    /* color: #FFFFFF; */
     font-size: 16px;
     line-height: 26px;
     max-width: 700px;
@@ -84,7 +89,8 @@
 
     border: 1px solid #A8AEB8;
     /* background-color: #FFFFFF; */
-    color: #FFFFFF;
+    color: #161E2A;
+    /* color: #FFFFFF; */
 }
 
 .btn-chat:hover {
@@ -606,7 +612,6 @@ select option {
         font-weight: 800;
         line-height: 44px;
 
-        color: white;
         letter-spacing: -0.02em;
     }
 

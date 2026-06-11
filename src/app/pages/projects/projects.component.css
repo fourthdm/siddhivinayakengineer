@@ -458,6 +458,15 @@
         color: #F16F24;
     }
 
+    .project-details {
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 30px;
+    }
+
+
 }
 
 .card {
@@ -467,7 +476,6 @@
 .times {
     font-size: 14px;
     line-height: 22px;
-
 }
 
 /* SECTION */
@@ -1054,9 +1062,9 @@
 
 @media(max-width:576px) {
 
-    .project-details {
+    /* .project-details {
         grid-template-columns: 1fr;
-    }
+    } */
 
     .thumb {
         width: 80px;

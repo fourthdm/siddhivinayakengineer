@@ -36,7 +36,7 @@
     font-size: 11px;
     letter-spacing: 0.22em;
     line-height: 16px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .heading-area .desc {
@@ -578,4 +578,29 @@ textarea {
         color: #F16F24;
     }
 
+}
+
+.required {
+    color: #F16F24;
+}
+
+/* Red border for invalid fields */
+.invalid-field {
+    border: 1px solid red !important;
+    box-shadow: 0 0 5px rgba(220, 53, 53, 0.3);
+}
+
+/* Normal input styling */
+input,
+select,
+textarea {
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+}
+
+/* Error text */
+.error-message {
+    color: #dc3545;
+    font-size: 12px;
+    margin-top: 4px;
 }

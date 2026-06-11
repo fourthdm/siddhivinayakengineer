@@ -39,30 +39,37 @@
                 <form class="contact-form" (submit)="sendEmail($event)">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="name">YOUR NAME <span style=" color: #F16F24;">*</span></label>
-                            <input type="text" name="name" id="name" placeholder="Full Name" required>
+                            <label for="name">YOUR NAME <span class="required">*</span></label>
+                            <input type="text" name="name" id="name" placeholder="Full Name" ngModel #name="ngModel"
+                                [class.invalid-field]="name.invalid && (name.touched)" required>
                             <br><br>
                         </div>
                         <div class="col-md-6">
-                            <label for="Name">COMPANY NAME <span style=" color: #F16F24;">*</span> </label><br>
-                            <input type="text" name="CompanyName" id="CompanyName" placeholder="Organisation"><br><br>
+                            <label for="CompanyName">COMPANY NAME <span class="required">*</span> </label><br>
+                            <input type="text" name="CompanyName" id="CompanyName" placeholder="Organisation" ngModel
+                                #CompanyName="ngModel"
+                                [class.invalid-field]="CompanyName.invalid && (CompanyName.touched)" required><br><br>
                         </div> <br>
 
                         <div class="col-md-6">
-                            <label for="Name">MOBILE NUMBER <span style=" color: #F16F24;">*</span> </label><br>
-                            <input type="text" name="MobileNumber" id="MobileNumber" placeholder="+91-----------">
+                            <label for="MobileNumber">MOBILE NUMBER <span class="required">*</span> </label><br>
+                            <input type="text" name="MobileNumber" id="MobileNumber" placeholder="+91-----------"
+                                ngModel #MobileNumber="ngModel"
+                                [class.invalid-field]="MobileNumber.invalid && (MobileNumber.touched)" required>
                             <span style="font-size: 12px;">We'll contact you via call or WhatsApp.</span> <br> <br>
                         </div><br>
+
                         <div class="col-md-6">
-                            <label for="Name">EMAIL ADDRESS <span>(optional)</span> </label><br>
+                            <label for="EmailAddress">EMAIL ADDRESS <span>(optional)</span> </label><br>
                             <input type="text" name="EmailAddress" id="EmailAddress" placeholder="name@company.com">
                             <br><br>
                         </div><br>
 
                         <div class="col-md-6">
-                            <label for="Name">WHAT DO YOU NEED? <span style=" color: #F16F24;">*</span></label><br>
+                            <label for="Services">WHAT DO YOU NEED? <span class="required">*</span></label><br>
                             <select class="form-select" name="Services" aria-label="Default select example"
-                                id="Services">
+                                id="Services" ngModel #Services="ngModel"
+                                [class.invalid-field]="Services.invalid && (Services.touched)" required>
                                 <option value="">Select a service</option>
                                 <option value="HVAC Design & Installation">HVAC Design & Installation</option>
                                 <option value="MEP Turnkey Project">MEP Turnkey Project</option>
@@ -76,9 +83,10 @@
                         </div><br>
 
                         <div class="col-md-6">
-                            <label for="Name">YOUR INDUSTRY<span style=" color: #F16F24;">*</span></label><br>
+                            <label for="Industry">YOUR INDUSTRY<span class="required">*</span></label><br>
                             <select class="form-select" name="Industry" aria-label="Default select example"
-                                id="Industry">
+                                id="Industry" ngModel #Industry="ngModel"
+                                [class.invalid-field]="Industry.invalid && (Industry.touched)" required>
                                 <option value="">Select industry</option>
                                 <option value="Pharmaceutical / Biotech">Pharmaceutical / Biotech</option>
                                 <option value="Data Centre / IT">Data Centre / IT</option>
@@ -92,15 +100,19 @@
                     <br>
 
                     <div class="col-md-12">
-                        <label for="Name">PROJECT LOCATION (CITY/STATE)<span
+                        <label for="Location">PROJECT LOCATION (CITY/STATE)<span
                                 style="color: #F16F24;">*</span></label><br>
-                        <input type="text" name="Location" id="Location" placeholder="e.g. Pune, Maharashtra"> <br>
+                        <input type="text" name="Location" id="Location" placeholder="e.g. Pune, Maharashtra" ngModel
+                            #Location="ngModel" [class.invalid-field]="Location.invalid && (Location.touched)" required>
+                        <br>
                     </div> <br>
 
                     <div class="col-md-12">
-                        <label for="Name">PROJECT DETAILS<span style=" color: #F16F24;">*</span></label><br>
+                        <label for="Details">PROJECT DETAILS<span class="required">*</span></label><br>
                         <textarea name="Project details" name="Details" id="Details" rows="4" cols="50"
-                            placeholder="e.g., 8,000 sqft pharma cleanroom. Require HVAC design & execution. Timeline: 6 months."></textarea>
+                            placeholder="e.g., 8,000 sqft pharma cleanroom. Require HVAC design & execution. Timeline: 6 months."
+                            ngModel #Details="ngModel" [class.invalid-field]="Details.invalid && (Details.touched)"
+                            required></textarea>
                         <br>
                     </div>
                     <br><br>

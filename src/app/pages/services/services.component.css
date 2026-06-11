@@ -13,14 +13,13 @@
             rgba(5, 15, 30, 0.62)),
         url('/assets/header/hero_servies_page.jpeg'); */
 
-    background:
+    /* background:
         linear-gradient(to right,
             rgba(5, 15, 30, 0.62) 0%,
             rgba(27, 27, 27, 0) 100%,
-
             transparent 0%),
-        url('/assets/header/hero_servies_page.jpeg');
-
+        url('/assets/header/hero_servies_page.jpeg'); */
+    background: url('/assets/header/3.jpg');
     background-size: cover;
     background-position: center;
     padding: 7%;
@@ -32,7 +31,8 @@
     font-weight: 800;
     line-height: 72px;
 
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
+    color: #161E2A;
     letter-spacing: -0.02em;
     max-width: 600px;
 }
@@ -43,15 +43,15 @@
 
 .small-title {
     color: rgb(241, 111, 36);
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.22em;
+    line-height: 16px;
+    font-weight: 600;
 }
 
 .heading-area .desc {
-    color: #FFFFFF;
-    /* color: #e6e8eb; */
-
-
+    /* color: #FFFFFF; */
+    color: #161E2A;
     font-size: 16px;
     line-height: 26px;
     /* padding: 0% 25% 0% 0%; */
@@ -679,9 +679,12 @@
         font-size: 36px;
         font-weight: 800;
         line-height: 44px;
-        color: #FFFFFF;
+        color: #161E2A;
+        /* color: #FFFFFF; */
         letter-spacing: -0.02em;
     }
+
+
 
     .operate {
         margin: 0;
