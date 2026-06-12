@@ -66,10 +66,10 @@ export class CareerComponent {
     const form = event.target as HTMLFormElement;
 
     emailjs.sendForm(
-      'service_l8nxa6d',
-      'template_0zfhgp7',
+      'service_l8nxa6d',  //Service Id
+      'template_0zfhgp7',  // Template Id
       form,
-      'h-OgB_ZELwY6SnxLu'
+      'h-OgB_ZELwY6SnxLu'  //Public Key form Emailjs
     ).then(
       () => {
 

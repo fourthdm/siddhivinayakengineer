@@ -386,7 +386,6 @@
     letter-spacing: 0.02em;
 }
 
-
 .cards {
     border: 0.5px solid #A8AEB8;
     padding: 2%;
@@ -401,7 +400,7 @@
 .para {
     font-size: 14px;
     line-height: 22px;
-    font-family: 400;
+    font-weight: 400;
     color: #A8AEB8;
 }
 
@@ -675,6 +674,15 @@
 
 @media(max-width:439px) {
 
+    .heading-area .desc {
+        /* color: #FFFFFF; */
+        color: #000;
+        font-size: 16px;
+        line-height: 26px;
+        /* padding: 0% 25% 0% 0%; */
+        max-width: 720px;
+    }
+
     .heading-area h1 {
         font-size: 36px;
         font-weight: 800;
@@ -683,8 +691,6 @@
         /* color: #FFFFFF; */
         letter-spacing: -0.02em;
     }
-
-
 
     .operate {
         margin: 0;
