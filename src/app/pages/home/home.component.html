@@ -4,7 +4,7 @@
 
 
 <!-- Trust Bar Counting Section -->
-<div class="Countsection"  data-aos="fade-up" data-aos-duration="1000">
+<div class="Countsection" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
         <div class="heading-area">
             <p class="small-title">
@@ -19,7 +19,7 @@
         <br>
         <div class="" #counterSection>
             <div class="row">
-                <div class="col-6 col-md-3 countcard">
+                <div class="col-6 col-md-3 countcard" data-aos="fade-right">
                     <div class="">
                         <div class="text-center">
                             <div class="counticons">
@@ -33,7 +33,8 @@
 
                     </div>
                 </div> <br>
-                <div class="col-6 col-md-3 countcard">
+                <div class="col-6 col-md-3 countcard" data-aos="fade-right" data-aos-easing="ease-in-back"
+                    data-aos-delay="200" data-aos-offset="0">
                     <div class="">
                         <div class="text-center">
                             <div class="counticons">
@@ -47,7 +48,9 @@
 
                     </div>
                 </div> <br>
-                <div class="col-6 col-md-3 countcard">
+
+                <div class="col-6 col-md-3 countcard" data-aos="fade-right" data-aos-easing="ease-in-back"
+                    data-aos-delay="300" data-aos-offset="0">
                     <div class="">
                         <div class="text-center">
                             <div class="counticons">
@@ -60,7 +63,9 @@
                         </div>
                     </div>
                 </div> <br>
-                <div class="col-6 col-md-3 countcard">
+
+                <div class="col-6 col-md-3 countcard" data-aos="fade-right" data-aos-easing="ease-in-back"
+                    data-aos-delay="400" data-aos-offset="0">
                     <div class="">
                         <div class="text-center">
                             <div class="counticons">
@@ -73,13 +78,14 @@
                         </div>
                     </div>
                 </div> <br>
+
             </div>
         </div>
     </div>
 </div>
 
 <!-- Industries serve section -->
-<div class="industriessection"  data-aos="fade-up" >
+<div class="industriessection" data-aos="fade-up">
     <div class="container">
         <div class="heading-area">
             <p class="small-title">
@@ -171,7 +177,7 @@
             </div><br>
         </div>
         <br>
-        <div class="row" >
+        <div class="row">
 
             <div class="col-md-4">
                 <div class="card">
@@ -221,7 +227,7 @@
                     </div> -->
                 </div> <br>
             </div><br>
-            <div class="col-md-4" >
+            <div class="col-md-4">
                 <div class="card">
                     <div class="bg-image hover-zoom">
                         <img src="/assets/industries/industrial and manufacturing.jpg" class="card-img-top"
@@ -326,7 +332,7 @@
 
 
 <!--  What We Do-->
-<section id="Capabilities"   data-aos="fade-up">
+<section id="Capabilities" data-aos="fade-up">
     <div class="whatwedo">
         <div class="container">
             <div class="heading-area">
@@ -660,7 +666,7 @@
 <!-- capability section close -->
 
 <!-- CASE STUDY section -->
-<div class="container"   data-aos="fade-up">
+<div class="container" data-aos="fade-up">
     <br><br>
     <div class="row">
         <div class="col-md-6">
@@ -903,7 +909,7 @@
 <br><br>
 <br>
 <!-- Our Process Section -->
-<div class=""   data-aos="fade-up">
+<div class="" data-aos="fade-up">
     <section class="methodology-section">
         <div class="container">
             <div class="containers">
@@ -1762,6 +1768,8 @@
     </div>
 </div>
 
+<app-blog  data-aos="fade-up"></app-blog>
+
 <div class="lastcontact" data-aos="fade-up">
     <div class="container">
         <div class="row">
@@ -1799,7 +1807,7 @@
                                 <br> <span class="times">Mon-Sat 9:00 AM - 7:00 PM IST</span>
                                 <br><br>
                                 <p class="btn-oranges">
-                                    <span class="text-start" (click)="scroll()" [routerLink]="['/Contact']">
+                                    <span class="text-start" (click)="scroll()" [routerLink]="['/Contact']"  fragment="Contactus">
                                         Request a Site Assessment
                                     </span> <i class="bi bi-arrow-right enquirybtn"></i>
                                 </p>

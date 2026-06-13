@@ -1,0 +1,30 @@
+<div class="container">
+    <br><br>
+    <div class="row align-items-center">
+
+        <!-- Left Side -->
+        <div class="col-lg-3 stats">
+            <p class="h2">10 +</p>
+            <p>District Footprint</p>
+
+            <p class="h2">500 +</p>
+            <p>Project Delivered </p>
+            <p class="h2">17</p>
+            <p>Years of Operation</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-9">
+            <div class="map-container">
+                <img src="assets/india.jpg" class="world-map" alt="World Map" />
+                <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
+                    [style.top.%]="location.y">
+                    <span class="tooltip">
+                        {{ location.name }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>

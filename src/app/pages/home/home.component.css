@@ -138,7 +138,7 @@ li {
 }
 
 .Countsection {
-    /* background-color: rgb(241, 111, 36); */
+    background-color: #F8FAFC;
     padding: 5%;
 }
 
@@ -157,22 +157,41 @@ li {
     font-size: 22px;
     text-align: center;
 }
-
-
 .counticons {
+    width: 70px;
+    height: 70px;
+    background-color: #F16F24;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
+}
+
+.cicon {
+    font-size: 35px;
+    color: white;
+}   
+/* .counticons {
     border-radius: 50%;
     background-color: #F16F24;
     height: 70px;
     width: 70px;
     margin-left: 4.5em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .cicon {
-    /* margin-top: 3em; */
     font-size: 35px;
     color: white;
     padding: 15em 5px 5px 5px;
-}
+} */
 
 @media(max-width: 439px) {
     .paratext {
@@ -281,22 +300,30 @@ li {
         grid-template-columns: repeat(2, auto);
         gap: 100px !important;
     }
-}
 
-@media(min-width: 390px) and (max-width: 767px) {
-
-    .counticons {
+    /* .counticons {
         border-radius: 50%;
         background-color: #F16F24;
         height: 70px;
         width: 70px;
         margin-left: 2.5em;
-    }
+    } */
+}
+
+@media(min-width: 390px) and (max-width: 767px) {
+
+    /* .counticons {
+        border-radius: 50%;
+        background-color: #F16F24;
+        height: 70px;
+        width: 70px;
+        margin-left: 2.5em;
+    } */
 
     .whyiconsection {
         display: grid;
         grid-template-columns: repeat(2, auto);
-        gap: 200px !important;
+        gap: 220px !important;
     }
 
     .paratext {

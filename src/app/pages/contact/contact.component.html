@@ -25,7 +25,7 @@
 </div>
 <br><br><br>
 
-<div class="container" data-aos="fade-up">
+<section class="container" id="Contactus" data-aos="fade-up">
     <div class="row">
         <div class="col-md-7">
             <p class="medium-title">
@@ -40,20 +40,20 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label for="name">YOUR NAME <span class="required">*</span></label>
-                            <input type="text" name="name" id="name" placeholder="Full Name" ngModel #name="ngModel"
+                            <input class=" rounded-pill" type="text" name="name" id="name" placeholder="Full Name" ngModel #name="ngModel"
                                 [class.invalid-field]="name.invalid && (name.touched)" required>
                             <br><br>
                         </div>
                         <div class="col-md-6">
                             <label for="CompanyName">COMPANY NAME <span class="required">*</span> </label><br>
-                            <input type="text" name="CompanyName" id="CompanyName" placeholder="Organisation" ngModel
+                            <input   class=" rounded-pill"  type="text" name="CompanyName" id="CompanyName" placeholder="Organisation" ngModel
                                 #CompanyName="ngModel"
                                 [class.invalid-field]="CompanyName.invalid && (CompanyName.touched)" required><br><br>
                         </div> <br>
 
                         <div class="col-md-6">
                             <label for="MobileNumber">MOBILE NUMBER <span class="required">*</span> </label><br>
-                            <input type="text" name="MobileNumber" id="MobileNumber" placeholder="+91-----------"
+                            <input  class=" rounded-pill"  type="text" name="MobileNumber" id="MobileNumber" placeholder="+91-----------"
                                 ngModel #MobileNumber="ngModel"
                                 [class.invalid-field]="MobileNumber.invalid && (MobileNumber.touched)" required>
                             <span style="font-size: 12px;">We'll contact you via call or WhatsApp.</span> <br> <br>
@@ -61,13 +61,13 @@
 
                         <div class="col-md-6">
                             <label for="EmailAddress">EMAIL ADDRESS <span>(optional)</span> </label><br>
-                            <input type="text" name="EmailAddress" id="EmailAddress" placeholder="name@company.com">
+                            <input  class="rounded-pill"  type="text" name="EmailAddress" id="EmailAddress" placeholder="name@company.com">
                             <br><br>
                         </div><br>
 
                         <div class="col-md-6">
                             <label for="Services">WHAT DO YOU NEED? <span class="required">*</span></label><br>
-                            <select class="form-select" name="Services" aria-label="Default select example"
+                            <select class="form-select rounded-pill" name="Services" aria-label="Default select example"
                                 id="Services" ngModel #Services="ngModel"
                                 [class.invalid-field]="Services.invalid && (Services.touched)" required>
                                 <option value="">Select a service</option>
@@ -84,7 +84,7 @@
 
                         <div class="col-md-6">
                             <label for="Industry">YOUR INDUSTRY<span class="required">*</span></label><br>
-                            <select class="form-select" name="Industry" aria-label="Default select example"
+                            <select class="form-select rounded-pill" name="Industry" aria-label="Default select example"
                                 id="Industry" ngModel #Industry="ngModel"
                                 [class.invalid-field]="Industry.invalid && (Industry.touched)" required>
                                 <option value="">Select industry</option>
@@ -102,19 +102,19 @@
                     <div class="col-md-12">
                         <label for="Location">PROJECT LOCATION (CITY/STATE)<span
                                 style="color: #F16F24;">*</span></label><br>
-                        <input type="text" name="Location" id="Location" placeholder="e.g. Pune, Maharashtra" ngModel
+                        <input class="rounded-pill" type="text" name="Location" id="Location" placeholder="e.g. Pune, Maharashtra" ngModel
                             #Location="ngModel" [class.invalid-field]="Location.invalid && (Location.touched)" required>
                         <br>
                     </div> <br>
 
                     <div class="col-md-12">
                         <label for="Details">PROJECT DETAILS<span class="required">*</span></label><br>
-                        <textarea name="Project details" name="Details" id="Details" rows="4" cols="50"
+                        <textarea  class="rounded-pill" name="Project details" name="Details" id="Details" rows="2" cols="10"
                             placeholder="e.g., 8,000 sqft pharma cleanroom. Require HVAC design & execution. Timeline: 6 months."
                             ngModel #Details="ngModel" [class.invalid-field]="Details.invalid && (Details.touched)"
                             required></textarea>
                         <br>
-                    </div>
+                    </div>  
                     <br><br>
                     <div class="laptopview">
                         <div class="d-flex">
@@ -241,7 +241,7 @@
         </div>
 
     </div>
-</div>
+</section>
 <br> <br>
 <div class="headquarts" data-aos="fade-up">
     <div class="container">
@@ -307,7 +307,7 @@
                                 <span class="times">Mon-Sat 9:00 AM - 7:00 PM IST</span>
                                 <br><br>
                                 <p class="btn-oranges">
-                                    <span class="text-start">
+                                    <span class="text-start"  (click)="scrollToSection('Contactus')">
                                         Request a Site Assessment
                                     </span> <i class="bi bi-arrow-right enquirybtn"></i>
                                 </p>

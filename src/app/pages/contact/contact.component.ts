@@ -36,7 +36,7 @@ export class ContactComponent {
 
   }
   selectedFile: any;
-  
+
   // File Upload
   onFileChange(event: any) {
 
@@ -67,6 +67,19 @@ export class ContactComponent {
       reader.onerror = error => reject(error);
 
     });
+  }
+
+  scrollToSection(sectionId: string) {
+
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
   }
 
 }
