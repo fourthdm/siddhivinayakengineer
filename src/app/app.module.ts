@@ -15,7 +15,14 @@ import { CareerComponent } from './pages/career/career.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { SliderComponent } from './pages/slider/slider.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TimelinesComponent } from './pages/timelines/timelines.component';
+import { CommonModule } from '@angular/common';
+import { ResidentialComponent } from './projects/residential/residential.component';
+import { IndustrialComponent } from './projects/industrial/industrial.component';
+import { CommercialComponent } from './projects/commercial/commercial.component';
+import { MapsComponent } from './pages/maps/maps.component';
 
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,14 +36,21 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     BlogComponent,
     CareerComponent,
     ContactComponent,
-    SliderComponent
+    SliderComponent,
+    TimelinesComponent,
+    ResidentialComponent,
+    IndustrialComponent,
+    CommercialComponent,
+    MapsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    CommonModule,
+    ],
+     schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

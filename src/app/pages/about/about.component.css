@@ -46,7 +46,7 @@
 
 .heading-area .desc {
     /* color: white; */
- color: #161E2A;
+    color: #161E2A;
     font-size: 16px;
     line-height: 26px;
     max-width: 780px;
@@ -421,9 +421,11 @@
     color: #F16F24;
     cursor: pointer;
 }
-
+.plan{
+    color: #DCE0E6;
+}
 .lastcontact {
-    padding: 5%;
+    padding: 3%;
     background-color: #111822;
     /* background-color: rgba(17, 24, 34); */
     color: white;
@@ -599,11 +601,12 @@
     color: #A8AEB8;
 }
 
-.getheading-area h1 {
+.getheading-area .lasth1 {
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     letter-spacing: -0.02em;
+    color: white;
 }
 
 .getheading-area .desc {
@@ -891,4 +894,127 @@
 
 .modal-title {
     color: #000;
+}
+
+
+
+
+/* New Css for a new updated sections  */
+.vissionicons{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    /* gap: px; */
+}
+
+.visionsection{
+    border-left: 2px solid #F16F24;
+    padding-left: 25px;
+    font-size: 18px
+}
+
+.vision {
+    font-size: 40px;
+    line-height: 48px;
+    color: #000;
+    font-weight: 700;
+}
+
+.visionmisson {
+    padding: 5%;
+}
+
+.highway-slider {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vw 166.35px;
+    margin: 1% 0;
+}
+
+#infinite .highway-lane {
+    width: calc(180px * 20);
+}
+
+.highway-lane {
+    display: -webkit-flex;
+    display: flex;
+    height: 100%;
+}
+
+#infinite .highway-car {
+    -webkit-animation: translateinfinite 25s linear infinite;
+    animation: translateinfinite 25s linear infinite;
+}
+
+#infinite div.highway-barrier {
+    background: #fff;
+}
+
+div.highway-barrier {
+    overflow: hidden;
+    position: relative;
+}
+
+.highway-car::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), #F16F24, rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F16F24, rgba(0, 0, 0, 0));
+}
+
+.highway-car {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: #fff;
+    border-right: 3px solid transparent;
+    position: relative;
+    margin: 0 0.2%;
+    padding: 2vw;
+    color: #343434;
+}
+#infinite div.highway-barrier::before {
+    top: 0;
+    left: 0;
+}
+#infinite div.highway-barrier::after {
+    top: 0;
+    right: 0;
+}
+
+#infinite div.highway-barrier::before,
+#infinite div.highway-barrier::after {
+    content: " ";
+    position: absolute;
+    z-index: 9;
+    width: 180px;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.h1{
+    color: #F16F24;
+    font-size: 60px;
+}
+
+@keyframes translateinfinite {
+    100% {
+        transform: translateX(calc(-180px * 12));
+    }
 }

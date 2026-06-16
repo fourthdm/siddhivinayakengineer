@@ -1,0 +1,40 @@
+<div class="container">
+    <br><br>
+    <div class="text-center">
+        <p class="industryheadline"> Mapping Our Pan<span> India Footprint </span> </p>
+        <p class="descindustries">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores magnam sunt, eius
+            porro nobis blanditiis impedit temporibus quo voluptas cumque ut assumenda aliquam, perferendis et nemo
+            aliquid quod omnis. Iste!.
+        </p>
+    </div>
+    <br>
+
+    <div class="row align-items-center">
+
+        <!-- Left Side -->
+        <div class="col-lg-3 stats"  #counterSection>
+            <p class="h2">  {{ count1 }} +</p>
+            <p>Year of Experience</p>
+
+            <p class="h2">{{ count3 }} +</p>
+            <p>Project Delivered </p>
+
+            <p class="h2">{{count4}} +</p>
+            <p>State Serverd</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="col-lg-9">
+            <div class="map-container">
+                <img src="assets/indiaaa.jpg" class="world-map" alt="World Map" />
+                <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
+                    [style.top.%]="location.y">
+                    <span class="tooltip">
+                        {{ location.name }}
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>

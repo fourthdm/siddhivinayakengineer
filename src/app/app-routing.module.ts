@@ -8,6 +8,9 @@ import { ServicesComponent } from './pages/services/services.component';
 import { IndustriesComponent } from './pages/industries/industries.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
+import { ResidentialComponent } from './projects/residential/residential.component';
+import { CommercialComponent } from './projects/commercial/commercial.component';
+import { IndustrialComponent } from './projects/industrial/industrial.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -19,6 +22,11 @@ const routes: Routes = [
 
   { path: 'Blog', component: BlogComponent },
   { path: 'Projects', component: ProjectsComponent },
+
+  { path: 'ResidentialProejct', component: ResidentialComponent },
+  { path: 'CommercialProejct', component: CommercialComponent },
+  { path: 'IndustrialProejct', component: IndustrialComponent },
+
   { path: '**', redirectTo: '' }
 ];
 

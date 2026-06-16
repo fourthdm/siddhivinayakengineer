@@ -1,0 +1,36 @@
+<div class="conatiner">
+    <br><br>
+
+    <div class="journey">
+
+    <h1>A Momentous Journey</h1>
+
+    <div class="cards">
+
+        <div
+            *ngFor="let card of cards; let i=index"
+            class="card"
+            [ngClass]="getClass(i)">
+
+            <h2>{{card.year}}</h2>
+
+            <p>
+              {{card.Description}}
+            </p>
+
+            <div class="line"></div>
+
+        </div>
+
+    </div>
+
+    <div class="controls">
+
+        <button (click)="prev()">←</button>
+
+        <button (click)="next()">→</button>
+
+    </div>
+
+</div>
+</div>

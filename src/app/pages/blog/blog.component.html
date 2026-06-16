@@ -1,30 +1,33 @@
-<div class="container">
-    <br><br>
-    <div class="row align-items-center">
+<div class="">
+    <div class="timeline-wrapper">
 
-        <!-- Left Side -->
-        <div class="col-lg-3 stats">
-            <p class="h2">10 +</p>
-            <p>District Footprint</p>
+        <h1>A Momentous Journey</h1>
 
-            <p class="h2">500 +</p>
-            <p>Project Delivered </p>
-            <p class="h2">17</p>
-            <p>Years of Operation</p>
-        </div>
+        <swiper-container effect="coverflow" centered-slides="true" slides-per-view="3" loop="true" grab-cursor="true"
+            mousewheel="true" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="400"
+            coverflow-effect-modifier="1" coverflow-effect-scale="1" coverflow-effect-slide-shadows="true">
 
-        <!-- Right Side -->
-        <div class="col-lg-9">
-            <div class="map-container">
-                <img src="assets/india.jpg" class="world-map" alt="World Map" />
-                <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
-                    [style.top.%]="location.y">
-                    <span class="tooltip">
-                        {{ location.name }}
-                    </span>
+            <swiper-slide *ngFor="let card of cards">
+
+                <div class="timeline-card">
+
+                    <h2>{{card.year}}</h2>
+
+                    <p>{{card.text}}</p>
+
+                    <div class="divider"></div>
+                    <!-- <p> {{card.award}}</p>
+                    <p> <br>
+                        {{card.award1}}</p>
+                    <p><br> {{card.award2}}</p>
+                    <p> <br>{{card.award3}}</p>
+                    <p><br> {{card.award4}}</p> -->
                 </div>
-            </div>
-        </div>
+
+            </swiper-slide>
+
+        </swiper-container>
+
     </div>
-    <br><br>
+
 </div>
