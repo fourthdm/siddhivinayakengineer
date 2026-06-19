@@ -53,6 +53,13 @@
     /* padding: 0% 25% 0% 0%; */
 }
 
+.descleadership {
+    color: #161E2A;
+    font-size: 16px;
+    line-height: 26px;
+    max-width: 780px;
+}
+
 .small-title span {
     width: 32px;
     height: 1px;
@@ -121,29 +128,35 @@
     padding: 5%;
 }
 
-.why-title {
-    color: #566073;
-    font-size: 11px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.22em;
+.subtitle {
+    color: #161E2A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
 }
 
-.why-title span {
+.why-title {
+    color: #161E2A;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+/* .why-title span {
     width: 32px;
     height: 1px;
     background: #F16F24;
     display: inline-block;
     margin-right: 10px;
     vertical-align: middle;
-}
+} */
 
 .whyheading h1 {
     color: black;
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-    max-width: 500px;
+    /* max-width: 500px; */
 }
 
 .whyheading h1 span {
@@ -157,7 +170,7 @@
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
-    max-width: 720px;
+    /* max-width: 720px; */
     color: #566073;
 }
 
@@ -166,7 +179,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-    max-width: 720px;
+    /* max-width: 720px; */
 }
 
 .certificatewhyheading h1 span {
@@ -180,7 +193,7 @@
     font-size: 16px;
     line-height: 26px;
     font-weight: 400;
-    max-width: 700px;
+    /* max-width: 700px; */
     color: #566073;
 }
 
@@ -310,7 +323,23 @@
 .card:hover {
     border: 1px solid #A8AEB8;
     border-radius: 0%;
-    box-shadow: 0 8px 24px -12px rgba(22, 30, 42, 0.18);
+    /* box-shadow: 0 8px 24px -12px rgba(22, 30, 42, 0.18); */
+}
+
+.animate_line:after {
+    left: 5px;
+    bottom: 5px;
+}
+
+.animate_line:after,
+.animate_line:before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    position: absolute;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    z-index: -1;
 }
 
 .dsectionbody span {
@@ -338,6 +367,15 @@
     word-spacing: -0.1em;
 }
 
+/* 
+.card:hover {
+    border-bottom: -20px;
+
+    border: 2px solid #F16F24;
+    z-index: 1;
+
+    transition: all 0.5s ease;
+} */
 
 .whychoosecard-body {
     padding: 3%;
@@ -388,7 +426,7 @@
     line-height: 28px;
     font-weight: 500;
     letter-spacing: -0.01em;
-    color: #000;
+    color: #F16F24;
 }
 
 .texts {
@@ -421,9 +459,11 @@
     color: #F16F24;
     cursor: pointer;
 }
-.plan{
-    color: #DCE0E6;
+
+.plan {
+    color: #fff;
 }
+
 .lastcontact {
     padding: 3%;
     background-color: #111822;
@@ -900,27 +940,39 @@
 
 
 /* New Css for a new updated sections  */
-.vissionicons{
+.vissionicons {
     display: grid;
     grid-template-columns: repeat(5, auto);
     /* gap: px; */
 }
 
-.visionsection{
+.visionsection {
     border-left: 2px solid #F16F24;
     padding-left: 25px;
     font-size: 18px
 }
 
 .vision {
-    font-size: 40px;
-    line-height: 48px;
+    font-size: 25px;
+    line-height: 32px;
     color: #000;
     font-weight: 700;
 }
 
+.visionimage {
+    width: 50px;
+}
+
+.classrounded {
+    border-radius: 5%;
+}
+
 .visionmisson {
-    padding: 5%;
+    padding: 3%;
+}
+
+img {
+    width: 100%;
 }
 
 .highway-slider {
@@ -984,10 +1036,12 @@ div.highway-barrier {
     padding: 2vw;
     color: #343434;
 }
+
 #infinite div.highway-barrier::before {
     top: 0;
     left: 0;
 }
+
 #infinite div.highway-barrier::after {
     top: 0;
     right: 0;
@@ -1008,7 +1062,7 @@ div.highway-barrier {
     box-sizing: border-box;
 }
 
-.h1{
+.h1 {
     color: #F16F24;
     font-size: 60px;
 }

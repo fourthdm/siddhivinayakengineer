@@ -1,13 +1,13 @@
 .map-container {
   position: relative;
   width: 100%;
-  max-width: 1400px;
-  margin: auto;  
-      overflow: visible;
+  /* max-width: 1400px; */
+  margin: auto;
+  overflow: visible;
 }
 
 .world-map {
-  width: 100%;
+  /* width: 100%; */
   display: block;
 }
 
@@ -28,7 +28,7 @@
   position: absolute;
   width: 12px;
   height: 12px;
-  background:#f16f249f;
+  background: #f16f249f;
   /* background: rgba(255, 81, 0, 0.5); */
   border-radius: 50%;
   animation: pulse 2s infinite;
@@ -66,34 +66,113 @@
   visibility: visible;
 }
 
-.h2{
-    font-size: 40px;
-    color: #F16F24;
-    font-weight: 600;
+.h2 {
+  font-size: 40px;
+  color: #F16F24;
+  font-weight: 600;
 }
 
-p{
-    color: black;
+
+p {
+  color: black;
 }
 
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
-    
+
 .industryheadline {
-    font-size: 46px;
-    font-weight: 600;
-    color: #161E2A;
+  font-size: 46px;
+  font-weight: 600;
+  color: #161E2A;
 }
 
 .industryheadline span {
-    color: #F16F24;
+  color: #F16F24;
 }
 
-
 .descindustries {
+  color: 210 16% 96%;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 0% 15% 0% 15%;
+}
+  .laptopview {
+    display: block;
+  }
+  
+  .mobileview {
+    display: none;
+  }
+
+@media(min-width: 390px) and (max-width: 767px) {
+  .h2 {
+    font-size: 20px;
+    color: #F16F24;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .laptopview {
+    display: none;
+  }
+
+  .mobileview {
+    display: block;
+  }
+
+  .counttext {
+    font-size: 14px;
+  }
+
+  .map-container {
+    position: relative;
+    width: 100%;
+    /* max-width: 1400px; */
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .descindustries {
     color: 210 16% 96%;
     font-size: 16px;
     line-height: 26px;
-    padding: 0% 15% 0% 15%;
+    padding: 0% 0% 0% 0%;
+  }
+
+  .map-marker {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #F16F24;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+
+  /* Pulse Effect */
+  .map-marker::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background: #f16f249f;
+    /* background: rgba(255, 81, 0, 0.5); */
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  .tooltip {
+    position: absolute;
+    left: 10px;
+    top: -15px;
+  }
+
+  .industryheadline {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 600;
+    color: #161E2A;
+  }
+
 }

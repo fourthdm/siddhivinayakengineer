@@ -36,7 +36,17 @@ a {
     color: white;
 }
 
+.productservice{
+    padding: 2%;
+}
 
+.ourproducts{
+    background-color: #F16F24;
+    color: white;
+}
+.servicestext{
+    font-size: 35px;
+}
 
 .labels {
     color: rgb(241, 111, 36);
@@ -380,6 +390,14 @@ li {
         font-weight: 600;
         color: #F16F24;
     }
+
+    .descindustries {
+        /* color: 210 16% 96%; */
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0% 0% 0% 0%;
+    }
+
 }
 
 @media(max-width:360px) {
@@ -399,15 +417,6 @@ li {
 }
 
 @media(min-width: 390px) and (max-width: 767px) {
-
-    /* .counticons {
-        border-radius: 50%;
-        background-color: #F16F24;
-        height: 70px;
-        width: 70px;
-        margin-left: 2.5em;
-    } */
-
     .whyiconsection {
         display: grid;
         grid-template-columns: repeat(2, auto);
@@ -494,6 +503,7 @@ li {
 
     .trusttext {
         font-size: 36px;
+        line-height: 44px;
         font-weight: 600;
     }
 
@@ -507,10 +517,24 @@ li {
 
     .whyheadlinetext {
         font-size: 36px;
+        line-height: 44px;
         font-weight: 600;
         color: #161E2A;
     }
 
+    .industryheadline {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: #161E2A;
+    }
+
+    .descindustries {
+        /* color: 210 16% 96%; */
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0% !important;
+    }
 }
 
 .mobilenumbertext {

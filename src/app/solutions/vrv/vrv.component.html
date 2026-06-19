@@ -1,0 +1,37 @@
+<section class="info-wrapper">
+  <div class="left-box">
+    <div class="outer-arc"></div>
+
+    <div class="main-circle">
+      <div class="stars">★★★★★</div>
+      <div class="small-title">Business</div>
+      <div class="big-title">Infographic</div>
+      <div class="sub-title">template</div>
+    </div>
+
+    <div class="dot-line">
+      <span
+        *ngFor="let item of options"
+        [style.border-color]="item.color"
+      ></span>
+    </div>
+  </div>
+
+  <div class="right-box">
+    <div
+      class="info-card"
+      *ngFor="let item of options; let i = index"
+      [style.background-color]="item.color"
+      [style.animation-delay]="i * 0.15 + 's'"
+    >
+      <div class="icon-circle">
+        {{ item.icon }}
+      </div>
+
+      <div class="card-content">
+        <h3>{{ item.title }} {{ item.number }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+    </div>
+  </div>
+</section>

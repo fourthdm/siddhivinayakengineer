@@ -1,166 +1,154 @@
-.journey {
-
-    height: 100vh;
-    background: #efefef;
-
+.timeline-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    padding: clamp(35px, 5vw, 70px) 16px;
+    background: #fff;
     overflow: hidden;
-    position: relative;
 }
 
-h1 {
-
-    text-align: center;
-    margin-top: 30px;
-    font-size: 60px;
+.timeline-wrapper h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+/*     
+    margin: 0 0 clamp(35px, 5vw, 70px);
+    font-size: clamp(32px, 4vw, 56px);
+    line-height: 1.1;
+    font-weight: 700; */
+    /* color: #292936; */
 }
 
-.cards {
 
-    position: relative;
+.timeline-wrapper h1 span {
+    color: #F16F24;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.timeline-swiper {
     width: 100%;
-    height: 650px;
-
-    margin-top: 50px;
+    height: clamp(430px, 62vw, 660px);
+    overflow: visible;
 }
 
-.card {
-
-    position: absolute;
-
-    width: 420px;
-    height: 520px;
-
-    border-radius: 15px;
-
-    color: white;
-
-    padding: 40px;
-
-    transition: all .6s ease;
-
-    top: 50%;
-    left: 50%;
-
-    transform-origin: center;
+swiper-slide {
+    width: clamp(260px, 28vw, 430px);
+    height: clamp(360px, 45vw, 560px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.card h2 {
-
-    margin-top: 120px;
-
+.timeline-card {
+    width: 100%;
+    height: 100%;
+    padding: clamp(24px, 3vw, 46px);
+    border-radius: 12px;
+    background: #F16F24;
+    /* background: #f50430; */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
     text-align: center;
-    font-size: 60px;
+    box-sizing: border-box;
+    /* box-shadow: 0 14px 35px rgba(255, 252, 252, 0); */
+    transition: transform 0.45s ease, opacity 0.45s ease, filter 0.45s ease;
 }
 
-.card p {
-
-    text-align: center;
-    line-height: 32px;
+swiper-slide:not(.swiper-slide-active) .timeline-card {
+    opacity: 0.85;
+    /* z-index: -3; */
+    filter: blur(2px);
+    transform: scale(0.86);
 }
 
-.line {
-
-    width: 150px;
-    height: 2px;
-
-    background: white;
-
-    margin: 20px auto;
-}
-
-/* CENTER */
-
-.active {
-
-    background: #ff0033;
-
-    transform:
-        translate(-50%, -50%) scale(1.15);
-
-    z-index: 10;
-
+swiper-slide.swiper-slide-active .timeline-card {
     opacity: 1;
+    filter: blur(0);
+    transform: scale(1);
 }
 
-/* LEFT */
-
-.left1 {
-
-    background: #f25a74;
-
-    transform:
-        translate(-110%, -50%) scale(.92);
-
-    z-index: 8;
-
-    opacity: .9;
+.timeline-card h2 {
+    margin: 0;
+    font-size: clamp(28px, 3.4vw, 48px);
+    line-height: 1.1;
+    font-weight: 600;
 }
 
-.left2 {
-
-    background: #f56d84;
-
-    transform:
-        translate(-165%, -50%) scale(.85);
-
-    z-index: 6;
-
-    opacity: .7;
+.timeline-card p {
+    max-width: 100%;
+    margin: 0;
+    font-size: clamp(14px, 1.15vw, 18px);
+    line-height: 1.55;
+    font-weight: 500;
 }
 
-/* RIGHT */
-
-.right1 {
-
-    background: #f25a74;
-
-    transform:
-        translate(10%, -50%) scale(.92);
-
-    z-index: 8;
-
-    opacity: .9;
+.timeline-card ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-.right2 {
-
-    background: #f56d84;
-
-    transform:
-        translate(65%, -50%) scale(.85);
-
-    z-index: 6;
-
-    opacity: .7;
+.timeline-card li {
+    margin-bottom: 8px;
+    font-size: clamp(13px, 1vw, 16px);
+    line-height: 1.35;
 }
 
-.hidden {
-
-    opacity: 0;
-    pointer-events: none;
+.divider {
+    width: min(130px, 45%);
+    height: 2px;
+    background: rgba(255, 255, 255, 0.85);
 }
 
-.controls {
+@media (max-width: 991px) {
+    .timeline-swiper {
+        height: auto;
+    }
 
-    position: absolute;
-
-    bottom: 40px;
-
-    width: 100%;
-
-    text-align: center;
+    swiper-slide {
+        width: 340px;
+        height: 460px;
+    }
 }
 
-.controls button {
+@media (max-width: 439px) {
+    .timeline-wrapper {
+        padding: 32px 12px;
+    }
 
-    width: 50px;
-    height: 50px;
+    .timeline-wrapper h1 {
+        margin-bottom: 32px;
+    }
 
-    margin: 0 10px;
+    .timeline-swiper {
+        height: 500px;
+    }
 
-    border: none;
+    swiper-slide {
+        width: 100% !important;
+    }
 
-    border-radius: 50%;
+    .timeline-card {
+        border-radius: 10px;
+    }
 
-    cursor: pointer;
+    swiper-slide:not(.swiper-slide-active) .timeline-card {
+        filter: blur(0px);
+        transform: scale(1);
+    }
+
+    .swiper-3d .swiper-slide {
+        transform-style: preserve-3d;
+    }
+}
+
+
+.swiper-3d .swiper-slide {
+    transform-style: preserve-3d;
 }
