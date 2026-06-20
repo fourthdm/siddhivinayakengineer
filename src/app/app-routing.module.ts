@@ -38,9 +38,9 @@ const routes: Routes = [
   {path:'COMFORT_AIR_CONDITIONING',component:ComfortairComponent},
   {path:'PRECISION_AIR_CONDITIONING',component:PrecisionairComponent},
 
-  { path: 'ResidentialProejct', component: ResidentialComponent },
-  { path: 'CommercialProejct', component: CommercialComponent },
-  { path: 'IndustrialProejct', component: IndustrialComponent },
+  { path: 'ResidentialProject', component: ResidentialComponent },
+  { path: 'CommercialProject', component: CommercialComponent },
+  { path: 'IndustrialProject', component: IndustrialComponent },
 
   { path: '**', redirectTo: '' }
 ];

@@ -1,298 +1,65 @@
-
-.info-wrapper {
-  width: 100%;
-  min-height: 100vh;
-  padding: 40px 20px;
-  background: #f7f7f7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 55px;
-  font-family: Arial, Helvetica, sans-serif;
-  overflow: hidden;
+@font-face {
+    font-family: 'FontCustom';
+    src: url('/assets/font/Avenir Medium.ttf');
 }
 
-.left-box {
-  position: relative;
-  width: 390px;
-  height: 390px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: slideLeft 0.8s ease forwards;
+* {
+    font-family: 'FontCustom';
 }
 
-.main-circle {
-  position: relative;
-  z-index: 3;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  background: radial-gradient(circle at top left, #ffffff, #eeeeee 60%, #cfcfcf);
-  box-shadow:
-    0 28px 35px rgba(0, 0, 0, 0.25),
-    inset 0 0 18px rgba(255, 255, 255, 0.9);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-  transition: 0.4s ease;
+
+.aboutbackground {
+    background: url('/assets/header/4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10% 7% 2% 7%;
 }
 
-.main-circle:hover {
-  transform: scale(1.06) rotate(-2deg);
+.title {
+    background-color: #f16f24cc;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
 }
 
-.stars {
-  color: #e4bd3d;
-  font-size: 15px;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
+.badge {
+    border: 2px solid #e2e5eb;
+    /* border: 2px solid #F9FAF8; */
 }
 
-.small-title {
-  color: #777;
-  font-size: 18px;
+.titles {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 40px;
+    color: #f16f24;
 }
 
-.big-title {
-  color: #333;
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 1.1;
+.content {
+    padding: 5%;
 }
 
-.sub-title {
-  color: #777;
-  font-size: 18px;
-  text-transform: lowercase;
+img {
+    border-radius: 5%;
 }
 
-.outer-arc {
-  position: absolute;
-  width: 330px;
-  height: 330px;
-  border-radius: 50%;
-  border: 22px solid transparent;
-  border-top-color: #4f9bd3;
-  border-right-color: #5854a3;
-  border-bottom-color: #302836;
-  transform: rotate(-42deg);
-  animation: arcAnimation 3s ease-in-out infinite;
+.carousel-caption{
+    background-color: #f16f24b0;
+    padding: 0%;
 }
 
-.outer-arc::after {
-  content: "";
-  position: absolute;
-  top: -35px;
-  right: -45px;
-  width: 180px;
-  height: 360px;
-  border-right: 3px dotted #333;
-  border-radius: 50%;
-  transform: rotate(30deg);
+.headline{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+
+    color: #F16F24;
 }
 
-.dot-line {
-  position: absolute;
-  right: 15px;
-  top: 65px;
-  z-index: 5;
-  height: 260px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.aspects{
+    background-color: #F8FAFC;
+    padding:3%;
 }
 
-.dot-line span {
-  width: 18px;
-  height: 18px;
-  background: #ffffff;
-  border: 3px solid;
-  border-radius: 50%;
-  box-shadow: 0 0 0 4px #ffffff, 0 4px 10px rgba(0, 0, 0, 0.25);
-  animation: pulse 1.8s ease-in-out infinite;
-}
-
-.right-box {
-  width: 430px;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
-}
-
-.info-card {
-  position: relative;
-  min-height: 92px;
-  padding: 18px 26px 18px 108px;
-  border-radius: 60px;
-  color: #ffffff;
-  box-shadow: 0 15px 28px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  animation: slideRight 0.7s ease forwards;
-  transition: 0.35s ease;
-}
-
-.info-card:hover {
-  transform: translateX(14px) scale(1.03);
-  filter: brightness(1.08);
-}
-
-.icon-circle {
-  position: absolute;
-  left: 18px;
-  top: 50%;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  transform: translateY(-50%);
-  background: radial-gradient(circle at top left, #ffffff, #eeeeee 65%, #c8c8c8);
-  color: #333333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 30px;
-  box-shadow:
-    0 9px 18px rgba(0, 0, 0, 0.35),
-    inset 0 0 12px rgba(255, 255, 255, 0.9);
-  transition: 0.35s ease;
-}
-
-.info-card:hover .icon-circle {
-  transform: translateY(-50%) rotate(12deg) scale(1.1);
-}
-
-.card-content h3 {
-  margin: 0 0 6px;
-  font-size: 24px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.card-content p {
-  margin: 0;
-  max-width: 260px;
-  font-size: 12px;
-  line-height: 1.35;
-}
-
-@keyframes slideLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-45px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideRight {
-  from {
-    opacity: 0;
-    transform: translateX(55px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes arcAnimation {
-  0%, 100% {
-    transform: rotate(-42deg);
-  }
-  50% {
-    transform: rotate(-30deg);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.18);
-  }
-}
-
-@media (max-width: 992px) {
-  .info-wrapper {
-    flex-direction: column;
-    gap: 35px;
-  }
-
-  .right-box {
-    width: 100%;
-    max-width: 520px;
-  }
-
-  .info-card:hover {
-    transform: translateY(-6px) scale(1.02);
-  }
-}
-
-@media (max-width: 576px) {
-  .info-wrapper {
-    padding: 30px 14px;
-  }
-
-  .left-box {
-    width: 290px;
-    height: 290px;
-  }
-
-  .main-circle {
-    width: 200px;
-    height: 200px;
-  }
-
-  .outer-arc {
-    width: 255px;
-    height: 255px;
-    border-width: 16px;
-  }
-
-  .outer-arc::after,
-  .dot-line {
-    display: none;
-  }
-
-  .small-title,
-  .sub-title {
-    font-size: 14px;
-  }
-
-  .big-title {
-    font-size: 22px;
-  }
-
-  .info-card {
-    border-radius: 28px;
-    padding: 82px 20px 22px;
-    text-align: center;
-  }
-
-  .icon-circle {
-    left: 50%;
-    top: 16px;
-    width: 56px;
-    height: 56px;
-    transform: translateX(-50%);
-    font-size: 25px;
-  }
-
-  .info-card:hover .icon-circle {
-    transform: translateX(-50%) rotate(12deg) scale(1.08);
-  }
-
-  .card-content h3 {
-    font-size: 20px;
-  }
-
-  .card-content p {
-    max-width: none;
-    font-size: 13px;
-  }
+.icons{
+    width: 20%;
 }
