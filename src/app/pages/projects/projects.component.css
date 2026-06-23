@@ -572,10 +572,13 @@
 }
 
 .locations {
-    font-size: 11px;
-    line-height: 16px;
-
+    font-size: 14px;
+    line-height: 22px;
     color: #475569;
+}
+
+.locations b{
+    color: #161E2A;
 }
 
 .bi-geo-alt {

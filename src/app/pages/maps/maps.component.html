@@ -12,21 +12,43 @@
     <div class="row align-items-center">
 
         <!-- Left Side -->
-        <div class="col-lg-3 stats"  #counterSection>
-            <p class="h2">  {{ count1 }} +</p>
-            <p>Year of Experience</p>
+        <div class="col-lg-3 stats" #counterSection>
 
-            <p class="h2">{{ count3 }} +</p>
-            <p>Project Delivered </p>
+            <div class="laptopview">
+                <p class="h2"> {{ count1 }} +</p>
+                <p>Year of Experience</p>
 
-            <p class="h2">{{count4}} +</p>
-            <p>State Serverd</p>
+                <p class="h2">{{ count3 }} +</p>
+                <p>Project Delivered </p>
+
+                <p class="h2">{{count4}} +</p>
+                <p>State Serverd</p>
+            </div>
+
+            <div class="mobileview">
+                <div class="row">
+                    <div class="col-4">
+                        <p class="h2"> {{ count1 }} +</p>
+                        <p class="counttext">Year of Experience</p>
+                    </div><br>
+
+                    <div class="col-4">
+                        <p class="h2">{{ count3 }} +</p>
+                        <p class="counttext">Project Delivered </p>
+                    </div><br>
+
+                    <div class="col-4">
+                        <p class="h2">{{count4}} +</p>
+                        <p class="counttext">State Serverd</p>
+                    </div><br>
+                </div>
+            </div>
+
         </div>
-
         <!-- Right Side -->
         <div class="col-lg-9">
             <div class="map-container">
-                <img src="assets/indiaaa.jpg" class="world-map" alt="World Map" />
+                <img src="assets/map.png" class="world-map" alt="World Map" />
                 <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
                     [style.top.%]="location.y">
                     <span class="tooltip">

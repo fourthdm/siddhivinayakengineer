@@ -76,3 +76,7 @@ swiper-slide {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+@media(min-width: 390px) and (max-width: 767px) {
+    
+}

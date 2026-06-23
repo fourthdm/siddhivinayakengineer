@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'FontCustom';
+    src: url('/assets/font/Avenir Medium.ttf');
+}
+
+* {
+    font-family: 'FontCustom';
+}
+
+
+.aboutbackground {
+    background: url('/assets/header/4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10% 7% 2% 7%;
+}
+
+.title {
+    background-color: #f16f24cc;
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.badge {
+    border: 2px solid #e2e5eb;
+    /* border: 2px solid #F9FAF8; */
+}
+
+.titles {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 40px;
+    color: #f16f24;
+}
+
+.content {
+    padding: 5%;
+}
+
+img {
+    border-radius: 5%;
+}
+
+.carousel-caption{
+    background-color: #f16f24b0;
+    padding: 0%;
+}
+
+.headline{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 52px;
+
+    color: #F16F24;
+}
+
+.aspects{
+    background-color: #F8FAFC;
+    padding:3%;
+}
+
+.icons{
+    width: 20%;
+}

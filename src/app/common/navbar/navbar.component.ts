@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var bootstrap: any;
 
 @Component({
   selector: 'app-navbar',
@@ -22,6 +23,19 @@ export class NavbarComponent {
     const navbarToggler = document.querySelector('.navbar-toggler') as HTMLElement;
     if (navbarToggler) {
       navbarToggler.click();
+    }
+  }
+
+
+  closeNavbars() {
+    const offcanvasElement = document.getElementById('offcanvasNavbar');
+
+    if (offcanvasElement) {
+      const offcanvas =
+        bootstrap.Offcanvas.getInstance(offcanvasElement) ||
+        new bootstrap.Offcanvas(offcanvasElement);
+
+      offcanvas.hide();
     }
   }
 }

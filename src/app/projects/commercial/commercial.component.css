@@ -1102,3 +1102,19 @@
     }
 
 }
+
+
+
+.aboutbackground {
+    background: url('/assets/header/4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10% 7% 2% 7%;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #f16f24;
+}

@@ -2,9 +2,9 @@
     <div class="container">
         <!-- Top Heading -->
         <div class="heading-area">
-            <p class="small-title">
+            <!-- <p class="small-title">
                 <span></span>GET IN TOUCH
-            </p>
+            </p> -->
             <h1> Request a Site Assessment or
                 <span> Project Consultation.</span>
             </h1>
@@ -23,211 +23,255 @@
 
     </div>
 </div>
-<br><br><br>
 
-<section class="container" id="Contactus" data-aos="fade-up">
-    <div class="row">
-        <div class="col-md-7">
-            <p class="medium-title">
+<div class="contactsection">
+    <!-- <br><br><br> -->
+    <section class="container" id="Contactus" data-aos="fade-up">
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <p class="medium-title">
                 <span></span>PROJECT ENQUIRY
-            </p>
-            <span class="paragraph">Tell us about <span class="share">your project.</span> </span>
-            <br><br>
-            <p class="para">The more details you share, the more precise our response will be.</p>
-            <br>
-            <div class="forms">
-                <form class="contact-form" (submit)="sendEmail($event)">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="name">YOUR NAME <span class="required">*</span></label>
-                            <input class=" rounded-pill" type="text" name="name" id="name" placeholder="Full Name" ngModel #name="ngModel"
-                                [class.invalid-field]="name.invalid && (name.touched)" required>
+            </p> -->
+                <span class="paragraph">Tell us about <span class="share">your project.</span> </span>
+                <br><br>
+                <p class="para">The more details you share, the more precise our response will be.</p>
+                <br>
+                <div class="forms">
+                    <form class="contact-form" (submit)="sendEmail($event)">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="name">YOUR NAME <span class="required">*</span></label>
+                                <input class=" rounded-pill" type="text" name="name" id="name" placeholder="Full Name"
+                                    ngModel #name="ngModel" [class.invalid-field]="name.invalid && (name.touched)"
+                                    required>
+                                <br><br>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="CompanyName">COMPANY NAME <span class="required">*</span> </label><br>
+                                <input class=" rounded-pill" type="text" name="CompanyName" id="CompanyName"
+                                    placeholder="Organisation" ngModel #CompanyName="ngModel"
+                                    [class.invalid-field]="CompanyName.invalid && (CompanyName.touched)"
+                                    required><br><br>
+                            </div> <br>
+
+                            <div class="col-md-4">
+                                <label for="MobileNumber">MOBILE NUMBER <span class="required">*</span> </label><br>
+                                <input class="rounded-pill" type="text" name="MobileNumber" id="MobileNumber"
+                                    placeholder="+91-----------" ngModel #MobileNumber="ngModel"
+                                    [class.invalid-field]="MobileNumber.invalid && (MobileNumber.touched)" required>
+                                <span style="font-size: 14px;">We'll contact you via call or WhatsApp.</span> <br> <br>
+                            </div><br>
+
+                            <div class="col-md-4">
+                                <label for="EmailAddress">EMAIL ADDRESS <span>(optional)</span> </label><br>
+                                <input class="rounded-pill" type="text" name="EmailAddress" id="EmailAddress"
+                                    placeholder="name@company.com">
+                                <br><br>
+                            </div><br>
+
+
+                            <div class="col-md-4">
+                                <label for="Location">PROJECT LOCATION (CITY/STATE)<span
+                                        style="color: #F16F24;">*</span></label><br>
+                                <input class="rounded-pill" type="text" name="Location" id="Location"
+                                    placeholder="e.g. Pune, Maharashtra" ngModel #Location="ngModel"
+                                    [class.invalid-field]="Location.invalid && (Location.touched)" required>
+                                <br>
+                            </div> <br>
+                            <br>
+                            <div class="col-md-6">
+                                <label for="Location">PROJECT TYPE<span style="color: #F16F24;">*</span></label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="Commercial" name="Projecttype" id="Projecttype">
+                                    <label class="form-check-label" for="inlineCheckbox1">COMMERCIAL</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="Industrial"  name="Projecttype" id="Projecttype">
+                                    <label class="form-check-label" for="inlineCheckbox2">INDUSTRIAL</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="Residential"  name="Projecttype" id="Projecttype">
+                                    <label class="form-check-label" for="inlineCheckbox3">RESIDENTIAL</label>
+                                </div>
+                            </div>
                             <br><br>
+
+                            <div class="col-md-6">
+                                <label for="Location">SYSTEM REQUIRED<span style="color: #F16F24;">*</span></label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                        value="CHILLER" name="SystemRequired" id="SystemRequired">
+                                    <label class="form-check-label" for="inlineCheckbox1">CHILLER</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                        value="VRV/VRF "  name="SystemRequired" id="SystemRequired">
+                                    <label class="form-check-label" for="inlineCheckbox2">VRV/VRF </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="CLEANROOM"  name="SystemRequired" id="SystemRequired">
+                                    <label class="form-check-label" for="inlineCheckbox3">CLEANROOM</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                        value="VENTILATION"  name="SystemRequired" id="SystemRequired">
+                                    <label class="form-check-label" for="inlineCheckbox3">VENTILATION</label>
+                                </div>
+                            </div> <br>
+                            <br> <br>
+
+                            <div class="col-md-12">
+                                <label for="Projectarea">PROJECT AREA IN SQ MTR :<span
+                                        class="required">*</span></label><br>
+                                <input class="rounded-pill" type="text" name="Projectarea" id="Projectarea"
+                                    placeholder="Project Area in SQ MTR">
+                                <br>
+                            </div>
+                            <br>
+                        </div> <br>
+                        <div class="col-md-12">
+                            <label for="Details">PROJECT DETAILS<span class="required">*</span></label><br>
+                            <textarea class="rounded-pill" name="Project details" name="Details" id="Details" rows="3"
+                                cols="10"
+                                placeholder="Please describe your project needs/ Details."
+                                ngModel #Details="ngModel" [class.invalid-field]="Details.invalid && (Details.touched)"
+                                required></textarea>
+                            <br>
                         </div>
-                        <div class="col-md-6">
-                            <label for="CompanyName">COMPANY NAME <span class="required">*</span> </label><br>
-                            <input   class=" rounded-pill"  type="text" name="CompanyName" id="CompanyName" placeholder="Organisation" ngModel
-                                #CompanyName="ngModel"
-                                [class.invalid-field]="CompanyName.invalid && (CompanyName.touched)" required><br><br>
-                        </div> <br>
-
-                        <div class="col-md-6">
-                            <label for="MobileNumber">MOBILE NUMBER <span class="required">*</span> </label><br>
-                            <input  class=" rounded-pill"  type="text" name="MobileNumber" id="MobileNumber" placeholder="+91-----------"
-                                ngModel #MobileNumber="ngModel"
-                                [class.invalid-field]="MobileNumber.invalid && (MobileNumber.touched)" required>
-                            <span style="font-size: 12px;">We'll contact you via call or WhatsApp.</span> <br> <br>
-                        </div><br>
-
-                        <div class="col-md-6">
-                            <label for="EmailAddress">EMAIL ADDRESS <span>(optional)</span> </label><br>
-                            <input  class="rounded-pill"  type="text" name="EmailAddress" id="EmailAddress" placeholder="name@company.com">
-                            <br><br>
-                        </div><br>
-
-                        <div class="col-md-6">
-                            <label for="Services">WHAT DO YOU NEED? <span class="required">*</span></label><br>
-                            <select class="form-select rounded-pill" name="Services" aria-label="Default select example"
-                                id="Services" ngModel #Services="ngModel"
-                                [class.invalid-field]="Services.invalid && (Services.touched)" required>
-                                <option value="">Select a service</option>
-                                <option value="HVAC Design & Installation">HVAC Design & Installation</option>
-                                <option value="MEP Turnkey Project">MEP Turnkey Project</option>
-                                <option value="Cleanroom Design & Execution">Cleanroom Design & Execution</option>
-                                <option value="Annual Maintenance Contract (AMC)">Annual Maintenance Contract (AMC)
-                                </option>
-                                <option value="Cleanroom Equipment Supply">Cleanroom Equipment Supply</option>
-                                <option value="Design & Consulting">Design & Consulting</option>
-                                <option value="Not Sure — Need Guidance">Not Sure — Need Guidance</option>
-                            </select><br>
-                        </div><br>
-
-                        <div class="col-md-6">
-                            <label for="Industry">YOUR INDUSTRY<span class="required">*</span></label><br>
-                            <select class="form-select rounded-pill" name="Industry" aria-label="Default select example"
-                                id="Industry" ngModel #Industry="ngModel"
-                                [class.invalid-field]="Industry.invalid && (Industry.touched)" required>
-                                <option value="">Select industry</option>
-                                <option value="Pharmaceutical / Biotech">Pharmaceutical / Biotech</option>
-                                <option value="Data Centre / IT">Data Centre / IT</option>
-                                <option value="Corporate Office / IT Park">Corporate Office / IT Park</option>
-                                <option value="Industrial / Manufacturing">Industrial / Manufacturing</option>
-                                <option value="Government / Research">Government / Research</option>
-                                <option value="Other">Other</option>
-                            </select><br>
-                        </div> <br>
-                    </div>
-                    <br>
-
-                    <div class="col-md-12">
-                        <label for="Location">PROJECT LOCATION (CITY/STATE)<span
-                                style="color: #F16F24;">*</span></label><br>
-                        <input class="rounded-pill" type="text" name="Location" id="Location" placeholder="e.g. Pune, Maharashtra" ngModel
-                            #Location="ngModel" [class.invalid-field]="Location.invalid && (Location.touched)" required>
                         <br>
-                    </div> <br>
 
-                    <div class="col-md-12">
-                        <label for="Details">PROJECT DETAILS<span class="required">*</span></label><br>
-                        <textarea  class="rounded-pill" name="Project details" name="Details" id="Details" rows="2" cols="10"
-                            placeholder="e.g., 8,000 sqft pharma cleanroom. Require HVAC design & execution. Timeline: 6 months."
-                            ngModel #Details="ngModel" [class.invalid-field]="Details.invalid && (Details.touched)"
-                            required></textarea>
-                        <br>
-                    </div>  
-                    <br><br>
-                    <div class="laptopview">
-                        <div class="d-flex">
-                            <button class="btn btn-orange" type="submit"><b style="font-size: 16px;"> Send Enquiry</b>
-                                <i class="bi bi-arrow-right enquirybtn"></i></button>
-                            <!-- <button class="btn-orange" type="submit" value="Send">
+                        <div class="laptopview">
+                            <div class="d-flex">
+                                <button class="btn btn-orange" type="submit"><b style="font-size: 16px;"> Send
+                                        Enquiry</b>
+                                    <i class="bi bi-arrow-right enquirybtn"></i></button>
+                                <!-- <button class="btn-orange" type="submit" value="Send">
                                 Send Enquiry <i class="bi bi-arrow-right enquirybtn"></i></button> -->
 
-                            <!-- <span class="text-start" type="submit">
+                                <!-- <span class="text-start" type="submit">
                              </span> <i class="bi bi-arrow-right enquirybtn"></i> -->
-                            <span class="infotext"><i class="bi bi-lock"></i> Your information will remain confidential.
-                            </span>
+                                <span class="infotext"><i class="bi bi-lock"></i> Your information will remain
+                                    confidential.
+                                </span>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="mobileview">
-                        <button class="btn-orange" type="submit">
-                            <span class="text-start">
-                                Send Enquiry
-                            </span> <i class="bi bi-arrow-right enquirybtn"></i>
-                        </button>
-                        <p class="infotext"> <i class="bi bi-lock"></i> Your information will remain confidential.
-                        </p>
-                    </div>
-
-
-                </form>
-            </div>
-            <br><br>
-        </div><br>
-
-        <div class="col-md-5">
-            <p class="medium-title">
-                <span></span>DIRECT CONTACT
-            </p>
-            <div class="laptopview">
-                <span class="paragraph">Perfer to <br> <span class="share"> speak directly?</span> </span>
+                        <div class="mobileview">
+                            <button class="btn-orange" type="submit">
+                                <span class="text-start">
+                                    Send Enquiry
+                                </span> <i class="bi bi-arrow-right enquirybtn"></i>
+                            </button>
+                            <p class="infotext"> <i class="bi bi-lock"></i> Your information will remain confidential.
+                            </p>
+                        </div>
+                    </form>
+                </div>
                 <br><br>
+            </div><br>
+        </div>
+    </section>
+</div>
+
+<div class="speaksection">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="laptopview">
+                <span class="paragraph">Perfer to <span class="share"> speak directly?</span> </span>
             </div>
 
             <div class="mobileview">
                 <span class="perferspeak">Perfer to<span class="share"> speak directly?</span> </span>
             </div>
-
+            
             <p class="para">Available Monday to Saturday, 9 AM - 7 PM IST.</p>
             <br>
-            <div class="card">
-                <div class="card-body">
-                    <div class="contact">
-                        <div class="icons">
-                            <p class="telephone">
-                                <i class="bi bi-telephone telephoneicon"></i>
-                            </p>
-                        </div>
-                        <div class="">
-                            <p> <span class="headcontent">CALL US</span> <br>
-                                <span class="mobile">+91 99706 41757</span>
-                                <br>
-                                <span class="subline">Speak directly with our engineering team</span>
-                            </p>
-                            <p class="call"><a href="tel:+919970641757" class="call">
-                                    CALL NOW <i class="bi bi-arrow-right"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-            </div> <br>
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="contact">
-                        <div class="icons">
-                            <p class="telephone">
-                                <i class="bi bi-whatsapp"></i>
-                            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="contact">
+                                <div class="icons">
+                                    <p class="telephone">
+                                        <i class="bi bi-telephone telephoneicon"></i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p> <span class="headcontent">CALL US</span> <br>
+                                        <span class="mobile">+91 99706 41757</span>
+                                        <br>
+                                        <span class="subline">Speak directly with our engineering team</span>
+                                    </p>
+                                    <p class="call"><a href="tel:+919970641757" class="call">
+                                            CALL NOW <i class="bi bi-arrow-right"></i></a></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="">
-                            <p> <span class="headcontent">WHATSAPP US </span> <br>
-                                <span class="mobile">+91 99706 41757</span>
-                                <br>
-                                <span class="subline">Quick reply during working hours.</span>
-                            </p>
-                            <p class="call"><a
-                                    href="https://wa.me/+919970641757?text=Hi SVESPL, I’d like to discuss a project."
-                                    data-mdb-toggle="tooltip" data-mdb-placement="top" aria-label="Read more about"
-                                    target="_blank" title="Connect Through Whatsapp" class="call"> OPEN WHATSAPP <i
-                                        class="bi bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+                    </div> <br>
                 </div>
-            </div>
-            <br>
 
-            <div class="card">
-                <div class="card-body">
-                    <div class="contacts">
-                        <div class="icons">
-                            <p class="telephone">
-                                <i class="bi bi-envelope"></i>
-                            </p>
-                        </div>
-                        <div class="">
-                            <p> <span class="headcontent">EMAIL US </span><br>
-                                <span class="mobile">contact@svespl.in</span>
-                                <br>
-                                <span class="subline">For projects briefs, drawings or detailed enquiries.</span>
-                            </p>
-                            <p class="call"><a href="https://mail.google.com/mail/compose=new" target="_blank">
-                                    SEND EMAIL <i class="bi bi-arrow-right"></i></a></p>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="contact">
+                                <div class="icons">
+                                    <p class="telephone">
+                                        <i class="bi bi-whatsapp"></i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p> <span class="headcontent">WHATSAPP US </span> <br>
+                                        <span class="mobile">+91 99706 41757</span>
+                                        <br>
+                                        <span class="subline">Quick reply during working hours.</span>
+                                    </p>
+                                    <p class="call"><a
+                                            href="https://wa.me/+919970641757?text=Hi SVESPL, I’d like to discuss a project."
+                                            data-mdb-toggle="tooltip" data-mdb-placement="top"
+                                            aria-label="Read more about" target="_blank"
+                                            title="Connect Through Whatsapp" class="call"> OPEN WHATSAPP <i
+                                                class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <br>
                 </div>
+
+                <div class="col-md-4">
+
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="contacts">
+                                <div class="icons">
+                                    <p class="telephone">
+                                        <i class="bi bi-envelope"></i>
+                                    </p>
+                                </div>
+                                <div class="">
+                                    <p> <span class="headcontent">EMAIL US </span><br>
+                                        <span class="mobile">contact@svespl.in</span>
+                                        <br>
+                                        <span class="subline">For projects briefs or detailed
+                                            enquiries.</span>
+                                    </p>
+                                    <p class="call"><a href="https://mail.google.com/mail/compose=new" target="_blank"
+                                            class="call">
+                                            SEND EMAIL <i class="bi bi-arrow-right"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
             </div>
-            <br>
+
 
             <div class="responsesection">
                 <div class="text">
@@ -239,17 +283,16 @@
                 </div>
             </div>
         </div>
-
     </div>
-</section>
-<br> <br>
+</div>
+
 <div class="headquarts" data-aos="fade-up">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="medium-title">
+                <!-- <p class="medium-title">
                     <span></span>OUR LOCATION
-                </p>
+                </p> -->
                 <span class="paragraph"> Headquartered in <span class="share">Pune.</span> </span>
                 <br><br>
                 <div class="locations">
@@ -271,25 +314,22 @@
     <div class="container">
 
         <div class="row">
-            <div class="">
-                <div class="heading-area">
-                    <p class="small-title">
-                        <span></span>GET STARTED
-                    </p>
-
-                    <p class="h1"> <span class="plan">Planning an HVAC or MEP Project? </span>
-                        <span class="start">Start with a Site Assessment.</span>
-                    </p>
-                    <p class="desc">Share your project scope and our engineering team will visit your site,
-                        conduct a detailed survey and return with a feasibility report and indicative budget.
-                    </p>
-                </div>
-            </div><br>
-
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-6"><br><br>
+                    <div class="col-md-6">
+                        <div class="">
+                            <div class="heading-area">
+
+                                <p class="h1"> <span class="plan">Planning an HVAC or MEP Project? </span>
+                                    <span class="start">Start with a Site Assessment.</span>
+                                </p>
+                                <p class="desc">Share your project scope and our engineering team will visit your site,
+                                    conduct a detailed survey and return with a feasibility report and indicative
+                                    budget.
+                                </p>
+                            </div>
+                        </div><br>
                         <div> <i class="bi bi-shield-check"></i> <span class="assessmentcontent"> No-obligation site
                                 assessment</span></div>
                         <div> <i class="bi bi-clock"></i> <span class="assessmentcontent"> Response within working
@@ -307,7 +347,7 @@
                                 <span class="times">Mon-Sat 9:00 AM - 7:00 PM IST</span>
                                 <br><br>
                                 <p class="btn-oranges">
-                                    <span class="text-start"  (click)="scrollToSection('Contactus')">
+                                    <span class="text-start" (click)="scrollToSection('Contactus')">
                                         Request a Site Assessment
                                     </span> <i class="bi bi-arrow-right enquirybtn"></i>
                                 </p>

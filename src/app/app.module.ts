@@ -23,6 +23,17 @@ import { CommercialComponent } from './projects/commercial/commercial.component'
 import { MapsComponent } from './pages/maps/maps.component';
 
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { AircooledComponent } from './solutions/aircooled/aircooled.component';
+import { VrvComponent } from './solutions/vrv/vrv.component';
+import { TurnkeycleanroomComponent } from './solutions/turnkeycleanroom/turnkeycleanroom.component';
+import { EvaporativeComponent } from './solutions/evaporative/evaporative.component';
+import { ForcedventilationComponent } from './solutions/forcedventilation/forcedventilation.component';
+import { ComfortairComponent } from './solutions/comfortair/comfortair.component';
+import { PrecisionairComponent } from './solutions/precisionair/precisionair.component';
+import { CultureComponent } from './pages/culture/culture.component';
+import { CasestudiesComponent } from './pages/casestudies/casestudies.component';
+import { AmanoraComponent } from './casestudies/amanora/amanora.component';
+import { MetroComponent } from './casestudies/metro/metro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -41,7 +52,18 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
     ResidentialComponent,
     IndustrialComponent,
     CommercialComponent,
-    MapsComponent
+    MapsComponent,
+    AircooledComponent,
+    VrvComponent,
+    TurnkeycleanroomComponent,
+    EvaporativeComponent,
+    ForcedventilationComponent,
+    ComfortairComponent,
+    PrecisionairComponent,
+    CultureComponent,
+    CasestudiesComponent,
+    AmanoraComponent,
+    MetroComponent
   ],
   imports: [
     BrowserModule,
