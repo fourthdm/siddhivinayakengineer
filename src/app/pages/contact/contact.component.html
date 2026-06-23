@@ -83,17 +83,17 @@
                                 <label for="Location">PROJECT TYPE<span style="color: #F16F24;">*</span></label><br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                                        value="Commercial">
+                                        value="Commercial" name="Projecttype" id="Projecttype">
                                     <label class="form-check-label" for="inlineCheckbox1">COMMERCIAL</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                                        value="Industrial ">
+                                        value="Industrial"  name="Projecttype" id="Projecttype">
                                     <label class="form-check-label" for="inlineCheckbox2">INDUSTRIAL</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
-                                        value="Residential">
+                                        value="Residential"  name="Projecttype" id="Projecttype">
                                     <label class="form-check-label" for="inlineCheckbox3">RESIDENTIAL</label>
                                 </div>
                             </div>
@@ -103,31 +103,31 @@
                                 <label for="Location">SYSTEM REQUIRED<span style="color: #F16F24;">*</span></label><br>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
-                                        value="CHILLER">
+                                        value="CHILLER" name="SystemRequired" id="SystemRequired">
                                     <label class="form-check-label" for="inlineCheckbox1">CHILLER</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
-                                        value="VRV/VRF ">
+                                        value="VRV/VRF "  name="SystemRequired" id="SystemRequired">
                                     <label class="form-check-label" for="inlineCheckbox2">VRV/VRF </label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
-                                        value="CLEANROOM">
+                                        value="CLEANROOM"  name="SystemRequired" id="SystemRequired">
                                     <label class="form-check-label" for="inlineCheckbox3">CLEANROOM</label>
                                 </div>
                                 <div class="form-check form-check-inline">
                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
-                                        value="VENTILATION">
+                                        value="VENTILATION"  name="SystemRequired" id="SystemRequired">
                                     <label class="form-check-label" for="inlineCheckbox3">VENTILATION</label>
                                 </div>
                             </div> <br>
                             <br> <br>
 
                             <div class="col-md-12">
-                                <label for="projectarea">PROJECT AREA IN SQ MTR :<span
+                                <label for="Projectarea">PROJECT AREA IN SQ MTR :<span
                                         class="required">*</span></label><br>
-                                <input class="rounded-pill" type="text" name="projectarea" id="projectarea"
+                                <input class="rounded-pill" type="text" name="Projectarea" id="Projectarea"
                                     placeholder="Project Area in SQ MTR">
                                 <br>
                             </div>
@@ -137,7 +137,7 @@
                             <label for="Details">PROJECT DETAILS<span class="required">*</span></label><br>
                             <textarea class="rounded-pill" name="Project details" name="Details" id="Details" rows="3"
                                 cols="10"
-                                placeholder="e.g., 8,000 sqft pharma cleanroom. Require HVAC design & execution. Timeline: 6 months."
+                                placeholder="Please describe your project needs/ Details."
                                 ngModel #Details="ngModel" [class.invalid-field]="Details.invalid && (Details.touched)"
                                 required></textarea>
                             <br>
@@ -169,8 +169,6 @@
                             <p class="infotext"> <i class="bi bi-lock"></i> Your information will remain confidential.
                             </p>
                         </div>
-
-
                     </form>
                 </div>
                 <br><br>
@@ -184,13 +182,12 @@
         <div class="col-md-12">
             <div class="laptopview">
                 <span class="paragraph">Perfer to <span class="share"> speak directly?</span> </span>
-
             </div>
 
             <div class="mobileview">
                 <span class="perferspeak">Perfer to<span class="share"> speak directly?</span> </span>
             </div>
-
+            
             <p class="para">Available Monday to Saturday, 9 AM - 7 PM IST.</p>
             <br>
 
@@ -260,7 +257,7 @@
                                     <p> <span class="headcontent">EMAIL US </span><br>
                                         <span class="mobile">contact@svespl.in</span>
                                         <br>
-                                        <span class="subline">For projects briefs, drawings or detailed
+                                        <span class="subline">For projects briefs or detailed
                                             enquiries.</span>
                                     </p>
                                     <p class="call"><a href="https://mail.google.com/mail/compose=new" target="_blank"

@@ -18,6 +18,10 @@ import { EvaporativeComponent } from './solutions/evaporative/evaporative.compon
 import { ForcedventilationComponent } from './solutions/forcedventilation/forcedventilation.component';
 import { ComfortairComponent } from './solutions/comfortair/comfortair.component';
 import { PrecisionairComponent } from './solutions/precisionair/precisionair.component';
+import { CultureComponent } from './pages/culture/culture.component';
+import { CasestudiesComponent } from './pages/casestudies/casestudies.component';
+import { MetroComponent } from './casestudies/metro/metro.component';
+import { AmanoraComponent } from './casestudies/amanora/amanora.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -26,21 +30,26 @@ const routes: Routes = [
   { path: 'Services', component: ServicesComponent, title: 'HVAC & MEP Services - Installation,Design & Maintenance | SVESPL' },
   { path: 'Career', component: CareerComponent, title: "Jobs(List)| Siddhivinayak Engineering Solutions" },
   { path: 'Contact', component: ContactComponent, title: 'Contact SVESPL - HVAC Contractor Pune-9604156757' },
+  { path: 'Culture', component: CultureComponent },
 
   { path: 'Blog', component: BlogComponent },
   { path: 'Projects', component: ProjectsComponent },
+  { path: 'Casestudies',component:CasestudiesComponent },
 
-  {path:'Air_Cooled&Water-Cooled_Chiller_Plants', component:AircooledComponent},
-  {path:'VRVVRF_SYSTEMS', component:VrvComponent},
-  {path:'TURNKEY_CLEAN_ROOM_SOLUTION', component:TurnkeycleanroomComponent},
-  {path:'EVAPORATIVE_COOLING',component:EvaporativeComponent},
-  {path:'FORCED_VENTILATION',component:ForcedventilationComponent},
-  {path:'COMFORT_AIR_CONDITIONING',component:ComfortairComponent},
-  {path:'PRECISION_AIR_CONDITIONING',component:PrecisionairComponent},
+  { path: 'Air_Cooled&Water-Cooled_Chiller_Plants', component: AircooledComponent },
+  { path: 'VRVVRF_SYSTEMS', component: VrvComponent },
+  { path: 'TURNKEY_CLEAN_ROOM_SOLUTION', component: TurnkeycleanroomComponent },
+  { path: 'EVAPORATIVE_COOLING', component: EvaporativeComponent },
+  { path: 'FORCED_VENTILATION', component: ForcedventilationComponent },
+  { path: 'COMFORT_AIR_CONDITIONING', component: ComfortairComponent },
+  { path: 'PRECISION_AIR_CONDITIONING', component: PrecisionairComponent },
 
   { path: 'ResidentialProject', component: ResidentialComponent },
   { path: 'CommercialProject', component: CommercialComponent },
   { path: 'IndustrialProject', component: IndustrialComponent },
+
+  { path:'MetroStationCasestudy', component: MetroComponent},
+  { path:'AmaoraCaseStudy',component:AmanoraComponent},
 
   { path: '**', redirectTo: '' }
 ];

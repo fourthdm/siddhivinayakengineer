@@ -140,6 +140,10 @@
 }
 
 @media(max-width:439px) {
+    .navbardaikins {
+        display: none;
+    }
+
     .laptopview {
         display: none;
     }
@@ -196,6 +200,11 @@
         font-weight: 700;
     }
 
+    .navtop {
+        /* text-align: end; */
+        margin-left: 32em !important;
+    }
+
     .navss {
         line-height: 28px;
         display: flex;
@@ -238,4 +247,19 @@
     .laptopview {
         display: none;
     }
+
+    .navtop {
+        /* text-align: end; */
+        margin-left: 15em !important;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {}
+
+.navtop {
+    /* text-align: end; */
+    margin-left: 45em;
 }

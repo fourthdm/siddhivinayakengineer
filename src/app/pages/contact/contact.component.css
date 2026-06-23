@@ -7,7 +7,7 @@
     font-family: 'FontCustom';
 }
 
-.contactsection{
+.contactsection {
     background-color: #F8FAFC;
     padding: 3%;
 }
@@ -260,7 +260,7 @@ label {
     letter-spacing: 0.02em;
 }
 
-.speaksection{
+.speaksection {
     padding: 3%;
 }
 
@@ -404,13 +404,33 @@ textarea {
     font-size: 14px;
 }
 
-
 .assessmentcontent {
     /* color: #eeeff0; */
     color: #A8AEB8;
     font-size: 16px;
     padding-left: 7px;
     line-height: 26px;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .contact {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 30px;
+    }
+
+    .mobile {
+        font-size: 19px;
+        font-weight: 600;
+        color: #000;
+    }
+
+    .mobile:hover {
+        font-size: 18px;
+        font-weight: 600;
+        color: #F16F24;
+    }
 }
 
 @media(max-width:1200px) {

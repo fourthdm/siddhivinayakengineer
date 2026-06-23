@@ -125,7 +125,10 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+}
 
+.whyheading h1 span {
+    color: #F16F24;
 }
 
 .whyheading .desc {
@@ -173,7 +176,18 @@
     font-weight: 600;
     line-height: 36px;
     letter-spacing: -0.01em;
+}
 
+.content:hover {
+    .h3 {
+        color: #F16F24;
+        font-size: 22px;
+    }
+
+    .bi {
+        color: #000;
+        font-size: 32px;
+    }
 }
 
 .content .description {
@@ -213,6 +227,10 @@
     line-height: 48px;
 }
 
+.roleheading h1 span {
+    color: #F16F24;
+}
+
 .roleheading .desc {
     font-size: 16px;
     line-height: 26px;
@@ -225,14 +243,12 @@
     font-weight: 600;
     line-height: 30px;
     letter-spacing: -0.01em;
-
 }
 
 .rolecontent .description {
     font-size: 15px;
     line-height: 26px;
     font-weight: 500;
-
 }
 
 .rolecontent .bi {
@@ -241,45 +257,23 @@
 }
 
 .rolecard {
-    padding: 0%;
-    margin: 0%;
-    border-right: 1px solid #DCE0E6;
-    border-bottom: 1px solid #DCE0E6;
+    /* padding: 0%; */
+    /* margin: 0%; */
+    border: 1px solid #DCE0E6;
+    /* border-bottom: 1px solid #DCE0E6; */
     background-color: #FFFFFF;
 }
 
 .rolecard:hover {
     background-color: #F8FAFC;
-}
 
-.rolecards:hover {
-    background-color: #F8FAFC;
-}
+    .rolecontent .h3 {
+        color: #F16F24;
+    }
 
-.rolecardbottom:hover {
-    background-color: #F8FAFC;
-}
-
-.rolecardbottomlast:hover {
-    background-color: #F8FAFC;
-}
-
-.rolecardbottomlast {
-    background-color: #FFFFFF;
-}
-
-.rolecardbottom {
-    padding: 0%;
-    margin: 0%;
-    border-right: 1px solid #DCE0E6;
-    background-color: #FFFFFF;
-}
-
-.rolecards {
-    padding: 0%;
-    margin: 0%;
-    border-bottom: 1px solid #DCE0E6;
-    background-color: #FFFFFF;
+    .rolecontent .bi {
+        color: #000;
+    }
 }
 
 .rolecontent {
@@ -318,7 +312,10 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
+}
 
+.workheading h1 span {
+    color: #F16F24;
 }
 
 .workheading .desc {
@@ -330,6 +327,32 @@
 
 .works {
     border-right: 1px solid #DCE0E6;
+}
+
+.works:hover {
+    .workpara .bi {
+        font-size: 30px;
+    }
+
+    .workheadline {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #F16F24;
+    }
+}
+
+.workss:hover {
+    .workpara .bi {
+        font-size: 30px;
+    }
+
+    .workheadline {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 30px;
+        color: #F16F24;
+    }
 }
 
 .workapproach {
@@ -344,12 +367,10 @@
     color: #F16F24;
     font-size: 11px;
     font-weight: 400;
-
 }
 
 .workpara .workdescription {
     font-size: 14px;
-
 }
 
 .workpara .bi {
@@ -391,6 +412,10 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 30px;
+}
+
+.openingheading h1 span {
+    color: #F16F24;
 }
 
 
@@ -483,6 +508,10 @@
     font-size: 40px;
     line-height: 48px;
     max-width: 250px;
+}
+
+.applyheading h1 span {
+    color: #F16F24;
 }
 
 .applyheading .applydesc {
@@ -645,24 +674,10 @@ select option {
     .rolecard {
         padding: 0%;
         margin: 0%;
-        border-right: none;
         border-bottom: 1px solid #DCE0E6;
     }
 
-    .rolecardbottom {
-        padding: 0%;
-        margin: 0%;
-        border-right: none;
-        border-bottom: 1px solid #DCE0E6;
-    }
-
-    .rolecards {
-        padding: 0%;
-        margin: 0%;
-        border-bottom: 1px solid #DCE0E6;
-    }
-
-    .works {
+     .works {
         border: 1px solid #DCE0E6;
     }
 
@@ -706,4 +721,12 @@ select option {
 
 textarea {
     width: 100%;
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .responsibilities .reslines {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

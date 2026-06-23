@@ -74,19 +74,17 @@
         <!-- <div class="emailcontact"> <a class="nav-link" href="" routerLinkActive="active-link"
                 [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Contact']" (click)="scroll()">Contact</a>
         </div> -->
-        <div class="text-center">
-            <form class="d-flex">
+        <div class="navtop">
+            <div class="d-flex">
                 <span class="Phoneno">
                     <a href="tel:+919970641757" class="Phoneno"><i class="bi bi-telephone"></i> +91 99706 41757 </a>
                 </span>
                 <span class="Phoneno">
-                    <a class="nav-link" href="" routerLinkActive="active-link"
-                        [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Contact']"
-                        (click)="scroll()">Contact</a>
+                    <a class="nav-link" href="" [routerLink]="['/Contact']" (click)="scroll()">Contact</a>
                 </span>
                 <!-- <span class="btns btn-lg" [routerLink]="['/Contact']" fragment="Contactus"> Get in Touch<i
                         class="bi bi-chevron-right"></i> </span> -->
-            </form>
+            </div>
         </div>
     </div>
 </div>
@@ -145,10 +143,23 @@
                     <ul class="dropdown-menu dropdown-submenu">
                         <li><a class="dropdown-item" [routerLink]="['/Projects']">Projects</a>
                         </li>
-                        <li><a class="dropdown-item" [routerLink]="['/ResidentialProject']">Residential Projects</a>
+                        <li><a class="dropdown-item" [routerLink]="['/Casestudies']">Case Studies</a>
                         </li>
-                        <li><a class="dropdown-item" [routerLink]="['/IndustrialProject']">Industrial Projects</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/CommercialProject']">Commercial Projects</a></li>
+                        <!-- <li><a class="dropdown-item" [routerLink]="['/ResidentialProject']">Residential Projects</a></li> -->
+                        <!-- <li><a class="dropdown-item" [routerLink]="['/IndustrialProject']">Industrial Projects</a></li> -->
+                        <!-- <li><a class="dropdown-item" [routerLink]="['/CommercialProject']">Commercial Projects</a></li> -->
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown dropdown-hover">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+                        [routerLink]="['/Career']" (click)="scroll()" (click)="closeNavbar()">
+                        Careers
+                    </a>
+                    <ul class="dropdown-menu dropdown-submenu">
+                        <li><a class="dropdown-item" [routerLink]="['/Culture']">Culture</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/Career']">Current Opening</a></li>
                     </ul>
                 </li>
 
@@ -157,11 +168,11 @@
                         [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Blog']" (click)="scroll()"
                         (click)="closeNavbar()">Blog</a>
                 </li> -->
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="" routerLinkActive="active-link"
                         [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Career']" (click)="scroll()"
                         (click)="closeNavbar()">Careers</a>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                     <a class="nav-link" href="" routerLinkActive="active-link"

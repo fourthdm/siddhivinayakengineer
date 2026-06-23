@@ -30,6 +30,10 @@ import { EvaporativeComponent } from './solutions/evaporative/evaporative.compon
 import { ForcedventilationComponent } from './solutions/forcedventilation/forcedventilation.component';
 import { ComfortairComponent } from './solutions/comfortair/comfortair.component';
 import { PrecisionairComponent } from './solutions/precisionair/precisionair.component';
+import { CultureComponent } from './pages/culture/culture.component';
+import { CasestudiesComponent } from './pages/casestudies/casestudies.component';
+import { AmanoraComponent } from './casestudies/amanora/amanora.component';
+import { MetroComponent } from './casestudies/metro/metro.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +59,11 @@ import { PrecisionairComponent } from './solutions/precisionair/precisionair.com
     EvaporativeComponent,
     ForcedventilationComponent,
     ComfortairComponent,
-    PrecisionairComponent
+    PrecisionairComponent,
+    CultureComponent,
+    CasestudiesComponent,
+    AmanoraComponent,
+    MetroComponent
   ],
   imports: [
     BrowserModule,

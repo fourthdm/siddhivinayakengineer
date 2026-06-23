@@ -212,7 +212,7 @@
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000;
-    max-width: 500px;
+   text-align: center;
 }
 
 .heading-area h1 span {
@@ -528,7 +528,7 @@
     background: #fff;
     color: #222;
     padding: 8px 12px;
-    font-size: 16px;
+    font-size: 11px;
     font-weight: 500;
     transition: 0.3s;
 }
@@ -572,13 +572,10 @@
 }
 
 .locations {
-    font-size: 14px;
-    line-height: 22px;
-    color: #475569;
-}
+    font-size: 11px;
+    line-height: 16px;
 
-.locations b{
-    color: #161E2A;
+    color: #475569;
 }
 
 .bi-geo-alt {
@@ -686,7 +683,7 @@
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000;
-    max-width: 500px;
+   
 }
 
 .insideheading .descindustries {
@@ -746,9 +743,9 @@
     grid-template-columns: repeat(2, auto);
     gap: 10px;
 
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 16px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
 
     letter-spacing: 0.22em;
     color: #161E2A;
@@ -904,7 +901,7 @@
 
 .lastcontactsection {
     background-color: #111822;
-    padding: 3%;
+    padding: 5%;
 }
 
 .lastcontactsection .medium-title {
@@ -1104,4 +1101,19 @@
         height: 220px;
     }
 
+}
+
+.aboutbackground {
+    background: url('/assets/header/4.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10% 7% 2% 7%;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #f16f24;
+    text-align: center;
 }
