@@ -22,6 +22,7 @@ import { CultureComponent } from './pages/culture/culture.component';
 import { CasestudiesComponent } from './pages/casestudies/casestudies.component';
 import { MetroComponent } from './casestudies/metro/metro.component';
 import { AmanoraComponent } from './casestudies/amanora/amanora.component';
+import { SitemapComponent } from './pages/sitemap/sitemap.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -34,7 +35,7 @@ const routes: Routes = [
 
   { path: 'Blog', component: BlogComponent },
   { path: 'Projects', component: ProjectsComponent },
-  { path: 'Casestudies',component:CasestudiesComponent },
+  { path: 'Casestudies', component: CasestudiesComponent },
 
   { path: 'Air_Cooled&Water-Cooled_Chiller_Plants', component: AircooledComponent },
   { path: 'VRVVRF_SYSTEMS', component: VrvComponent },
@@ -48,9 +49,9 @@ const routes: Routes = [
   { path: 'CommercialProject', component: CommercialComponent },
   { path: 'IndustrialProject', component: IndustrialComponent },
 
-  { path:'MetroStationCasestudy', component: MetroComponent},
-  { path:'AmaoraCaseStudy',component:AmanoraComponent},
-
+  { path: 'MetroStationCasestudy', component: MetroComponent },
+  { path: 'AmaoraCaseStudy', component: AmanoraComponent },
+  { path: 'Sitemap', component:SitemapComponent},
   { path: '**', redirectTo: '' }
 ];
 

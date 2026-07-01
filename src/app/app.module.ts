@@ -34,6 +34,7 @@ import { CultureComponent } from './pages/culture/culture.component';
 import { CasestudiesComponent } from './pages/casestudies/casestudies.component';
 import { AmanoraComponent } from './casestudies/amanora/amanora.component';
 import { MetroComponent } from './casestudies/metro/metro.component';
+import { SitemapComponent } from './pages/sitemap/sitemap.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -63,7 +64,8 @@ import { MetroComponent } from './casestudies/metro/metro.component';
     CultureComponent,
     CasestudiesComponent,
     AmanoraComponent,
-    MetroComponent
+    MetroComponent,
+    SitemapComponent
   ],
   imports: [
     BrowserModule,

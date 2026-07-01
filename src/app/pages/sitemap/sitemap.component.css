@@ -1,0 +1,38 @@
+ul {
+    list-style: none;
+}
+
+.card {
+    background-color: #f0f1f3;
+    border: 1px solid #F16F24;
+}
+
+li {
+    font-size: 1.1em;
+    /* font-size: 21px; */
+    color: #000;
+    border: 1px solid #F8FAFC;
+    border-left: 4px solid #f16f24;
+    padding: 1%;
+    background-color: #F8FAFC;
+}
+
+li:hover {
+    background-color: #F16F24;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    :is(a){
+        color: white;
+        text-decoration: underline;
+    }
+}
+
+a{
+    color: #000;
+}
+
+h1 {
+    font-size: 2.2em;
+    color: #000;
+}

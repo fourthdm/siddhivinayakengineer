@@ -38,16 +38,16 @@
     padding: 5%;
 }
 
-img {
+/* img {
     border-radius: 5%;
-}
+} */
 
-.carousel-caption{
+.carousel-caption {
     background-color: #f16f24b0;
     padding: 0%;
 }
 
-.headline{
+.headline {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
@@ -55,11 +55,32 @@ img {
     color: #F16F24;
 }
 
-.aspects{
+.aspects {
     background-color: #F8FAFC;
-    padding:3%;
+    padding: 3%;
 }
 
-.icons{
+.icons {
     width: 20%;
+}
+
+
+@media(min-width: 390px) and (max-width: 767px) {
+
+    .title {
+        background-color: #f16f24cc;
+        color: white;
+        font-size: 15px;
+        line-break: auto;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .aboutbackground {
+        background: url('/assets/header/4.jpg');
+        background-size: cover;
+        background-position: center;
+        padding: 25% 7% 2% 7%;
+    }
+
 }
