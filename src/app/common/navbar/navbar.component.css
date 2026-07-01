@@ -202,7 +202,7 @@
 
     .navtop {
         /* text-align: end; */
-        margin-left: 32em !important;
+        margin-left: 41em !important;
     }
 
     .navss {
@@ -252,14 +252,9 @@
         /* text-align: end; */
         margin-left: 15em !important;
     }
-
-
 }
-
-
-@media only screen and (min-width: 1024px) and (max-width: 1439px) {}
 
 .navtop {
     /* text-align: end; */
-    margin-left: 45em;
+    margin-left: 61em;
 }
