@@ -9,10 +9,11 @@
 
 
 .aboutbackground {
-    background: url('/assets/header/4.jpg');
+    background: url('https://static.wixstatic.com/media/e25784_ec599829514647fc81b8433515830080~mv2.jpg/v1/fit/w_1735,h_1105,q_90,enc_avif,quality_auto/e25784_ec599829514647fc81b8433515830080~mv2.jpg');
+    /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 10% 7% 2% 7%;
+    padding: 15% 7% 2% 7%;
 }
 
 .title {
@@ -42,12 +43,12 @@ img {
     border-radius: 5%;
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: #f16f24b0;
     padding: 0%;
 }
 
-.headline{
+.headline {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
@@ -55,11 +56,11 @@ img {
     color: #F16F24;
 }
 
-.aspects{
+.aspects {
     background-color: #F8FAFC;
-    padding:3%;
+    padding: 3%;
 }
 
-.icons{
+.icons {
     width: 20%;
 }

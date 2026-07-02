@@ -73,8 +73,8 @@ import { SitemapComponent } from './pages/sitemap/sitemap.component';
     FormsModule,
     ReactiveFormsModule,
     CommonModule,
-    ],
-     schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [],
   bootstrap: [AppComponent]
 })

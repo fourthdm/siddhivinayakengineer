@@ -1,3 +1,15 @@
+.description {
+    max-width: 900px;
+}
+
+.laptopview {
+    display: block;
+}
+
+.mobileview {
+    display: none;
+}
+
 .timeline-wrapper {
     width: 100%;
     min-height: 100vh;
@@ -11,7 +23,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-/*     
+    /*     
     margin: 0 0 clamp(35px, 5vw, 70px);
     font-size: clamp(32px, 4vw, 56px);
     line-height: 1.1;
@@ -118,6 +130,15 @@ swiper-slide.swiper-slide-active .timeline-card {
 }
 
 @media (max-width: 439px) {
+
+    .laptopview {
+        display: none;
+    }
+
+    .mobileview {
+        display: block;
+    }
+
     .timeline-wrapper {
         padding: 32px 12px;
     }
@@ -147,7 +168,6 @@ swiper-slide.swiper-slide-active .timeline-card {
         transform-style: preserve-3d;
     }
 }
-
 
 .swiper-3d .swiper-slide {
     transform-style: preserve-3d;
