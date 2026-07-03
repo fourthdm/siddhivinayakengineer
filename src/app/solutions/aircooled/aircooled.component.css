@@ -51,7 +51,6 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-
     color: #F16F24;
 }
 
@@ -66,6 +65,19 @@
 
 
 @media(min-width: 390px) and (max-width: 767px) {
+    .headline {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .titles {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+        color: #f16f24;
+    }
 
     .title {
         background-color: #f16f24cc;

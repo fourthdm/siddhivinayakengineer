@@ -32,6 +32,10 @@
     font-size: 35px;
     font-weight: 700;
     line-height: 40px;
+    color: black;
+}
+
+.titles span {
     color: #f16f24;
 }
 
@@ -63,4 +67,30 @@ img {
 
 .icons {
     width: 20%;
+}
+
+
+@media(min-width: 390px) and (max-width: 767px) {
+    .headline {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .titles {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+        color: #f16f24;
+    }
+
+    .title {
+        background-color: #f16f24cc;
+        color: white;
+        font-size: 15px;
+        line-break: auto;
+        line-height: 30px;
+        font-weight: 500;
+    }
 }

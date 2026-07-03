@@ -131,6 +131,10 @@
     }
 }
 
+.offcanvas{
+    width: 90%;
+}
+
 .laptopview {
     display: block;
 }

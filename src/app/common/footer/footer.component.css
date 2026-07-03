@@ -15,7 +15,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-color: #121821; */
-    
+
     color: #FFFFFF;
     padding: 0% 0% 0% 1%;
 }
@@ -100,13 +100,27 @@ i {
     color: rgb(241, 111, 36);
 }
 
-@media(max-width:439px) {
+@media(min-width: 390px) and (max-width: 767px) {
     .Company {
         margin-left: 0%;
     }
+
+    .main {
+        /* background-color: rgba(22, 29, 39); */
+        background-color: #161d27;
+        /* background-image: url('/assets/footerbackground.png'); */
+        /* background-image: url('/assets/Symbol Background.png'); */
+        /* background-repeat: no-repeat; */
+        background-size: 100%;
+        /* background-color: #121821; */
+
+        color: #FFFFFF;
+        padding: 0% 0% 0% 1%;
+    }
+
 }
 
-a{
+a {
     color: #FFFFFF;
 }
 
