@@ -15,6 +15,14 @@ li {
     border-left: 4px solid #f16f24;
     padding: 1%;
     background-color: #F8FAFC;
+
+     background: rgba(255, 255, 255, 0.08); /* Semi-transparent base */
+  backdrop-filter: blur(24px) saturate(180%); /* iOS-style fluid blur */
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle highlight edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+
 }
 
 li:hover {
@@ -22,13 +30,14 @@ li:hover {
     color: white;
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
-    :is(a){
+
+    :is(a) {
         color: white;
         text-decoration: underline;
     }
 }
 
-a{
+a {
     color: #000;
 }
 
@@ -36,3 +45,46 @@ h1 {
     font-size: 2.2em;
     color: #000;
 }
+
+
+
+
+
+
+
+/* glass-panel.component.css */
+.ios-glass-card {
+    /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.08);
+
+    /* Blur and saturation for the background content */
+    backdrop-filter: blur(24px) saturate(180%);
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+
+    /* Styling and 3D specular edge */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 24px;
+
+    /* Smooth depth shadow */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+
+    /* Smooth transition for active states */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Optional active/hover feedback common in iOS */
+.ios-glass-card:active {
+    transform: scale(0.98);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.ios-glass-view {
+  background: rgba(255, 255, 255, 0.08); /* Semi-transparent base */
+  backdrop-filter: blur(24px) saturate(180%); /* iOS-style fluid blur */
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle highlight edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+}
+

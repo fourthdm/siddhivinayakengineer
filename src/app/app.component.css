@@ -20,7 +20,8 @@
 
 .btn-oranges {
     background: #F16F24;
-    color: #FFFFFF;
+    color: #F16F24;
+    /* color: #FFFFFF; */
     /* padding: 18px 34px; */
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -99,3 +100,22 @@ a {
 }
 
 /* css for background images that are fixed on full pages */
+
+
+.ios-glass-view {
+  background: rgba(241, 111, 36, 0.08); /* Semi-transparent base */
+  backdrop-filter: blur(24px) saturate(180%); /* iOS-style fluid blur */
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(241, 111, 36, 0.2); /* Subtle highlight edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+}
+
+.ios-glass-views {
+  background: rgba(255, 255, 255, 0.08); /* Semi-transparent base */
+  backdrop-filter: blur(24px) saturate(180%); /* iOS-style fluid blur */
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle highlight edge */
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+}

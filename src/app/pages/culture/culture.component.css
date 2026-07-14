@@ -9,10 +9,11 @@
 
 
 .aboutbackground {
-    background: url('/assets/header/4.jpg');
+    background: url('https://static.wixstatic.com/media/e25784_ec599829514647fc81b8433515830080~mv2.jpg/v1/fit/w_1735,h_1105,q_90,enc_avif,quality_auto/e25784_ec599829514647fc81b8433515830080~mv2.jpg');
+    /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 10% 7% 2% 7%;
+    padding: 15% 7% 2% 7%;
 }
 
 .title {
@@ -31,6 +32,10 @@
     font-size: 35px;
     font-weight: 700;
     line-height: 40px;
+    color: black;
+}
+
+.titles span {
     color: #f16f24;
 }
 
@@ -42,12 +47,12 @@ img {
     border-radius: 5%;
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: #f16f24b0;
     padding: 0%;
 }
 
-.headline{
+.headline {
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
@@ -55,11 +60,36 @@ img {
     color: #F16F24;
 }
 
-.aspects{
+.aspects {
     background-color: #F8FAFC;
-    padding:3%;
+    padding: 3%;
 }
 
-.icons{
+.icons {
     width: 20%;
+}
+
+
+@media(min-width: 390px) and (max-width: 767px) {
+    .headline {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .titles {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    .title {
+        background-color: #f16f24cc;
+        color: white;
+        font-size: 15px;
+        line-break: auto;
+        line-height: 30px;
+        font-weight: 500;
+    }
 }

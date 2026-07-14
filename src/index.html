@@ -24,7 +24,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
@@ -43,7 +43,17 @@
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init(
+      {
+        duration: 1200,        // Animation speed
+        easing: 'ease-out-cubic', 
+        offset: 120,           // Start animation a little before entering
+        delay: 100,
+        mirror: false,
+        throttleDelay: 99,
+        debounceDelay: 50
+      }
+    );
   </script>
 
 </body>
