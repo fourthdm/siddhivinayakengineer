@@ -15,17 +15,39 @@
     position: absolute;
     left: 100%;
     top: -7px;
+
+
+    background: rgba(241, 111, 36, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(241, 111, 36, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    /* Soft shadow for depth */
 }
 
 .dropdown-menu .dropdown-submenu-left {
     right: 100%;
     left: auto;
+
+    background: rgba(241, 111, 36, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(241, 111, 36, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    /* Soft shadow for depth */
 }
 
 .dropdown-menu>li:hover>.dropdown-submenu {
     display: block;
 }
-
 
 .btns {
     color: white;
@@ -51,9 +73,19 @@
 }
 
 .nav-link:hover {
-    color: #F16F24;
+    background: rgba(241, 111, 36, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(241, 111, 36, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    /* Soft shadow for depth */
+    /* color: #F16F24;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 500; */
 }
 
 .Phoneno {
@@ -131,8 +163,27 @@
     }
 }
 
-.offcanvas{
+.offcanvas {
+    background: rgba(255, 255, 255, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    /* Soft shadow for depth */
+
+    color: white;
+
     width: 90%;
+}
+
+.offcanvas-body .nav-link {
+    color: white;
+    padding-inline-start: 5%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .laptopview {
@@ -154,6 +205,7 @@
 
     .mobileview {
         display: block;
+
     }
 
     .navss {
@@ -261,4 +313,26 @@
 .navtop {
     /* text-align: end; */
     margin-left: 61em;
+}
+
+.ios-glass-view {
+    background: rgba(241, 111, 36, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(241, 111, 36, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    /* Soft shadow for depth */
+}
+
+.navsitemaptext{
+    color: #161E2A;
+    font-weight: 400;
+}
+
+.navsitemaptext:hover{
+    color: #F16F24;
 }

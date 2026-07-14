@@ -31,9 +31,13 @@
     font-size: 35px;
     font-weight: 500;
     line-height: 40px;
-    color: #f16f24;
+    color: black;
+    /* color: #f16f24; */
 }
 
+.titles span{
+    color: #F16F24;
+}
 .content {
     padding: 5%;
 }
@@ -51,8 +55,10 @@
     font-size: 40px;
     font-weight: 700;
     line-height: 52px;
-
     color: #F16F24;
+}
+.headline span {
+    color: #000;
 }
 
 .aspects {

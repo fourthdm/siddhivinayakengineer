@@ -16,7 +16,7 @@
 }
 
 .title {
-    background-color: #f16f24cc;
+    background-color: #F16F24cc;
     color: white;
     font-size: 40px;
     font-weight: 500;
@@ -31,7 +31,11 @@
     font-size: 35px;
     font-weight: 500;
     line-height: 40px;
-    color: #f16f24;
+    color: #000;
+}
+
+.titles span{
+    color: #F16F24;
 }
 
 .content {
@@ -43,16 +47,18 @@
 } */
 
 .carousel-caption{
-    background-color: #f16f24b0;
+    background-color: #F16F24b0;
     padding: 0%;
 }
 
 .headline{
     font-size: 40px;
     font-weight: 700;
-    line-height: 52px;
-
+    line-height: 48px;
     color: #F16F24;
+}
+.headline span {
+    color: #000;
 }
 
 .aspects{
@@ -77,10 +83,9 @@
         font-size: 28px;
         font-weight: 500;
         line-height: 36px;
-        color: #f16f24;
     }
     .title {
-        background-color: #f16f24cc;
+        background-color: #F16F24cc;
         color: white;
         font-size: 15px;
         line-break: auto;

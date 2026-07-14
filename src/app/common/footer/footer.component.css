@@ -11,7 +11,7 @@
     /* background-color: rgba(22, 29, 39); */
     background-color: #161d27;
     /* background-image: url('/assets/footerbackground.png'); */
-    background-image: url('/assets/Symbol Background.png');
+    /* background-image: url('/assets/Symbol Background.png'); */
     background-repeat: no-repeat;
     background-size: 100%;
     /* background-color: #121821; */
@@ -27,6 +27,10 @@
 .Company {
     margin-left: 5%;
 }
+
+/* img{
+    width: 100%;
+} */
 
 .img {
     width: 100%;
@@ -113,7 +117,6 @@ i {
         /* background-repeat: no-repeat; */
         background-size: 100%;
         /* background-color: #121821; */
-
         color: #FFFFFF;
         padding: 0% 0% 0% 1%;
     }
@@ -143,3 +146,4 @@ a {
     color: #FFFFFF;
     cursor: pointer;
 }
+

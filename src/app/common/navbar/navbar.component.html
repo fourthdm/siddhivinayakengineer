@@ -80,10 +80,10 @@
                     <a href="tel:+919970641757" class="Phoneno"><i class="bi bi-telephone"></i> +91 99706 41757 </a>
                 </span> -->
                 <span class="Phoneno">
-                    <a class="nav-link" href="" [routerLink]="['/Contact']" (click)="scroll()">Contact</a>
+                    <a class="navsitemaptext" href="" [routerLink]="['/Contact']" (click)="scroll()">Contact</a>
                 </span>
                 <span class="Phoneno">
-                    <a class="nav-link" href="" [routerLink]="['/Sitemap']" (click)="scroll()">Sitemap</a>
+                    <a class="navsitemaptext" href="" [routerLink]="['/Sitemap']" (click)="scroll()">Sitemap</a>
                 </span>
                 <!-- <span class="btns btn-lg" [routerLink]="['/Contact']" fragment="Contactus"> Get in Touch<i
                         class="bi bi-chevron-right"></i> </span> -->
@@ -103,22 +103,22 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
+                    <a class="nav-link " routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
                         [routerLink]="['/Home']" aria-current="page" href="" (click)="closeNavbar()">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="" routerLinkActive="active-link"
+                    <a class="nav-link " href="" routerLinkActive="active-link"
                         [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/About']" (click)="scroll()"
                         (click)="closeNavbar()">About Us</a>
                 </li>
 
                 <li class="nav-item dropdown dropdown-hover">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false" [routerLink]="['/Services']">
                         Solution
                     </a>
                     <ul class="dropdown-menu dropdown-submenu">
-                        <li><a class="dropdown-item" href="#"
+                        <li><a class="dropdown-item " href="#"
                                 [routerLink]="['/Air_Cooled&Water-Cooled_Chiller_Plants']">AIR COOLED & WATER-COOLED
                                 CHILLER PLANTS </a></li>
                         <li><a class="dropdown-item" href="#" [routerLink]="['/VRVVRF_SYSTEMS']"> VRV / VRF SYSTEMS </a>
@@ -212,7 +212,7 @@
 </nav>
 
 
-<nav class="navbar bg-body-tertiary mobileview">
+<nav class="navbar bg-body-tertiary mobileview" style=" background: rgba(255, 255, 255, 0.08);">
     <div class="container">
         <a class="navbar-brand" href="#">
             <img src="/assets/Logo file_Update-01.png" class="logoimage" alt="LogoImage">
@@ -328,6 +328,8 @@
                             [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Contact']" (click)="scroll()"
                             (click)="closeNavbars()">Contact</a>
                     </li>
+
+
                 </ul>
                 <!-- <form class="d-flex mt-3" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
