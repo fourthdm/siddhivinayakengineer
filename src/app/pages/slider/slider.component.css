@@ -368,5 +368,35 @@
     font-size: 64px;
     font-weight: 700;
     line-height: 72px;
-    color: #F16F24;
+    color: #F8F9FA;
+    /* color: #F16F24; */
+    animation: titleAnimation 1.1s ease forwards;
+}
+
+
+@keyframes titleAnimation {
+
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+@keyframes zoom {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.15);
+
+    }
+
 }

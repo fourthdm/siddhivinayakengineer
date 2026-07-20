@@ -34,7 +34,7 @@
     color: #000;
 }
 
-.titles span{
+.titles span {
     color: #F16F24;
 }
 
@@ -46,33 +46,56 @@
     border-radius: 5%;
 } */
 
-.carousel-caption{
+.carousel-caption {
     background-color: #F16F24b0;
     padding: 0%;
 }
 
-.headline{
+.headline {
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
     color: #F16F24;
 }
+
 .headline span {
     color: #000;
 }
 
-.aspects{
+.aspects {
     background-color: #F8FAFC;
-    padding:3%;
+    padding: 3%;
 }
 
-.icons{
+.icons {
     width: 20%;
 }
 
+.approachtext {
+    font-size: 20px;
+    color: #000;
+}
+
+.whychoosetext {
+    font-size: 20px;
+    color: #F16F24;
+}
+
+.approachcard {
+    height: 90%;
+}
+
+.benefits {
+    padding: 5%;
+}
+
+.whychoose {
+    background-color: #F8FAFC;
+    padding: 3%;
+}
 
 @media(min-width: 390px) and (max-width: 767px) {
-.headline {
+    .headline {
         font-size: 28px;
         font-weight: 700;
         line-height: 36px;
@@ -84,6 +107,7 @@
         font-weight: 500;
         line-height: 36px;
     }
+
     .title {
         background-color: #F16F24cc;
         color: white;
@@ -92,7 +116,8 @@
         line-height: 30px;
         font-weight: 500;
     }
-        .aboutbackground {
+
+    .aboutbackground {
         background: url('/assets/header/4.jpg');
         background-size: cover;
         background-position: center;
