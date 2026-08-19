@@ -1,0 +1,126 @@
+
+
+/* ===============================
+   INTRO SCREEN
+================================ */
+.intro-screen {
+
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100vh;
+
+  background: #F16F24;
+
+  z-index: 99999;
+
+  overflow: hidden;
+
+  transform: translateY(0);
+
+  transition:
+    transform 1.2s cubic-bezier(.77, 0, .175, 1);
+
+}
+
+
+/* ==========================================
+   PRELOADER EXIT
+========================================== */
+
+.intro-screen.intro-finished {
+
+  transform: translateY(-100%);
+
+  pointer-events: none;
+
+}
+.intro-center {
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  width: 200px;
+  height: 200px;
+
+  transform:
+    translate(-50%, -50%);
+
+  transition:
+    transform 0.6s ease,
+    opacity 0.6s ease;
+
+}
+
+.solar-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  transform:
+    translate(-50%, -50%)
+    rotate(0deg);
+  opacity: 1;
+  transition:
+    transform 0.8s cubic-bezier(.77, 0, .175, 1),
+    left 1.2s cubic-bezier(.77, 0, .175, 1);
+}
+
+.solar-logo.logo-rotate {
+
+  transform:
+    translate(-50%, -50%)
+    rotate(360deg);
+
+}
+
+
+.solar-logo.logo-move-right {
+
+  left: 90%;
+
+  transform:
+    translate(-50%, -50%)
+    rotate(360deg);
+
+}
+
+/* ==========================================
+   ZOOM OUT
+========================================== */
+
+.intro-center.logo-zoom-out {
+
+  transform:
+    translate(-50%, -50%)
+    scale(0);
+
+  opacity: 0;
+
+  transition:
+    transform 0.6s ease,
+    opacity 0.5s ease;
+
+}
+
+.website {
+
+  opacity: 0;
+
+  transition:
+    opacity 0.8s ease;
+
+}
+
+
+.website.website-visible {
+
+  opacity: 1;
+
+}

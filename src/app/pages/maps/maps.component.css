@@ -41,7 +41,7 @@
   }
 
   100% {
-    transform: scale(2);
+    transform: scale(3);
     opacity: 0;
   }
 }
@@ -64,6 +64,7 @@
 .map-marker:hover .tooltip {
   opacity: 1;
   visibility: visible;
+  
 }
 
 .h2 {
@@ -71,7 +72,6 @@
   color: #F16F24;
   font-weight: 600;
 }
-
 
 p {
   color: black;

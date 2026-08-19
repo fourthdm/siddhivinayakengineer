@@ -1,5 +1,7 @@
 <!-- <app-maps></app-maps> -->
 <app-slider></app-slider>
+<app-newanimation></app-newanimation>
+<app-animation></app-animation>
 <!-- Trust Bar Counting Section -->
 <div class="Countsection" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
@@ -18,7 +20,7 @@
         <br><br>
         <div class="" #counterSection>
             <div class="row">
-                <div class="col-6 col-md-3 countcard" data-aos="zoom-in">
+                <div class="col-6 col-md-4 countcard" data-aos="zoom-in">
                     <div class="">
                         <div class="text-center">
                             <div class="counticons">
@@ -32,7 +34,7 @@
 
                     </div>
                 </div> <br>
-                <div class="col-6 col-md-3 countcard" data-aos="zoom-in" data-aos-easing="ease-in-sine"
+                <div class="col-6 col-md-4 countcard" data-aos="zoom-in" data-aos-easing="ease-in-sine"
                     data-aos-delay="1000" data-aos-offset="0">
                     <div class="">
                         <div class="text-center">
@@ -48,7 +50,7 @@
                     </div>
                 </div> <br>
 
-                <div class="col-6 col-md-3 countcard" data-aos="zoom-in" data-aos-easing="ease-in-sine"
+                <div class="col-6 col-md-4 countcard" data-aos="zoom-in" data-aos-easing="ease-in-sine"
                     data-aos-delay="1500" data-aos-offset="0">
                     <div class="">
                         <div class="text-center">
@@ -63,7 +65,7 @@
                     </div>
                 </div> <br>
 
-                <div class="col-6 col-md-3 countcard" data-aos="zoom-in" data-aos-easing="ease-in-sine"
+                <!-- <div class="col-6 col-md-3 countcard" data-aos="zoom-in" data-aos-easing="ease-in-sine"
                     data-aos-delay="2000" data-aos-offset="0">
                     <div class="">
                         <div class="text-center">
@@ -76,7 +78,7 @@
                             <p class="counttext">States Served</p>
                         </div>
                     </div>
-                </div> <br>
+                </div> <br> -->
 
             </div>
         </div>
@@ -106,7 +108,7 @@
                             <i class="bi bi-window-plus cicon"></i>
                         </div>
                         <div class="card-body">
-                            <h5 class="card-titlewhy">17+ Years of Proven Engineering Experience</h5>
+                            <h5 class="card-titlewhy">18+ Years of Proven Engineering Experience</h5>
                             <p class="card-text">Experience plays a critical role in successful project execution. Over
                                 the past seventeen years, SVESPL has delivered HVAC and MEP solutions for diverse
                                 industrial and commercial applications, developing the expertise needed to manage
@@ -252,7 +254,9 @@
     </div>
 </div>
 
-<div class="AITools">
+<app-animation></app-animation>
+
+<!-- <div class="AITools">
     <section class="digital-tree" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
 
@@ -260,7 +264,6 @@
                 An AI-backed <span>Digital Backbone</span>
             </h2>
 
-            <!-- Parent Card -->
             <div class="tree-parent">
 
                 <div class="tree-card parent-card">
@@ -278,13 +281,12 @@
 
             </div>
 
-            <!-- Connector -->
             <div class="tree-line">
                 <div class="vertical-line"></div>
                 <div class="horizontal-line"></div>
             </div>
 
-            <!-- Child Cards -->
+      
             <div class="row tree-row">
 
                 <div class="col-lg-4 col-md-4">
@@ -343,7 +345,7 @@
 
         </div>
     </section>
-</div>
+</div> -->
 
 <!-- Industries serve section -->
 <div class="industriessection" data-aos="fade-up" id="Industries">
@@ -782,7 +784,7 @@
                 <div class="card solutioncard">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="/assets/Solutions/vrv.png" alt="Images"><br><br>
+                            <img src="/assets/services/Healthcare & Research Facilities.jpg" alt="Images" width="100%"><br><br>
                             <p class="card-titles">Turnkey Clean Room Solutions</p>
                         </div>
                         <p>We develop complete cleanroom environments for pharmaceutical, healthcare, biotechnology,
@@ -804,7 +806,7 @@
                 <div class="card solutioncard">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="/assets/Solutions/vrv.png" alt="Images"><br><br>
+                            <img src="/assets/Solutions/evaporative cooling.png" alt="Images"   width="100%"><br><br>
                             <p class="card-titles">Evaporative Cooling Systems</p>
                         </div>
                         <p>Our evaporative cooling solutions offer an economical and environmentally responsible
@@ -822,7 +824,7 @@
                 <div class="card solutioncard">
                     <div class="card-body">
                         <div class="text-center">
-                            <img src="/assets/Solutions/vrv.png" alt="Images"><br><br>
+                            <img src="/assets/Solutions/ventilation.png" alt="Images"  width="100%"><br><br>
                             <p class="card-titles">Forced Ventilation Systems</p>
                         </div>
                         <p>Designed to improve airflow, remove excess heat, and maintain healthier indoor environments,
@@ -844,15 +846,14 @@
 </div>
 
 <!-- Our Process Section -->
-<div class="" data-aos="fade-up">
+<!-- <div class="" data-aos="fade-up">
     <section class="methodology-section">
         <div class="container">
             <div class="containers">
-                <!-- Top Heading -->
                 <div class="heading-area">
-                    <!-- <p class="methology-title">
+                    <p class="methology-title">
                         <span></span>ENGINEERING METHODOLOGY
-                    </p> -->
+                    </p>
                     <h1>
                         <span style="color: white;">A Structured five-stage approach to </span>
                         <span class="h1headline">every project.</span>
@@ -865,30 +866,23 @@
                     </p>
                 </div>
 
-                <!-- Process Row -->
                 <div class="process-row">
-                    <!-- Item -->
                     <div class="process-box">
                         <div class="icon-box">
                             <span class="number">01</span>
-                            <!-- <i class="fa-solid fa-clipboard-list"></i> -->
                             <i class="bi bi-clipboard-check processicon"></i>
                         </div>
 
                         <small>STAGE 1</small>
-                        <!-- <h3>Site Assessment & Discovery</h3> -->
                         <h3>Consultation & Site Assessment</h3>
                         <p>
                             Every project begins with an in-depth consultation to understand the client's operational
                             requirements, facility layout, production processes, environmental conditions, and project
                             objectives. Our engineers conduct detailed site assessments to gather the technical
                             information necessary for accurate system planning.
-                            <!-- We assess your facility, operational requirements, and compliance needs to define the right
-                            system approach based on actual conditions, not assumptions. -->
                         </p>
                     </div>
 
-                    <!-- Item -->
                     <div class="process-box">
                         <div class="icon-box">
                             <span class="number">02</span>
@@ -897,18 +891,14 @@
 
                         <small>STAGE 2</small>
                         <h3>Engineering Design & Planning</h3>
-                        <!-- <h3>Engineering Design</h3> -->
                         <p>
                             Using engineering calculations, industry standards, and project-specific data, our design
                             team develops optimized HVAC and MEP solutions that balance performance, efficiency, safety,
                             and future scalability. Every design is prepared with careful attention to equipment
                             selection, system integration, and maintainability.
-                            <!-- Our in-house team develops a customised HVAC/MEP design using load calculations, detailed
-                            drawings, and a transparent BOQ with accurate costing. -->
                         </p>
                     </div>
 
-                    <!-- Item -->
                     <div class="process-box">
                         <div class="icon-box">
                             <span class="number">03</span>
@@ -921,15 +911,9 @@
                             and strict quality control procedures. Throughout the execution phase, project managers
                             coordinate activities to ensure safety, accuracy, and timely completion.
                         </p>
-                        <!-- <h3>Project Execution</h3>
-                            <p>
-                                Our engineering and technical teams execute installations with precision aligned to
-                                timelines,
-                                specifications, and project scope.
-                            </p> -->
+                     
                     </div>
 
-                    <!-- Item -->
                     <div class="process-box">
                         <div class="icon-box">
                             <span class="number">04</span>
@@ -945,7 +929,6 @@
                         </p>
                     </div>
 
-                    <!-- Item -->
                     <div class="process-box">
                         <div class="icon-box">
                             <span class="number">05</span>
@@ -967,7 +950,7 @@
         </div>
 
     </section>
-</div>
+</div> -->
 
 <!-- Trusted Section -->
 
@@ -1151,6 +1134,7 @@
                         </div>
                         <br>
                     </div><br>
+                    
                     <div class="col-md-2">
                         <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
                             data-aos-easing="ease-in-sine">
@@ -1161,9 +1145,140 @@
                         <br>
                     </div><br>
 
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/1.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/2.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/3.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/4.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/5.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/6.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/7.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/8.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/14.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/10.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/11.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/12.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
+                    <div class="col-md-2">
+                        <div class="card Clientcard bg-image hover-zoom" data-aos="zoom-in"
+                            data-aos-easing="ease-in-sine">
+                            <div class="">
+                                <img src="/assets/clients/13.png" class="imgClient" alt="Client Images" />
+                            </div>
+                        </div>
+                        <br>
+                    </div><br>
+
                 </div>
             </div>
         </div>
+
         <div class="mobileview">
             <div class="container">
                 <div class="row">
@@ -1338,6 +1453,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 </div>
 

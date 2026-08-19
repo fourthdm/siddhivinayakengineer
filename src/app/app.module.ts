@@ -35,6 +35,9 @@ import { CasestudiesComponent } from './pages/casestudies/casestudies.component'
 import { AmanoraComponent } from './casestudies/amanora/amanora.component';
 import { MetroComponent } from './casestudies/metro/metro.component';
 import { SitemapComponent } from './pages/sitemap/sitemap.component';
+import { HeadersComponent } from './pages/headers/headers.component';
+import { AnimationComponent } from './pages/animation/animation.component';
+import { NewanimationComponent } from './pages/newanimation/newanimation.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +68,10 @@ import { SitemapComponent } from './pages/sitemap/sitemap.component';
     CasestudiesComponent,
     AmanoraComponent,
     MetroComponent,
-    SitemapComponent
+    SitemapComponent,
+    HeadersComponent,
+    AnimationComponent,
+    NewanimationComponent
   ],
   imports: [
     BrowserModule,
