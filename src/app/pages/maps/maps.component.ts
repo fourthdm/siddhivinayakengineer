@@ -31,11 +31,10 @@ export class MapsComponent {
 
               this.startCounter(18, 'count1', 50);
               this.startCounter(150, 'count2', 10);
-              this.startCounter(500, 'count3', 5);
-              this.startCounter(500, 'count4', 5);
+              this.startCounter(50, 'count3', 10);
+              this.startCounter(8.5, 'count4', 5);
 
               observer.unobserve(entry.target);
-
             }
 
           });

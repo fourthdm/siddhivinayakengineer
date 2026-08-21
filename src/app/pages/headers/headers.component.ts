@@ -7,110 +7,190 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class HeadersComponent implements OnInit, OnDestroy {
 
+  // ==========================================
+  // PRELOADER STATES
+  // ==========================================
 
-  introFinished = false;
+  startAssembly = false;
 
-  // Logo rotation
-  startAnimation = false;
+  logoComplete = false;
 
-  // Logo moves to right
-  moveLogo = false;
+  showName = false;
 
-  // Logo zoom out
-  startZoom = false;
+  loaderFinished = false;
 
-  // Store timers
+
+  // Timers
   private timers: any[] = [];
-
-
-  // ==========================================
-  // ON INIT
-  // ==========================================
 
   ngOnInit(): void {
 
-    // Disable scrolling while loader is visible
+    // Prevent scrolling while animation runs
     document.body.classList.add('loader-active');
 
-
-    // ------------------------------------------
-    // STEP 1
-    // Start logo rotation
-    // ------------------------------------------
-
     this.timers.push(
+
       setTimeout(() => {
 
-        this.startAnimation = true;
+        this.startAssembly = true;
 
-      }, 100)
+      }, 300)
+
+    );
+
+    this.timers.push(
+
+      setTimeout(() => {
+
+        this.logoComplete = true;
+
+      }, 1550)
+
     );
 
 
-    // ------------------------------------------
-    // STEP 2
-    // Move logo to right
-    // Solar website uses around 800ms
-    // ------------------------------------------
-
     this.timers.push(
+
       setTimeout(() => {
 
-        this.moveLogo = true;
+        this.showName = true;
 
-      }, 800)
+      }, 1900)
+
     );
 
 
-    // ------------------------------------------
-    // STEP 3
-    // Zoom out
-    // Solar website uses around 2200ms
-    // ------------------------------------------
-
     this.timers.push(
+
       setTimeout(() => {
 
-        this.startZoom = true;
-
-      }, 2200)
-    );
-
-
-    // ------------------------------------------
-    // STEP 4
-    // Hide orange loader
-    // Solar website uses around 2800ms
-    // ------------------------------------------
-
-    this.timers.push(
-      setTimeout(() => {
-
-        this.introFinished = true;
+        this.loaderFinished = true;
 
         document.body.classList.remove('loader-active');
 
-      }, 2800)
+      }, 3400)
+
     );
 
   }
 
 
-  // ==========================================
-  // COMPONENT DESTROY
-  // ==========================================
 
   ngOnDestroy(): void {
 
-    // Clear all timers
     this.timers.forEach(timer => {
+
       clearTimeout(timer);
+
     });
 
-    // Make sure scrolling is enabled
     document.body.classList.remove('loader-active');
 
   }
+
+  // introFinished = false;
+
+  // // Logo rotation
+  // startAnimation = false;
+
+  // // Logo moves to right
+  // moveLogo = false;
+
+  // // Logo zoom out
+  // startZoom = false;
+
+  // // Store timers
+  // private timers: any[] = [];
+
+
+  // // ==========================================
+  // // ON INIT
+  // // ==========================================
+
+  // ngOnInit(): void {
+
+  //   // Disable scrolling while loader is visible
+  //   document.body.classList.add('loader-active');
+
+
+  //   // ------------------------------------------
+  //   // STEP 1
+  //   // Start logo rotation
+  //   // ------------------------------------------
+
+  //   this.timers.push(
+  //     setTimeout(() => {
+
+  //       this.startAnimation = true;
+
+  //     }, 100)
+  //   );
+
+
+  //   // ------------------------------------------
+  //   // STEP 2
+  //   // Move logo to right
+  //   // Solar website uses around 800ms
+  //   // ------------------------------------------
+
+  //   this.timers.push(
+  //     setTimeout(() => {
+
+  //       this.moveLogo = true;
+
+  //     }, 800)
+  //   );
+
+
+  //   // ------------------------------------------
+  //   // STEP 3
+  //   // Zoom out
+  //   // Solar website uses around 2200ms
+  //   // ------------------------------------------
+
+  //   this.timers.push(
+  //     setTimeout(() => {
+
+  //       this.startZoom = true;
+
+  //     }, 2200)
+  //   );
+
+
+  //   // ------------------------------------------
+  //   // STEP 4
+  //   // Hide orange loader
+  //   // Solar website uses around 2800ms
+  //   // ------------------------------------------
+
+  //   this.timers.push(
+  //     setTimeout(() => {
+
+  //       this.introFinished = true;
+
+  //       document.body.classList.remove('loader-active');
+
+  //     }, 2800)
+  //   );
+
+  // }
+
+
+  // // ==========================================
+  // // COMPONENT DESTROY
+  // // ==========================================
+
+  // ngOnDestroy(): void {
+
+  //   // Clear all timers
+  //   this.timers.forEach(timer => {
+  //     clearTimeout(timer);
+  //   });
+
+  //   // Make sure scrolling is enabled
+  //   document.body.classList.remove('loader-active');
+
+  // }
 
 }
 
