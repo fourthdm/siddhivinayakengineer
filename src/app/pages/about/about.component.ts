@@ -8,6 +8,9 @@ import Swiper from 'swiper';
 })
 export class AboutComponent {
 
+  
+
+
   scrolltop = document.getElementById('scrolltop');
   rootelement = document.documentElement;
 
@@ -175,5 +178,4 @@ export class AboutComponent {
       slideShadows: false,
     },
   });
-
 }

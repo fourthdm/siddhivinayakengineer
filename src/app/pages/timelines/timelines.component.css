@@ -129,7 +129,7 @@ swiper-slide.swiper-slide-active .timeline-card {
     }
 }
 
-@media (max-width: 439px) {
+@media (max-width: 440px) {
 
     .laptopview {
         display: none;

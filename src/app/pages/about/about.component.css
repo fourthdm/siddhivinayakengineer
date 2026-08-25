@@ -12,7 +12,6 @@
         rgba(228, 228, 228, 0.62)), */
     /* background:
         url('/assets/header/about hero.png'); */
-
     background: url('/assets/header/1.jpg');
     background-size: cover;
     background-position: center;
@@ -21,14 +20,13 @@
 
 
 .heading-area h1 {
-    font-size: 64px;
+    font-size: 46px;
     font-weight: 800;
-    line-height: 72px;
-
+    line-height: 49px;
     /* color: white; */
     color: #161E2A;
     letter-spacing: -0.02em;
-    max-width: 780px;
+    max-width: 580px;
 }
 
 .heading-area h1 span {
@@ -48,7 +46,7 @@
     color: #161E2A;
     font-size: 16px;
     line-height: 26px;
-    max-width: 780px;
+    max-width: 580px;
     /* padding: 0% 25% 0% 0%; */
 }
 
@@ -305,7 +303,7 @@
 .bg-image {
     display: inline-block;
     vertical-align: middle;
-    padding-top: 7%;
+    /* padding-top: 7%; */
     /* padding-bottom: 7%; */
 }
 
@@ -927,7 +925,7 @@
     display: block;
 }
 
-@media(max-width:439px) {
+@media(max-width:440px) {
 
     .main-circle {
         border-radius: 0% !important;
@@ -1019,7 +1017,6 @@
         font-weight: 600;
     }
 
-
 }
 
 .modal-title {
@@ -1035,9 +1032,14 @@
 }
 
 .visionsection {
-    border-left: 2px solid #F16F24;
+    /* border-left: 2px solid #F16F24; */
     padding-left: 25px;
-    font-size: 18px
+    font-size: 16px;
+}
+
+.visioncard {
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .vision {
@@ -1160,8 +1162,6 @@ div.highway-barrier {
         transform: translateX(calc(-180px * 8));
     }
 }
-
-
 
 
 
@@ -1429,106 +1429,85 @@ div.highway-barrier {
     }
 }
 
-.employeename{
+.employeename {
     color: #000;
-    font-size: 28px;
+    font-size: 18px;
+    /* font-size: 28px; */
     font-weight: 600;
 }
 
+/* .award-card{
+    border: 1px solid #000;
+} */
 
-.award-card{
-    /* border: 1px solid #000; */
-}
-
-.images{
+.images {
     width: 50%;
 }
 
-
-.panorama-swiper {
-  width: 100%;
-  height: 600px;
-  padding: 70px 0;
-  overflow: hidden;
+.visionmisionimage{
+    width: 100%;
 }
 
-.panorama-swiper swiper-slide {
-  width: 340px;
-  height: 460px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  transition:
-    transform 0.8s ease,
-    opacity 0.8s ease;
+/* .visionmisionimage {
 }
 
-.panorama-card {
-  width: 100%;
-  height: 100%;
+.missionimage {
+ 
+} */
 
-  border-radius: 20px;
-  overflow: hidden;
+.visionmisionimage:hover {
+    transform: rotateY(10deg) !important;
+    transform: perspective(100px) rotateY(160deg);
+    transition: .9s;
 
-  background: #ffffff;
-
-  box-shadow:
-    0 25px 60px rgba(0, 0, 0, 0.20);
-
-  transition:
-    transform 0.8s ease,
-    box-shadow 0.8s ease;
+    cursor: pointer;
 }
 
-.panorama-card img {
-  width: 100%;
-  height: 100%;
 
-  display: block;
 
-  object-fit: cover;
 
-  user-select: none;
-  -webkit-user-drag: none;
+
+swiper-container {
+    width: 100%;
+    height: 100%;
 }
 
-/* Center slide */
-.panorama-swiper swiper-slide.swiper-slide-active {
-  z-index: 10;
+swiper-slide {
+    text-align: center;
+    font-size: 15px;
+    /* background: #444; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.panorama-swiper swiper-slide.swiper-slide-active .panorama-card {
-  box-shadow:
-    0 35px 80px rgba(0, 0, 0, 0.30);
+swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-/* Tablet */
-@media (max-width: 992px) {
-
-  .panorama-swiper {
-    height: 500px;
-  }
-
-  .panorama-swiper swiper-slide {
-    width: 280px;
-    height: 390px;
-  }
-
+swiper-container {
+    width: 100%;
+    /* height: 300px; */
+    margin: 20px auto;
 }
 
-/* Mobile */
-@media (max-width: 576px) {
+.append-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
 
-  .panorama-swiper {
-    height: 430px;
-    padding: 40px 0;
-  }
-
-  .panorama-swiper swiper-slide {
-    width: 230px;
-    height: 330px;
-  }
-
+.append-buttons button {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #007aff;
+    color: #000;
+    /* color: #007aff; */
+    text-decoration: none;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+    font-size: 13px;
 }

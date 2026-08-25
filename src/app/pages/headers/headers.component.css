@@ -116,7 +116,8 @@
 
 /* Working code */
 
-.siddhivinayak-loader {
+
+/* .siddhivinayak-loader {
   position: fixed;
   top: 0;
   left: 0;
@@ -131,51 +132,14 @@
   overflow: hidden;
   transition:
     transform 1.1s cubic-bezier(.77, 0, .175, 1);
-}
-.siddhivinayak-loader.loader-hide {
-  transform: translateY(-100%);
-  pointer-events: none;
-}
+} */
 
-.logo-assembly {
-   position: relative;
-
-  width: 260px;
-  height: 260px;
-
-  transform: scale(.85);
-
-  transition:
-    transform .6s cubic-bezier(.16, 1, .3, 1);
-}
-  /* position: relative;
+/* position: relative;
   width: 220px;
   height: 220px;
   transform: scale(.85);
   transition:    transform .6s cubic-bezier(.16, 1, .3, 1);
 } */
-
-.logo-piece {
-  position: absolute;
-
-  width: 105px;
-  height: auto;
-
-  object-fit: contain;
-
-  opacity: 1;
-
-  transition:
-    top 1.2s cubic-bezier(.16, 1, .3, 1),
-    left 1.2s cubic-bezier(.16, 1, .3, 1),
-    transform 1.2s cubic-bezier(.16, 1, .3, 1),
-    opacity .5s ease;
-
-  will-change:
-    top,
-    left,
-    transform;
-}
 
 /* .logo-piece {
   position: absolute;
@@ -187,23 +151,86 @@
     left 1.15s cubic-bezier(.16, 1, .3, 1),
     transform 1.15s cubic-bezier(.16, 1, .3, 1),
     opacity .5s ease;
-
 } */
 
-.piece-1 {
-  top: -180px;
-  left: -150px;
+/* .company-name {
+  color: white;
+  font-family: 'FontCustom';
+  font-size: 75px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transform:translateX(30px)scale(.95);
+  transition:opacity .7s ease, transform .7s cubic-bezier(.16, 1, .3, 1);
+
+}
+.company-name span {
+  font-size: 25px;
+}
+.company-name.show-name {
+  opacity: 1;
   transform:
-    rotate(-70deg)
-    scale(.8);
+    translateX(0) scale(1);
+} */
+
+
+.siddhivinayak-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #F16F24;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition:transform 1.1s cubic-bezier(.77, 0, .175, 1);
+}
+
+.siddhivinayak-loader.loader-hide {
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.logo-assembly {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  transform: scale(.85);
+  transition:
+    transform .6s cubic-bezier(.16, 1, .3, 1);
+}
+
+.logo-piece {
+  position: absolute;
+  width: 105px;
+  height: auto;
+  object-fit: contain;
+  opacity: 1;
+  transition:
+    top 1.2s cubic-bezier(.16, 1, .3, 1),
+    left 1.2s cubic-bezier(.16, 1, .3, 1),
+    transform 1.2s cubic-bezier(.16, 1, .3, 1),
+    opacity .5s ease;
+  will-change:
+    top,
+    left,
+    transform;
+}
+
+.piece-1 {
+  top: -200px;
+  left: -150px;
+  transform: rotate(-70deg) scale(.8);
 }
 
 .piece-2 {
   top: -160px;
   left: 280px;
-  transform:
-    rotate(75deg)
-    scale(.75);
+  transform: rotate(75deg) scale(.75);
 
 }
 
@@ -211,40 +238,38 @@
   top: 280px;
   left: -180px;
   transform:
-    rotate(-80deg)
-    scale(.75);
+    rotate(-80deg) scale(.75);
 }
 
 .piece-4 {
   top: 300px;
   left: 280px;
-  transform:    rotate(80deg)    scale(.75);
+  transform: rotate(80deg) scale(.75);
 }
 
 .logo-assembly.assemble .piece-1 {
-  top: 55px;
-  left: 65px;
-  transform:    rotate(0deg)    scale(1);
+  top: 65px;
+  left: 27px;
+  transform: rotate(0deg) scale(1);
 }
 
 .logo-assembly.assemble .piece-2 {
-  top: 55px;
-  left: 115px;
-  transform:    rotate(0deg)    scale(1);
+  top: 30px;
+  left: 79px;
+  transform: rotate(0deg) scale(1);
 }
 
 .logo-assembly.assemble .piece-3 {
-  top: 105px;
+  top: 115px;
   left: 65px;
   transform: rotate(0deg) scale(1);
 }
 
 .logo-assembly.assemble .piece-4 {
-  top: 105px;
+  top: 76px;
   left: 115px;
   transform:
-    rotate(0deg)
-    scale(1);
+    rotate(0deg) scale(1);
 }
 
 .logo-assembly.complete {
@@ -256,39 +281,57 @@
   0% {
     transform: scale(.85);
   }
+
   45% {
     transform: scale(1.08);
   }
+
   70% {
     transform: scale(.96);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
+@font-face {
+  font-family: 'FontCustom';
+  src: url('/assets/font/Avenir Medium.ttf');
+}
+
+* {
+  font-family: 'FontCustom';
+}
+
 .company-name {
-  margin-top: 5px;
   color: white;
-  font-family:
-    Arial,
-    Helvetica,
-    sans-serif;
-  font-size: 27px;
-  font-weight: 500;
-  letter-spacing: 8px;
+  font-family: 'FontCustom';
+  font-size: 75px;
+  font-weight: 700;
+  letter-spacing: 6px;
+  white-space: nowrap;
+  line-height: 0.88;
   opacity: 0;
-  transform:
-    translateY(25px)
-    scale(.95);
+  transform: translateX(30px) scale(.95);
   transition:
     opacity .7s ease,
     transform .7s cubic-bezier(.16, 1, .3, 1);
 }
 
+.company-name span {
+  display: block;
+  margin-top: 7px;
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
 .company-name.show-name {
   opacity: 1;
   transform:
-    translateY(0)
+    translateX(0)
     scale(1);
 }
 
@@ -302,5 +345,59 @@
 
 .website.website-visible {
   opacity: 1;
-  transform: translateY(0);
-} 
+  transform: translateX(0);
+}
+
+.logo-brand-wrapper {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 28px;
+
+  transform: translateX(0);
+
+}
+
+.logo-brand-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+@media(max-width:440px) {
+  .company-name {
+  color: white;
+  font-family: 'FontCustom';
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  line-height: 0.88;
+  opacity: 0;
+  transform: translateX(10px) scale(.95);
+  transition:
+    opacity .7s ease,
+    transform .7s cubic-bezier(.16, 1, .3, 1);
+}
+
+.company-name span {
+  display: block;
+  margin-top: 7px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+.company-name.show-name {
+  opacity: 1;
+  transform:
+    translateX(0)
+    scale(1);
+}
+}
