@@ -1,193 +1,18 @@
-/* 
-.intro-screen {
-
-  position: fixed;
-
-  top: 0;
-  left: 0;
-
-  width: 100%;
-  height: 100vh;
-
-  background: #F16F24;
-
-  z-index: 99999;
-
-  overflow: hidden;
-
-  transform: translateY(0);
-
-  transition:
-    transform 1.2s cubic-bezier(.77, 0, .175, 1);
-
-}
-
-
-
-.intro-screen.intro-finished {
-
-  transform: translateY(-100%);
-
-  pointer-events: none;
-
-}
-.intro-center {
-
-  position: absolute;
-
-  top: 50%;
-  left: 50%;
-
-  width: 200px;
-  height: 200px;
-
-  transform:
-    translate(-50%, -50%);
-
-  transition:
-    transform 0.6s ease,
-    opacity 0.6s ease;
-
-}
-
-.solar-logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: auto;
-  transform:
-    translate(-50%, -50%)
-    rotate(0deg);
-  opacity: 1;
-  transition:
-    transform 0.8s cubic-bezier(.77, 0, .175, 1),
-    left 1.2s cubic-bezier(.77, 0, .175, 1);
-}
-
-.solar-logo.logo-rotate {
-
-  transform:
-    translate(-50%, -50%)
-    rotate(360deg);
-
-}
-
-
-.solar-logo.logo-move-right {
-
-  left: 90%;
-
-  transform:
-    translate(-50%, -50%)
-    rotate(360deg);
-
-}
-
-.intro-center.logo-zoom-out {
-
-  transform:
-    translate(-50%, -50%)
-    scale(0);
-
-  opacity: 0;
-
-  transition:
-    transform 0.6s ease,
-    opacity 0.5s ease;
-
-}
-
-.website {
-
-  opacity: 0;
-
-  transition:
-    opacity 0.8s ease;
-
-}
-
-
-.website.website-visible {
-
-  opacity: 1;
-
-} */
-
-/* Working code */
-
-
-/* .siddhivinayak-loader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #F16F24;
-  z-index: 99999;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  transition:
-    transform 1.1s cubic-bezier(.77, 0, .175, 1);
-} */
-
-/* position: relative;
-  width: 220px;
-  height: 220px;
-  transform: scale(.85);
-  transition:    transform .6s cubic-bezier(.16, 1, .3, 1);
-} */
-
-/* .logo-piece {
-  position: absolute;
-  width: 90px;
-  height: 90px;
-  object-fit: contain;
-  opacity: 1;
-  transition:    top 1.15s cubic-bezier(.16, 1, .3, 1),
-    left 1.15s cubic-bezier(.16, 1, .3, 1),
-    transform 1.15s cubic-bezier(.16, 1, .3, 1),
-    opacity .5s ease;
-} */
-
-/* .company-name {
-  color: white;
-  font-family: 'FontCustom';
-  font-size: 75px;
-  font-weight: 700;
-  letter-spacing: 6px;
-  white-space: nowrap;
-  opacity: 0;
-  transform:translateX(30px)scale(.95);
-  transition:opacity .7s ease, transform .7s cubic-bezier(.16, 1, .3, 1);
-
-}
-.company-name span {
-  font-size: 25px;
-}
-.company-name.show-name {
-  opacity: 1;
-  transform:
-    translateX(0) scale(1);
-} */
-
-
 .siddhivinayak-loader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #F16F24;
+  background: #D85F18;
+  /* background: #f0732a; */
+  /* background: #F16F24; */
   z-index: 99999;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  transition:transform 1.1s cubic-bezier(.77, 0, .175, 1);
+  transition: transform 1.1s cubic-bezier(.77, 0, .175, 1);
 }
 
 .siddhivinayak-loader.loader-hide {
@@ -200,8 +25,7 @@
   width: 260px;
   height: 260px;
   transform: scale(.85);
-  transition:
-    transform .6s cubic-bezier(.16, 1, .3, 1);
+  transition: transform .6s cubic-bezier(.16, 1, .3, 1);
 }
 
 .logo-piece {
@@ -215,10 +39,7 @@
     left 1.2s cubic-bezier(.16, 1, .3, 1),
     transform 1.2s cubic-bezier(.16, 1, .3, 1),
     opacity .5s ease;
-  will-change:
-    top,
-    left,
-    transform;
+  will-change: top, left, transform;
 }
 
 .piece-1 {
@@ -231,14 +52,12 @@
   top: -160px;
   left: 280px;
   transform: rotate(75deg) scale(.75);
-
 }
 
 .piece-3 {
   top: 280px;
   left: -180px;
-  transform:
-    rotate(-80deg) scale(.75);
+  transform: rotate(-80deg) scale(.75);
 }
 
 .piece-4 {
@@ -268,13 +87,11 @@
 .logo-assembly.assemble .piece-4 {
   top: 76px;
   left: 115px;
-  transform:
-    rotate(0deg) scale(1);
+  transform: rotate(0deg) scale(1);
 }
 
 .logo-assembly.complete {
-  animation:
-    logoComplete .65s cubic-bezier(.16, 1, .3, 1);
+  animation: logoComplete .65s cubic-bezier(.16, 1, .3, 1);
 }
 
 @keyframes logoComplete {
@@ -331,8 +148,7 @@
 .company-name.show-name {
   opacity: 1;
   transform:
-    translateX(0)
-    scale(1);
+    translateX(0) scale(1);
 }
 
 .website {
@@ -349,17 +165,11 @@
 }
 
 .logo-brand-wrapper {
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 28px;
-
   transform: translateX(0);
-
 }
 
 .logo-brand-wrapper {
@@ -368,36 +178,124 @@
   gap: 20px;
 }
 
+.laptopview {
+  display: block;
+}
+
+.mobileview {
+  display: none;
+}
 
 @media(max-width:440px) {
+
+  .mobileview {
+    display: block;
+  }
+
+  .laptopview {
+    display: none;
+  }
+
   .company-name {
-  color: white;
-  font-family: 'FontCustom';
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  white-space: nowrap;
-  line-height: 0.88;
-  opacity: 0;
-  transform: translateX(10px) scale(.95);
-  transition:
-    opacity .7s ease,
-    transform .7s cubic-bezier(.16, 1, .3, 1);
-}
+    color: white;
+    font-family: 'FontCustom';
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    line-height: 0.88;
+    opacity: 0;
+    /* transform: translateX(10px) scale(.95); */
+    margin-left: -25%;
+    margin-top: -17%;
+    transition:
+      opacity .7s ease,
+      transform .7s cubic-bezier(.16, 1, .3, 1);
+  }
 
-.company-name span {
-  display: block;
-  margin-top: 7px;
-  font-size: 10px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  line-height: 1;
-}
+  .company-name span {
+    display: block;
+    /* margin-top: 7px; */
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1;
+  }
 
-.company-name.show-name {
-  opacity: 1;
-  transform:
-    translateX(0)
-    scale(1);
-}
+  .company-name.show-name {
+    opacity: 1;
+    transform:
+      translateX(0) scale(1);
+  }
+
+  .logo-assembly {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    transform: scale(.85);
+    transition: transform .6s cubic-bezier(.16, 1, .3, 1);
+  }
+
+  .logo-piece {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    opacity: 1;
+    transition:
+      top 1.2s cubic-bezier(.16, 1, .3, 1),
+      left 1.2s cubic-bezier(.16, 1, .3, 1),
+      transform 1.2s cubic-bezier(.16, 1, .3, 1),
+      opacity .5s ease;
+    will-change: top, left, transform;
+  }
+
+  .piece-1 {
+    top: -200px;
+    left: -150px;
+    transform: rotate(-70deg) scale(.8);
+  }
+
+  .piece-2 {
+    top: -160px;
+    left: 280px;
+    transform: rotate(75deg) scale(.75);
+  }
+
+  .piece-3 {
+    top: 280px;
+    left: -180px;
+    transform: rotate(-80deg) scale(.75);
+  }
+
+  .piece-4 {
+    top: 300px;
+    left: 280px;
+    transform: rotate(80deg) scale(.75);
+  }
+
+  .logo-assembly.assemble .piece-1 {
+    top: 47px;
+    left: 55px;
+    transform: rotate(0deg) scale(1);
+  }
+
+  .logo-assembly.assemble .piece-2 {
+    top: 30px;
+    left: 79px;
+    transform: rotate(0deg) scale(1);
+  }
+
+  .logo-assembly.assemble .piece-3 {
+    top: 72px;
+    left: 70px;
+    transform: rotate(0deg) scale(1);
+  }
+
+  .logo-assembly.assemble .piece-4 {
+    top: 54px;
+    left: 97px;
+    transform: rotate(0deg) scale(1);
+  }
+
 }

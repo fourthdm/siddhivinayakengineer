@@ -80,7 +80,7 @@ export class HomeComponent implements AfterViewInit {
 
               this.startCounter(18, 'count1', 100);
               this.startCounter(150, 'count2', 100);
-              this.startCounter(500, 'count3', 80);
+              this.startCounter(500, 'count3', 5);
               this.startCounter(500, 'count4', 80);
 
               observer.unobserve(entry.target);

@@ -275,8 +275,62 @@
     </div>
 </div> -->
 
+<div class="hero-video-section">
 
-<div class="bg-image">
+    <video #heroVideo class="hero-video" src="/assets/header/video.mp4" autoplay muted loop playsinline>
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="mechanical-text-wrapper">
+
+            <div class="mechanical-text" [class.leaving]="textAnimating" [attr.data-text]="heroTexts[currentTextIndex]">
+                {{ heroTexts[currentTextIndex] }}
+
+                <span class="scan-line"></span>
+            </div>
+
+        </div>
+
+        <!-- <div class="hero-counter">
+            <span>0{{ currentTextIndex + 1 }}</span>
+            <div class="counter-line">
+                <div class="counter-progress" [style.width.%]="((currentTextIndex + 1) / heroTexts.length) * 100">
+                </div>
+            </div>
+            <span>0{{ heroTexts.length }}</span>
+        </div> -->
+
+    </div>
+
+</div>
+
+<!-- <div class="hero-video-section">
+    <video #heroVideo class="hero-video" src="/assets/header/video.mp4" autoplay muted loop playsinline preload="auto">
+    </video>
+
+    <div class="video-overlay"></div>
+    <div class="hero-content">
+
+        <div class="text-wrapper">
+
+            <div class="hero-text" [class.animate-out]="textAnimating" [class.animate-in]="!textAnimating"
+                [attr.key]="currentTextIndex">
+                {{ heroTexts[currentTextIndex] }}
+            </div>
+
+        </div>
+        <div class="hero-indicator">
+            <span *ngFor="let text of heroTexts; let i = index" [class.active]="i === currentTextIndex">
+            </span>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <div class="bg-image">
     <video src="/assets/header/video.mp4" autoplay loop width="100%"></video>
 
     <div class="mask" style="background-color: rgba(10, 10, 10, 0.35) ">
@@ -305,17 +359,18 @@
                         <p class="paratext">Precision Air Conditioning</p>
                     </div>
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button> -->

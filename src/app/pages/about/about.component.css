@@ -926,6 +926,9 @@
 }
 
 @media(max-width:440px) {
+    .h1 {
+        font-size: 20px !important;
+    }
 
     .main-circle {
         border-radius: 0% !important;
@@ -1444,7 +1447,7 @@ div.highway-barrier {
     width: 50%;
 }
 
-.visionmisionimage{
+.visionmisionimage {
     width: 100%;
 }
 
