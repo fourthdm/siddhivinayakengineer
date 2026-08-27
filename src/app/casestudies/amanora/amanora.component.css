@@ -1104,7 +1104,8 @@
 }
 
 .aboutbackground {
-    background: url('/assets/header/4.jpg');
+    background: url('/assets/project/Amonora/project-amanora.jpg');
+    /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
     padding: 10% 7% 2% 7%;

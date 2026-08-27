@@ -31,18 +31,14 @@ export class HomeComponent implements AfterViewInit {
 
   // @ViewChild('counterSection') counterSection!: ElementRef;
 
-
-
   scrolltop = document.getElementById('scrolltop');
   rootelement = document.documentElement;
-
   scroll() {
     this.rootelement.scrollTo({
       top: 0,
       behavior: 'smooth'
     })
   }
-
   scrollToSection(sectionId: string) {
 
     const element = document.getElementById(sectionId);
@@ -66,27 +62,18 @@ export class HomeComponent implements AfterViewInit {
   hasStarted = false;
 
   ngAfterViewInit(): void {
-
     setTimeout(() => {
-
       const observer = new IntersectionObserver(
         (entries) => {
-
           entries.forEach(entry => {
-
             if (entry.isIntersecting && !this.hasStarted) {
-
               this.hasStarted = true;
-
               this.startCounter(18, 'count1', 100);
-              this.startCounter(150, 'count2', 100);
-              this.startCounter(500, 'count3', 5);
+              this.startCounter(150, 'count2', 30);
+              this.startCounter(500, 'count3', 10);
               this.startCounter(500, 'count4', 80);
-
               observer.unobserve(entry.target);
-
             }
-
           });
 
         },
@@ -127,7 +114,6 @@ export class HomeComponent implements AfterViewInit {
       }
 
     }, speed);
-
   }
 
   // @ViewChild('counterSection', { static: false }) counterSection!: ElementRef;

@@ -7,12 +7,12 @@
     font-family: 'FontCustom';
 }
 
-
 .aboutbackground {
-    background: url('/assets/header/4.jpg');
+    background: url('/assets/Solutions/solutionheader/Comfort Air Conditioning.png');
+    /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 10% 7% 2% 7%;
+    padding: 10% 7% 12% 7%;
 }
 
 .title {

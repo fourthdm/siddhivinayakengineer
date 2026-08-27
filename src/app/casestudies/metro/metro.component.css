@@ -1104,10 +1104,11 @@
 }
 
 .aboutbackground {
-    background: url('/assets/header/4.jpg');
+    background: url('/assets/project/Metro/project-metro.jpg');
+    /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 10% 7% 2% 7%;
+    padding: 20% 7% 2% 20%;
 }
 
 .title{
@@ -1115,5 +1116,7 @@
     font-weight: 600;
     line-height: 52px;
     color: #f16f24;
+    /* background-color: rgba(255, 255, 255, 0.76); */
+    padding: 1%;
     text-align: center;
 }

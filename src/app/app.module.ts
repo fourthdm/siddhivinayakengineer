@@ -38,6 +38,7 @@ import { SitemapComponent } from './pages/sitemap/sitemap.component';
 import { HeadersComponent } from './pages/headers/headers.component';
 import { AnimationComponent } from './pages/animation/animation.component';
 import { NewanimationComponent } from './pages/newanimation/newanimation.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -71,7 +72,8 @@ import { NewanimationComponent } from './pages/newanimation/newanimation.compone
     SitemapComponent,
     HeadersComponent,
     AnimationComponent,
-    NewanimationComponent
+    NewanimationComponent,
+    AboutusComponent
   ],
   imports: [
     BrowserModule,

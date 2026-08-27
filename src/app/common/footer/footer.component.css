@@ -77,6 +77,12 @@ i {
 } */
 .footers {
     font-size: 14px;
+    /* display: flex; */
+}
+
+.powered{
+    margin-top: -2%;
+    float: right;
 }
 
 .icons {
