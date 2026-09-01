@@ -24,6 +24,7 @@ import { MetroComponent } from './casestudies/metro/metro.component';
 import { AmanoraComponent } from './casestudies/amanora/amanora.component';
 import { SitemapComponent } from './pages/sitemap/sitemap.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { EmersonComponent } from './casestudies/emerson/emerson.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Home', pathMatch: 'full' },
@@ -52,6 +53,8 @@ const routes: Routes = [
 
   { path: 'MetroStationCasestudy', component: MetroComponent },
   { path: 'AmaoraCaseStudy', component: AmanoraComponent },
+  { path: 'EmersonCaseStudy', component: EmersonComponent },
+
   { path: 'Sitemap', component:SitemapComponent},
   { path: '**', redirectTo: '' }
 ];

@@ -6,7 +6,10 @@
 * {
     font-family: 'FontCustom';
 }
-
+.heading-area .title{
+    background-color: #4b55639f;
+    padding: 5px;
+}
 /* slider.component.css */
 
 #heroSlider {
@@ -1112,9 +1115,9 @@
 }
 
 .title{
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 52px;
+    /* line-height: 37px; */
     color: #f16f24;
     text-align: center;
 }
