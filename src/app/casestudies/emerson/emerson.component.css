@@ -1110,13 +1110,26 @@
     /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 30% 7% 2% 30%;
+    padding: 30% 7% 2% 7%;
 }
 
 .title{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     /* line-height: 37px; */
-    color: #f16f24;
+    color: #FFF;
     text-align: center;
+}
+
+@media(min-width: 319px) and (max-width: 767px) {
+    .aboutbackground {
+        background-size: cover;
+        background-position: center;
+        padding: 30% 7% 4% 7%;
+    }
+
+    .title {
+        font-size: 12px;
+        font-weight: 600;
+    }
 }

@@ -7,7 +7,7 @@
     font-family: 'FontCustom';
 }
 
-.heading-area .title{
+.heading-area .title {
     background-color: #4b55639f;
     padding: 5px;
 }
@@ -217,7 +217,7 @@
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000;
-   text-align: center;
+    text-align: center;
 }
 
 .heading-area h1 span {
@@ -688,7 +688,7 @@
     line-height: 48px;
     letter-spacing: -0.02em;
     color: #000;
-   
+
 }
 
 .insideheading .descindustries {
@@ -1113,7 +1113,7 @@
     /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 20% 7% 2% 20%;
+    padding: 20% 7% 2% 7%;
 }
 
 /* .title{
@@ -1125,10 +1125,23 @@
     text-align: center;
 } */
 
-.title{
-    font-size: 35px;
+.title {
+    font-size: 30px;
     font-weight: 600;
     /* line-height: 37px; */
-    color: #f16f24;
+    color: #FFF;
     text-align: center;
+}
+
+@media(min-width: 319px) and (max-width: 767px) {
+    .aboutbackground {
+        background-size: cover;
+        background-position: center;
+        padding: 30% 7% 4% 7%;
+    }
+
+    .title {
+        font-size: 12px;
+        font-weight: 600;
+    }
 }
