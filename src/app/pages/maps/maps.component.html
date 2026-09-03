@@ -50,6 +50,7 @@
                 <img src="assets/map.png" class="world-map" alt="World Map" />
                 <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
                     [style.top.%]="location.y">
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: rgb(241, 111, 36);"> </i>
                     <span class="tooltip">
                         {{ location.name }}
                     </span>

@@ -8,11 +8,12 @@
 }
 
 .aboutbackground {
+    /* background: url('/assets/Solutions/solutionheader/Air Cooled & Water-Cooled Chiller Plants.png'); */
     background: url('/assets/Solutions/solutionheader/Air Cooled & Water-Cooled Chiller Plants.png');
     /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 10% 7% 2% 7%;
+    padding:30% 7% 2% 7%;
 }
 
 .title {
@@ -154,4 +155,11 @@
         padding: 25% 7% 2% 7%;
     }
 
+}
+
+.carousel-control-next-icon{
+    color: #f75d04;
+}
+.carousel-control-prev-icon{
+    color: #f75d04;
 }

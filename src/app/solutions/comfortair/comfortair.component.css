@@ -12,7 +12,7 @@
     /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 10% 7% 12% 7%;
+    padding: 30% 7% 2% 7%;
 }
 
 .title {
@@ -148,4 +148,12 @@
         background-position: center;
         padding: 25% 7% 2% 7%;
     }
+}
+
+.carousel-control-next-icon {
+    color: #f75d04;
+}
+
+.carousel-control-prev-icon {
+    color: #f75d04;
 }

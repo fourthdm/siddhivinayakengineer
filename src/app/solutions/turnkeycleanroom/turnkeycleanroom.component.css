@@ -9,11 +9,11 @@
 
 
 .aboutbackground {
-     background: url('/assets/Solutions/solutionheader/Turnkey Clean Room Solution.png');
+    background: url('/assets/Solutions/solutionheader/Turnkey Clean Room Solution.png');
     /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding: 10% 7% 2% 7%;
+    padding: 30% 7% 2% 7%;
 }
 
 .title {
@@ -36,9 +36,10 @@
     /* color: #f16f24; */
 }
 
-.titles span{
+.titles span {
     color: #F16F24;
 }
+
 .content {
     padding: 5%;
 }
@@ -58,6 +59,7 @@
     line-height: 52px;
     color: #F16F24;
 }
+
 .headline span {
     color: #000;
 }
@@ -93,12 +95,13 @@
     background-color: #F8FAFC;
     padding: 3%;
 }
+
 .approachcard:hover {
     border-radius: 0%;
     transform: scale(1.05);
     box-shadow: rgba(241, 111, 36, 0.4) 0px 2px 4px, rgba(241, 111, 36, 0.3) 0px 7px 13px -3px, rgba(241, 111, 36, 0.2) 0px -3px 0px inset;
 
-   .approachtext {
+    .approachtext {
         color: #F16F24;
     }
 }
@@ -118,7 +121,7 @@
 }
 
 @media(min-width: 319px) and (max-width: 767px) {
-.headline {
+    .headline {
         font-size: 28px;
         font-weight: 700;
         line-height: 36px;
@@ -131,6 +134,7 @@
         line-height: 36px;
         color: #f16f24;
     }
+
     .title {
         background-color: #f16f24cc;
         color: white;
@@ -145,4 +149,13 @@
         background-position: center;
         padding: 25% 7% 2% 7%;
     }
+}
+
+
+.carousel-control-next-icon {
+    color: #f75d04;
+}
+
+.carousel-control-prev-icon {
+    color: #f75d04;
 }
