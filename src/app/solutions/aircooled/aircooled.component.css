@@ -60,7 +60,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
- padding: 30% 7% 2% 7%;
+    padding: 30% 7% 2% 7%;
 }
 
 @media (max-width: 991px) {
@@ -227,11 +227,11 @@ img {
     width: 20%;
 }
 
-.bi-shield-check{
+.bi-shield-check {
     color: #F16F24;
 }
 
-.industry{
+.industry {
     padding: 3%;
     font-size: large;
     color: #000;
