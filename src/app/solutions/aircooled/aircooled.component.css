@@ -7,13 +7,168 @@
     font-family: 'FontCustom';
 }
 
+.hero-video-section {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* min-height: 600px; */
+    overflow: hidden;
+    /* background: #111; */
+}
+
+/* =====================================================
+   VIDEO
+===================================================== */
+
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+/* =====================================================
+   VIDEO OVERLAY
+===================================================== */
+
+.video-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    background:
+        linear-gradient(90deg,
+            rgba(241, 111, 36, 0.1),
+            rgba(241, 111, 36, 0.1),
+            rgba(241, 111, 36, 0));
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    /* height: 100%; */
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ padding: 30% 7% 2% 7%;
+}
+
+@media (max-width: 991px) {
+
+    /* .hero-video-section {
+        min-height: 550px;
+    } */
+    .mechanical-text-wrapper {
+        width: 92%;
+    }
+
+    .mechanical-text {
+        font-size:
+            clamp(38px,
+                6vw,
+                62px);
+    }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+    /* 
+    .hero-video-section {
+        height: 75vh;
+        min-height: 500px;
+    } */
+
+    .video-overlay {
+        background: rgba(0, 0, 0, 0.418);
+    }
+
+    .mechanical-text-wrapper {
+        width: 94%;
+        padding: 10px 0 25px;
+    }
+
+    .mechanical-text {
+        font-size:
+            clamp(30px,
+                8.5vw,
+                46px);
+        line-height: 1.15;
+        letter-spacing: -.7px;
+    }
+
+    .scan-line {
+        width: 2px;
+    }
+
+    .hero-counter {
+        bottom: 28px;
+        gap: 9px;
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .counter-line {
+        width: 75px;
+    }
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 480px) {
+
+    /* .hero-video-section {
+        height: 70vh;
+        min-height: 450px;
+    } */
+
+    .mechanical-text {
+        font-size: 29px;
+    }
+
+    .counter-line {
+        width: 60px;
+    }
+}
+
+
+/* =====================================================
+   LARGE SCREEN
+===================================================== */
+
+@media (min-width: 1600px) {
+    .mechanical-text {
+        font-size: 86px;
+    }
+
+    .mechanical-text-wrapper {
+        max-width: 1400px;
+    }
+}
+
+
 .aboutbackground {
     /* background: url('/assets/Solutions/solutionheader/Air Cooled & Water-Cooled Chiller Plants.png'); */
     background: url('/assets/Solutions/solutionheader/Air Cooled & Water-Cooled Chiller Plants.png');
     /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
-    padding:30% 7% 2% 7%;
+    padding: 30% 7% 2% 7%;
 }
 
 .title {
@@ -43,9 +198,9 @@
     padding: 5%;
 }
 
-/* img {
-    border-radius: 5%;
-} */
+img {
+    width: 100%;
+}
 
 .carousel-caption {
     background-color: #f16f24b0;
@@ -72,6 +227,15 @@
     width: 20%;
 }
 
+.bi-shield-check{
+    color: #F16F24;
+}
+
+.industry{
+    padding: 3%;
+    font-size: large;
+    color: #000;
+}
 
 .approachtext {
     font-size: 20px;
@@ -102,7 +266,7 @@
     transform: scale(1.05);
     box-shadow: rgba(241, 111, 36, 0.4) 0px 2px 4px, rgba(241, 111, 36, 0.3) 0px 7px 13px -3px, rgba(241, 111, 36, 0.2) 0px -3px 0px inset;
 
-   .approachtext {
+    .approachtext {
         color: #F16F24;
     }
 }
@@ -121,7 +285,7 @@
     }
 }
 
-.solutionimage{
+.solutionimage {
     width: 100%;
 }
 
@@ -148,18 +312,18 @@
         font-weight: 500;
     }
 
-    .aboutbackground {
-        /* background: url('/assets/Solutions/solutionheader/Air Cooled & Water-Cooled Chiller Plants.png'); */
+    /* .aboutbackground {
         background-size: cover;
         background-position: center;
         padding: 25% 7% 2% 7%;
-    }
+    } */
 
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     color: #f75d04;
 }
-.carousel-control-prev-icon{
+
+.carousel-control-prev-icon {
     color: #f75d04;
 }

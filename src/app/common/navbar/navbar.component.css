@@ -204,7 +204,7 @@
     display: none;
 }
 
-@media(max-width:439px) {
+@media(min-width: 319px) and (max-width: 767px)  {
     .navbardaikins {
         display: none;
     }
