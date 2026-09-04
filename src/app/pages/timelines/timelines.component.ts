@@ -2,6 +2,7 @@ import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Swiper from 'swiper';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -74,6 +75,13 @@ export class TimelinesComponent {
         'timeline-card ' + this.positions[index];
     });
   }
+
+  swiper = new Swiper('.swiper', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
   // activeIndex = 2;
 
