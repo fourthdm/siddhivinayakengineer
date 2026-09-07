@@ -275,7 +275,7 @@
     </div>
 </div> -->
 
-<div class="hero-video-section">
+<!-- <div class="hero-video-section">
 
     <video #heroVideo class="hero-video" src="/assets/header/video.mp4" autoplay muted loop playsinline>
     </video>
@@ -293,19 +293,26 @@
             </div>
 
         </div>
-
-        <!-- <div class="hero-counter">
-            <span>0{{ currentTextIndex + 1 }}</span>
-            <div class="counter-line">
-                <div class="counter-progress" [style.width.%]="((currentTextIndex + 1) / heroTexts.length) * 100">
-                </div>
-            </div>
-            <span>0{{ heroTexts.length }}</span>
-        </div> -->
-
     </div>
+</div> -->
 
-</div>
+<!-- <section class="hero-slider">
+    <div class="hero-slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide">
+        <div class="split-image">
+            <div class="image-piece piece-1" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+
+            <div class="image-piece piece-2" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+
+            <div class="image-piece piece-3" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+
+            <div class="image-piece piece-4" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+        </div>
+    </div>
+</section> -->
 
 <!-- <div class="hero-video-section">
     <video #heroVideo class="hero-video" src="/assets/header/video.mp4" autoplay muted loop playsinline preload="auto">
@@ -374,3 +381,48 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
 </button> -->
+
+
+<section class="hero-slider">
+
+    <!-- Current slide -->
+    <div class="hero-image" [style.background-image]="'url(' + slides[activeSlide].image + ')'"></div>
+
+    <!-- New slide transition -->
+    <div class="splitting" [ngClass]="slides[nextSlideIndex].animation" [class.animate]="isAnimating">
+        <div class="cell-grid">
+
+            <div class="cell" *ngFor="let cell of cells" [style.--col-index]="cell.col">
+                <div class="cell-inner" [style.background-image]="
+            'url(' + slides[nextSlideIndex].image + ')'
+          "></div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- <section class="hero-slider">
+    <div
+        class="hero-slide"
+        *ngFor="let slide of slides; let i = index"
+        [class.active]="i === currentSlide"
+        [class.prev]="i === previousSlide"  >
+
+        <div
+            class="slide-image"
+            [style.background-image]="'url(' + slide.image + ')'"
+        ></div>
+    </div>
+    <div class="slider-dots">
+
+        <button
+            *ngFor="let slide of slides; let i = index"
+            [class.active]="i === currentSlide"
+            (click)="goToSlide(i)">
+        </button>
+
+    </div>
+
+</section> -->

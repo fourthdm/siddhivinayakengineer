@@ -1,3 +1,130 @@
+
+<!-- <section class="hero-slider">
+
+  <div class="hero-image-wrapper">
+
+    <div
+      class="splitting"
+      [class.animate]="isAnimating"
+    >
+
+      <div
+        class="cell-grid"
+        [style.--row-total]="2"
+        [style.--col-total]="3"
+      >
+
+        <div
+          class="cell"
+          *ngFor="let cell of cells"
+          [style.--row-index]="cell.row"
+          [style.--col-index]="cell.col"
+        >
+
+          <div
+            class="cell-inner"
+            [style.background-image]="
+              'url(' + slides[activeSlide].image + ')'
+            "
+          ></div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="slide-indicators">
+    <button
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === activeSlide"
+      (click)="goToSlide(i)"
+    ></button>
+
+  </div>
+
+</section> -->
+
+<section class="hero-slider">
+
+  <div
+    class="splitting"
+    [class.animate]="isAnimating"
+    [style.--row-total]="1"
+    [style.--col-total]="5"
+  >
+
+    <div class="cell-grid">
+
+      <div
+        class="cell"
+        *ngFor="let cell of cells"
+        [style.--row-index]="cell.row"
+        [style.--col-index]="cell.col"
+      >
+
+        <div
+          class="cell-inner"
+          [style.background-image]="
+            'url(' + slides[activeSlide].image + ')'
+          "
+        ></div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- <div class="hero-content">
+
+    <h1>
+      Integrated
+      <span>HVAC & MEP</span>
+      Solutions
+    </h1>
+
+    <p>
+      Engineering solutions designed for performance,
+      reliability and operational excellence.
+    </p>
+
+  </div> -->
+
+</section>
+
+
+<!-- <div
+  class="splitting"
+  [style.--row-total]="1"
+  [style.--col-total]="5"
+>
+
+  <div class="cell-grid">
+
+    <div
+      class="cell"
+      *ngFor="let cell of cells"
+      [style.--row-index]="cell.row"
+      [style.--col-index]="cell.col"
+    >
+
+      <div
+        class="cell-inner"
+        [style.background-image]="
+          'url(' + slides[activeSlide].image + ')'
+        ">
+      </div>
+
+    </div>
+
+  </div>
+
+</div> -->
+
+
 <div class="main">
     <div class="container"><br>
         <div class="row">

@@ -44,7 +44,7 @@
 
 .piece-1 {
   top: -200px;
-  left: -150px;
+  left: -10px;
   transform: rotate(-70deg) scale(.8);
 }
 
@@ -67,26 +67,26 @@
 }
 
 .logo-assembly.assemble .piece-1 {
-  top: 65px;
-  left: 27px;
+  top: 63px;
+  left: 24px;
   transform: rotate(0deg) scale(1);
 }
 
 .logo-assembly.assemble .piece-2 {
-  top: 30px;
-  left: 79px;
+  top: 29.5px;
+  left: 77px;
   transform: rotate(0deg) scale(1);
 }
 
 .logo-assembly.assemble .piece-3 {
   top: 115px;
-  left: 65px;
+  left: 60px;
   transform: rotate(0deg) scale(1);
 }
 
 .logo-assembly.assemble .piece-4 {
-  top: 76px;
-  left: 115px;
+  top: 79px;
+  left: 112px;
   transform: rotate(0deg) scale(1);
 }
 
