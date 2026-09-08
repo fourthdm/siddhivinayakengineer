@@ -275,11 +275,72 @@
     </div>
 </div> -->
 
+<!-- <div class="hero-video-section">
 
-<div class="bg-image">
+    <video #heroVideo class="hero-video" src="/assets/header/video.mp4" autoplay muted loop playsinline>
+    </video>
+
+    <div class="video-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="mechanical-text-wrapper">
+
+            <div class="mechanical-text" [class.leaving]="textAnimating" [attr.data-text]="heroTexts[currentTextIndex]">
+                {{ heroTexts[currentTextIndex] }}
+
+                <span class="scan-line"></span>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+<!-- <section class="hero-slider">
+    <div class="hero-slide" *ngFor="let slide of slides; let i = index" [class.active]="i === currentSlide">
+        <div class="split-image">
+            <div class="image-piece piece-1" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+
+            <div class="image-piece piece-2" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+
+            <div class="image-piece piece-3" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+
+            <div class="image-piece piece-4" [style.background-image]="'url(' + slide.image + ')'">
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- <div class="hero-video-section">
+    <video #heroVideo class="hero-video" src="/assets/header/video.mp4" autoplay muted loop playsinline preload="auto">
+    </video>
+
+    <div class="video-overlay"></div>
+    <div class="hero-content">
+
+        <div class="text-wrapper">
+
+            <div class="hero-text" [class.animate-out]="textAnimating" [class.animate-in]="!textAnimating"
+                [attr.key]="currentTextIndex">
+                {{ heroTexts[currentTextIndex] }}
+            </div>
+
+        </div>
+        <div class="hero-indicator">
+            <span *ngFor="let text of heroTexts; let i = index" [class.active]="i === currentTextIndex">
+            </span>
+        </div>
+    </div>
+</div> -->
+
+
+<!-- <div class="bg-image">
     <video src="/assets/header/video.mp4" autoplay loop width="100%"></video>
 
-    <div class="mask" style="background-color: rgba(211, 213, 176, 0.281)">
+    <div class="mask" style="background-color: rgba(10, 10, 10, 0.35) ">
         <div class="d-flex justify-content-center align-items-center h-100">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -305,17 +366,63 @@
                         <p class="paratext">Precision Air Conditioning</p>
                     </div>
                 </div>
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
             </div>
         </div>
     </div>
-</div>
+</div> -->
+
+<!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+    data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+    data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+</button> -->
+
+
+<section class="hero-slider">
+
+    <!-- Current slide -->
+    <div class="hero-image" [style.background-image]="'url(' + slides[activeSlide].image + ')'"></div>
+
+    <!-- New slide transition -->
+    <div class="splitting" [ngClass]="slides[nextSlideIndex].animation" [class.animate]="isAnimating">
+        <div class="cell-grid">
+
+            <div class="cell" *ngFor="let cell of cells" [style.--col-index]="cell.col">
+                <div class="cell-inner" [style.background-image]="
+            'url(' + slides[nextSlideIndex].image + ')'
+          "></div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- <section class="hero-slider">
+    <div
+        class="hero-slide"
+        *ngFor="let slide of slides; let i = index"
+        [class.active]="i === currentSlide"
+        [class.prev]="i === previousSlide"  >
+
+        <div
+            class="slide-image"
+            [style.background-image]="'url(' + slide.image + ')'"
+        ></div>
+    </div>
+    <div class="slider-dots">
+
+        <button
+            *ngFor="let slide of slides; let i = index"
+            [class.active]="i === currentSlide"
+            (click)="goToSlide(i)">
+        </button>
+
+    </div>
+
+</section> -->
