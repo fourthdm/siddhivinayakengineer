@@ -1484,6 +1484,10 @@ div.highway-barrier {
         line-height: 36px;
     }
 
+    .laptop {
+        display: none;
+    }
+
     .laptopview {
         display: none;
     }

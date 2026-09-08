@@ -85,6 +85,21 @@ swiper-slide.swiper-slide-active .timeline-card {
     transform: scale(1);
 } */
 
+
+.timeline-wrapper h1 {
+    color: black;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+.timeline-wrapper h1 span {
+    color: #F16F24;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
 .timeline-wrapper {
     width: 100%;
     /* min-height: 100vh; */
