@@ -449,6 +449,39 @@ li {
         display: none;
     }
 
+    .whyheadlinetext {
+        font-size: 30px;
+        font-weight: 600;
+        color: #161E2A;
+    }
+
+    .trustcontent {
+        color: #161E2A;
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0%;
+    }
+
+    .Whycontent {
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0% 0% 0% 0%;
+    }
+
+    .industryheadline {
+        font-size: 30px;
+        line-height: 44px;
+        font-weight: 600;
+        color: #161E2A;
+    }
+
+    .descindustries {
+        /* color: 210 16% 96%; */
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0% !important;
+    }
+
     /* .counticons {
         border-radius: 50%;
         background-color: #F16F24;
@@ -2307,4 +2340,3 @@ h2 span {
             translateY(0) scale(1);
     }
 }
-

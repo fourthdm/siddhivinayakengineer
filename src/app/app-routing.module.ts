@@ -27,7 +27,7 @@ import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { EmersonComponent } from './casestudies/emerson/emerson.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/Home', pathMatch: 'full' },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'Home', component: HomeComponent, title: 'HVAC & MEP Contractor in Pune | Siddhivinayak Engineering Solutions ' },
   { path: 'About', component: AboutusComponent, title: 'About SVESPL - Punes trusted HVAC Contractor Since 2007' },
   { path: 'Services', component: ServicesComponent, title: 'HVAC & MEP Services - Installation,Design & Maintenance | SVESPL' },
@@ -55,7 +55,7 @@ const routes: Routes = [
   { path: 'AmaoraCaseStudy', component: AmanoraComponent },
   { path: 'EmersonCaseStudy', component: EmersonComponent },
 
-  { path: 'Sitemap', component:SitemapComponent},
+  { path: 'Sitemap', component: SitemapComponent },
   { path: '**', redirectTo: '' }
 ];
 
