@@ -85,13 +85,13 @@ export class MapsComponent {
 
 
   locations = [
-    { name: 'Gujarat', x: 19, y: 44 },
+    { name: 'Gujarat', x: 19, y: 42 },
     { name: 'Rajasthan', x: 25, y: 34 },
     // { name: 'Uttar Pradesh', x: 45, y: 35 },
     { name: 'Telangana', x: 38, y: 60 },
     { name: 'Maharastra', x: 30, y: 54 },
     // { name: 'Delhi', x: 35.5, y: 27.5 },
-    { name: 'Punjab', x: 31, y: 19 },
+    { name: 'Punjab', x: 31, y: 18 },
     // { name: 'Hariyana', x: 32, y: 25 },
     // { name: 'Jammu & Kashmir', x: 35, y: 8 },
     // { name: 'Himachal Pradesh', x: 35, y: 15 },
@@ -113,7 +113,7 @@ export class MapsComponent {
     { name: 'Karnataka', x: 30, y: 73 },
     // { name: 'Odisha', x: 55, y: 55 },
     // { name: 'Kerla', x: 31, y: 85 },
-    { name: 'Tamil Nadu', x: 37, y: 83 },
+    { name: 'Tamil Nadu', x: 37, y: 80 },
     // { name: 'Andhra Pradesh', x: 40, y: 70 },
     // { name: 'Sri Lanka', x: 42, y: 92 }
   ];

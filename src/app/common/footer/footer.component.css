@@ -86,7 +86,7 @@ i {
 }
 
 .icons {
-    float: right;
+    float: left;
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 15px;
