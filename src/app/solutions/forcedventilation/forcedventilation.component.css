@@ -13,7 +13,7 @@
     height: auto;
     /* min-height: 600px; */
     overflow: hidden;
-    background: #111;
+    /* background: #111; */
 }
 
 /* =====================================================
@@ -56,26 +56,31 @@
     z-index: 3;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: row; */
     justify-content: center;
     align-items: center;
-      padding: 30% 7% 2% 7%;
+    /* padding: 30px; */
+    padding: 30% 7% 2% 7%;
 }
 
 @media (max-width: 991px) {
     /* .hero-video-section {
         min-height: 550px;
     } */
+
     .mechanical-text-wrapper {
         width: 92%;
     }
+
     .mechanical-text {
         font-size:
             clamp(38px,
                 6vw,
-                62px); }
+                62px);
+    }
 }
+
 /* =====================================================
    MOBILE
 ===================================================== */
@@ -83,13 +88,13 @@
 @media (max-width: 767px) {
 
     /* .hero-video-section {
-        height: 75vh;
+        height: auto;
         min-height: 500px;
     } */
 
-    .video-overlay {
+    /* .video-overlay {
         background: rgba(0, 0, 0, 0.418);
-    }
+    } */
 
     .mechanical-text-wrapper {
         width: 94%;
@@ -126,7 +131,7 @@
    SMALL MOBILE
 ===================================================== */
 
-@media (max-width: 480px) {
+@media (max-width: 440px) {
 
     /* .hero-video-section {
         height: 70vh;
@@ -151,13 +156,14 @@
     .mechanical-text {
         font-size: 86px;
     }
+
     .mechanical-text-wrapper {
         max-width: 1400px;
     }
 }
 
 .aboutbackground {
-    background: url('/assets/Solutions/solutionheader/Forced Ventilation.png');
+    background: url('/assets/Solutions/solutionheader/Precision Air Conditioning.png');
     /* background: url('/assets/header/4.jpg'); */
     background-size: cover;
     background-position: center;
@@ -165,7 +171,7 @@
 }
 
 .title {
-    background-color: #f16f24cc;
+    background-color: #F16F24cc;
     color: white;
     font-size: 40px;
     font-weight: 500;
@@ -196,14 +202,14 @@
 } */
 
 .carousel-caption {
-    background-color: #f16f24b0;
+    background-color: #F16F24b0;
     padding: 0%;
 }
 
 .headline {
     font-size: 40px;
     font-weight: 700;
-    line-height: 52px;
+    line-height: 48px;
     color: #F16F24;
 }
 
@@ -223,6 +229,8 @@
 .approachtext {
     font-size: 20px;
     color: #F16F24;
+
+    /* color: #000; */
 }
 
 .whychoosetext {
@@ -282,7 +290,7 @@
     }
 
     .title {
-        background-color: #f16f24cc;
+        background-color: #F16F24cc;
         color: white;
         font-size: 15px;
         line-break: auto;
@@ -291,15 +299,17 @@
     }
 
     .aboutbackground {
+        /* background: url('/assets/header/4.jpg'); */
         background-size: cover;
         background-position: center;
         padding: 25% 7% 2% 7%;
     }
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     color: #f75d04;
 }
-.carousel-control-prev-icon{
+
+.carousel-control-prev-icon {
     color: #f75d04;
 }
