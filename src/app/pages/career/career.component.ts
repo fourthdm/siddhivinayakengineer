@@ -127,7 +127,7 @@ export class CareerComponent {
 
   // selectedFileName: string = '';
 
-  // onFileSelected(event: any) {
+  // onFileSelected(event: a+ny) {
 
   //   const file = event.target.files[0];
 
