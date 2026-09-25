@@ -14,7 +14,7 @@
             <p class="desc">
                 Work on HVAC and MEP systems across data centres, pharma cleanrooms, industrial facilities and
                 large-scale infrastructure projects-alongside engineers who have delivered critical installation
-                for over 17 years.
+                for over 18 years.
             </p>
         </div>
         <br>
@@ -57,7 +57,7 @@
 
         <div class="why">
             <div class="row">
-                <div class="col-md-4 whycard"  data-aos="zoom-in-up">
+                <div class="col-md-4 whycard" data-aos="zoom-in-up">
                     <div class="content">
                         <i class="bi bi-buildings"></i> <br>
                         <p class="h3">Complex, real-word projects</p>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 whycard"  data-aos="zoom-in-up">
+                <div class="col-md-4 whycard" data-aos="zoom-in-up">
                     <div class="content">
                         <i class="bi bi-shield-check"></i> <br>
                         <p class="h3">Critical infrastructure exposure </p>
@@ -80,7 +80,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 whycards"  data-aos="zoom-in-up">
+                <div class="col-md-4 whycards" data-aos="zoom-in-up">
                     <div class="content">
                         <i class="bi bi-diagram-2"></i><br>
                         <p class="h3">In-house engineering + execution </p>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 whycardbottom"  data-aos="zoom-in-up">
+                <div class="col-md-4 whycardbottom" data-aos="zoom-in-up">
                     <div class="content">
                         <i class="bi bi-mortarboard-fill"></i> <br>
                         <p class="h3">Structured technical growth</p>
@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 whycardbottom"  data-aos="zoom-in-up">
+                <div class="col-md-4 whycardbottom" data-aos="zoom-in-up">
                     <div class="content">
                         <i class="bi bi-bezier2"></i><br>
                         <p class="h3">Design to commissioning ownership</p>
@@ -113,7 +113,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 whycardsbottom"  data-aos="zoom-in-up">
+                <div class="col-md-4 whycardsbottom" data-aos="zoom-in-up">
                     <div class="content">
                         <i class="bi bi-people"></i><br>
                         <p class="h3">Long-term engineering careers</p>
@@ -134,9 +134,6 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="roleheading">
-                    <!-- <p class="role-title">
-                        <span></span>ROLE EXPOSURE
-                    </p> -->
                     <h1>
                         What You'll <span>Work on.</span>
                     </h1>
@@ -546,7 +543,103 @@
             <section class="col-md-7" id="Applyprofile">
                 <div class="card formsection">
                     <div class="card-body">
+
                         <form (submit)="sendEmail($event)">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="name">FULL NAME</label>
+                                    <br>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                    <br>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="phone">PHONE</label>
+                                    <br>
+                                    <input type="tel" id="phone" name="phone" placeholder="+91..." required>
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <div class="col-md-12">
+
+                                <label for="emailaddress">EMAIL ADDRESS</label>
+                                <br>
+
+                                <input type="email" id="emailaddress" name="emailaddress" placeholder="name@gmail.com"
+                                    required>
+
+                            </div>
+
+                            <br>
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+
+                                    <label for="position">POSITION APPLYING FOR</label>
+                                    <br>
+
+                                    <select class="form-select" id="position" name="position" required>
+
+                                        <option value="">Select a role</option>
+
+                                        <option value="HVAC Design Engineer">
+                                            HVAC Design Engineer
+                                        </option>
+
+                                        <option value="Project Engineer">
+                                            Project Engineer
+                                        </option>
+
+                                        <option value="Design & Consulting">
+                                            Design & Consulting
+                                        </option>
+
+                                        <option value="Not Sure - Need Guidance">
+                                            Not Sure - Need Guidance
+                                        </option>
+                                    </select>
+                                    <br>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="experience">EXPERIENCE (YEARS)</label>
+                                    <br>
+                                    <input type="text" id="experience" name="experience" placeholder="e.g. 4" required>
+                                </div>
+                            </div>
+                            <br>
+
+                            <div class="col-md-12">
+                                <div class="resume-upload-section">
+                                    <label for="resume" class="upload-label">
+                                        UPLOAD RESUME LINK
+                                    </label>
+                                    <textarea name="resume" id="resume" rows="2" placeholder="Google Drive Link"
+                                        required></textarea>
+                                </div>
+                            </div>
+
+                            <br>
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <p class="para">
+                                        By submitting, you agree to be contacted by SVESPL
+                                        regarding your application.
+                                    </p>
+                                </div>
+                                <div class="col-md-5">
+                                    <button class="btn btn-orange" type="submit">
+                                        Submit Application
+                                        <i class="bi bi-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- <form (submit)="sendEmail($event)">
                             <div class="row">
                                 <div class="col-md-6">
                                     <label for="Name">FULL NAME</label>
@@ -555,21 +648,21 @@
                                 </div>
                                 <br> <br>
                                 <div class="col-md-6">
-                                    <label for="Name">PHONE</label>
+                                    <label for="phone">PHONE</label>
                                     <br>
                                     <input type="text" name="phone" placeholder="+91...">
                                 </div>
                             </div>
                             <br>
                             <div class="col-md-12">
-                                <label for="Name">EMAIL ADDRESS</label>
+                                <label for="emailaddress">EMAIL ADDRESS</label>
                                 <br>
-                                <input type="text" name="EmailAddress" placeholder="name@gmail.com">
+                                <input type="text" name="emailaddress" placeholder="name@gmail.com">
                             </div>
                             <br>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label for="Name">POSITION APPLYING FOR </label>
+                                    <label for="position">POSITION APPLYING FOR </label>
                                     <br>
                                     <select class="form-select" name="position" aria-label="Default select example">
                                         <option value="">Select a role</option>
@@ -580,7 +673,7 @@
                                     </select><br>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="Name">EXPERIENCE (YEARS)</label>
+                                    <label for="experience">EXPERIENCE (YEARS)</label>
                                     <br>
                                     <input type="text" name="experience" placeholder="e.g.4">
                                 </div>
@@ -590,27 +683,11 @@
                             <div class="col-md-12">
                                 <div class="resume-upload-section">
                                     <label class="upload-label">UPLOAD RESUME LINK</label>
-
-                                    <!-- <input type="text" name="resume" placeholder="Google Drive Link"> -->
                                     <textarea type="text" name="resume" id="resume" rows="2" cols="80"
                                         placeholder="Google Drive Link"></textarea>
-                                    <!-- <div class="upload-box" (click)="fileInput.click()">
-
-                                        <div class="left-content">
-                                            <i class="bi bi-upload"></i>
-                                            <span>
-                                                {{ selectedFileName || 'Upload PDF or DOCX (max 5MB)' }}
-                                            </span>
-                                        </div>
-
-                                        <span class="browse-text">BROWSE</span>
-
-                                        <input type="file" #fileInput hidden name="resume" accept=".pdf,.doc,.docx"
-                                            (change)="onFileSelected($event)">
-                                    </div> -->
+                                
                                 </div>
                             </div> <br>
-                            <!-- <hr> -->
                             <br>
                             <div class="row">
                                 <div class="col-md-7">
@@ -619,15 +696,17 @@
                                     </p>
                                 </div>
                                 <div class="col-md-5">
-                                    <button class="btn btn-orange" type="submit">Submit Application <i
-                                            class="bi bi-arrow-right"></i></button>
+                                    <button class="btn btn-orange" type="submit">Submit Application 
+                                        <i class="bi bi-arrow-right"></i></button>
                                 </div>
                             </div>
 
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </section>
         </div>
     </div>
 </div>
+
+<app-headers></app-headers>

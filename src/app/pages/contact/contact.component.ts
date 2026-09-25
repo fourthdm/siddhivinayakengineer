@@ -11,10 +11,11 @@ export class ContactComponent {
     event.preventDefault();
 
     emailjs.sendForm(
-      'service_l8nxa6d',       // e.g., service_xxxxxx
-      'template_3hj3hfv',      // e.g., template_yyyyyy
+      'service_12fup14',       // e.g., service_xxxxxx
+      'template_a37pd1y',      // e.g., template_yyyyyy
       event.target as HTMLFormElement,
-      'h-OgB_ZELwY6SnxLu'        // e.g., public_zzzzzz
+      '0uM-uJmPUVao0kr9M'        // e.g., public_zzzzzz
+      // 'h-OgB_ZELwY6SnxLu'        // e.g., public_zzzzzz
     ).then(
       () => {
         alert('Enquiry sent successfully!');

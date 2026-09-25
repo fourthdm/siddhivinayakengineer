@@ -2,6 +2,7 @@ import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Swiper from 'swiper';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,66 +15,128 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class TimelinesComponent {
 
-  @ViewChildren('card')
-  cards!: QueryList<ElementRef>;
+  @ViewChild('timelineSwiper') timelineSwiper!: ElementRef;
 
-  positions = [
-    'active',
-    'right1',
-    'right2',
-    'right3',
-    'left1',
-    'left2'
-  ];
+private wheelLocked = false;
 
-  ngAfterViewInit() {
-    this.applyClasses();
-  }
+ngAfterViewInit(): void {
 
-  @HostListener('wheel', ['$event'])
-  onWheel(event: WheelEvent) {
+  const swiperEl = this.timelineSwiper.nativeElement;
 
-    event.preventDefault();
+  swiperEl.addEventListener(
+    'wheel',
+    (event: WheelEvent) => {
 
-    if (event.deltaY > 0) {
-      this.next();
-    } else {
-      this.prev();
-    }
-  }
+      // Ignore horizontal wheel
+      if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+        return;
+      }
 
-  next() {
+      // Ignore if animation is running
+      if (this.wheelLocked) {
+        event.preventDefault();
+        return;
+      }
 
-    const first = this.positions.shift();
+      const swiper = swiperEl.swiper;
 
-    if (first) {
-      this.positions.push(first);
-    }
+      if (!swiper) {
+        return;
+      }
 
-    this.applyClasses();
-  }
+      this.wheelLocked = true;
 
-  prev() {
+      event.preventDefault();
 
-    const last = this.positions.pop();
+      if (event.deltaY > 0) {
+        swiper.slideNext();
+      } else {
+        swiper.slidePrev();
+      }
 
-    if (last) {
-      this.positions.unshift(last);
-    }
+      setTimeout(() => {
+        this.wheelLocked = false;
+      }, 750);
 
-    this.applyClasses();
-  }
+    },
+    { passive: false }
+  );
+}
 
-  applyClasses() {
+  // @ViewChildren('card')
+  // cards!: QueryList<ElementRef>;
 
-    const cardsArray = this.cards.toArray();
+  // positions = [
+  //   'active',
+  //   'right1',
+  //   'right2',
+  //   'right3',
+  //   'left1',
+  //   'left2'
+  // ];
 
-    cardsArray.forEach((card, index) => {
+  // ngAfterViewInit() {
+  //   this.applyClasses();
+  // }
 
-      card.nativeElement.className =
-        'timeline-card ' + this.positions[index];
-    });
-  }
+  // @HostListener('wheel', ['$event'])
+  // onWheel(event: WheelEvent) {
+
+  //   event.preventDefault();
+
+  //   if (event.deltaY > 0) {
+  //     this.next();
+  //   } else {
+  //     this.prev();
+  //   }
+  // }
+
+  // next() {
+
+  //   const first = this.positions.shift();
+
+  //   if (first) {
+  //     this.positions.push(first);
+  //   }
+
+  //   this.applyClasses();
+  // }
+
+  // prev() {
+
+  //   const last = this.positions.pop();
+
+  //   if (last) {
+  //     this.positions.unshift(last);
+  //   }
+
+  //   this.applyClasses();
+  // }
+
+  // applyClasses() {
+
+  //   const cardsArray = this.cards.toArray();
+
+  //   cardsArray.forEach((card, index) => {
+
+  //     card.nativeElement.className =
+  //       'timeline-card ' + this.positions[index];
+  //   });
+  // }
+
+  // swiper = new Swiper('.swiper', {
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  // });
+
+
+
+
+
+
+
 
   // activeIndex = 2;
 
