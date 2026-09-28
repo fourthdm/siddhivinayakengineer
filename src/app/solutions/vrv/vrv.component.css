@@ -218,7 +218,7 @@
 }
 
 .aspects {
-    background-color: #F8FAFC;
+   
     padding: 3%;
 }
 
@@ -243,6 +243,7 @@
 }
 
 .benefits {
+     background-color: #F8FAFC;
     padding: 5%;
 }
 
@@ -312,4 +313,14 @@
 
 .carousel-control-prev-icon {
     color: #f75d04;
+}
+
+.accordion-button {
+    font-size: 18px;
+    color: #000;
+}
+
+.faq {
+    background-color: #F8FAFC;
+    padding: 3%;
 }

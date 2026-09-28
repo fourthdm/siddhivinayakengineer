@@ -313,3 +313,13 @@
 .carousel-control-prev-icon {
     color: #f75d04;
 }
+
+.accordion-button {
+    font-size: 18px;
+    color: #000;
+}
+
+.faq {
+    background-color: #F8FAFC;
+    padding: 3%;
+}
