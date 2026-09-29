@@ -450,7 +450,7 @@ nextSlide(): void {
 
     this.isAnimating = false;
 
-  }, 1100);
+  }, 2100);
 
 }
 
@@ -470,7 +470,7 @@ goToSlide(index: number): void {
     this.activeSlide = index;
     this.isAnimating = false;
 
-  }, 1100);
+  }, 2100);
 
   this.sliderInterval = setInterval(() => {
     this.nextSlide();

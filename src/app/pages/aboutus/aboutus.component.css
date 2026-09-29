@@ -351,7 +351,7 @@
 
 .dsectionbody span {
     color: #F16F24;
-    font-size: 11px;
+    font-size: 15px;
     /* line-height: 16px; */
     font-weight: 500;
     letter-spacing: 0.22em;
@@ -374,6 +374,9 @@
     word-spacing: -0.1em;
 }
 
+.employeename{
+    font-size: 18px;
+}
 
 .whychoosecard-body {
     padding: 3%;
@@ -858,8 +861,12 @@
     padding: 3%;
 }
 
-img {
+.visionmisionimage{
     width: 100%;
+}
+
+img {
+    /* width: 100%; */
 }
 
 .highway-slider {
@@ -1669,4 +1676,15 @@ swiper-container {
     border-radius: 4px;
     margin: 0 10px;
     font-size: 13px;
+}
+
+.employeeimage{
+    width: auto;
+    text-align: center;
+}
+
+.empcards{
+    text-align: center;
+    border: none !important;
+    background-color: none !important;
 }
