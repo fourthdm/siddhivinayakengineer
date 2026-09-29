@@ -371,118 +371,153 @@ export class SliderComponent implements OnInit, OnDestroy {
 
 
   slides = [
-  {
-    image: '/assets/header/11.png',
-    animation: 'slide'
-  },
-  {
-    image: '/assets/header/22.png',
-    animation: 'slide'
-  },
-  {
-    image: '/assets/header/33.png',
-    animation: 'zoom'
-  },
-  {
-    image: '/assets/header/44.png',
-    animation: 'diagonal'
-  },
-  {
-    image: '/assets/header/55.png',
-    animation: 'slide'
-  },
-  {
-    image: '/assets/header/66.png',
-    animation: 'scale'
-  }
-];
+    {
+      image: '/assets/header/11.png',
+      animation: 'slide'
+    },
+    {
+      image: '/assets/header/22.png',
+      animation: 'slide'
+    },
+    {
+      image: '/assets/header/33.png',
+      animation: 'zoom'
+    },
+    {
+      image: '/assets/header/44.png',
+      animation: 'diagonal'
+    },
+    {
+      image: '/assets/header/55.png',
+      animation: 'slide'
+    },
+    {
+      image: '/assets/header/66.png',
+      animation: 'scale'
+    }
+  ];
 
-rows = 1;
-cols = 5;
+  // animationDuration = 2000;
+  // slideInterval = 6000;
 
-cells: any[] = [];
+  animationDuration = 2000; // transition duration
+  displayDuration = 5000;   // image stays visible for 2 seconds
+  private sliderTimeout: any;
 
-activeSlide = 0;
-isAnimating = false;
+  rows = 1;
+  cols = 5;
 
-private sliderInterval: any;
+  cells: any[] = [];
 
+  activeSlide = 0;
+  isAnimating = false;
+
+  private sliderInterval: any;
 
 ngOnInit(): void {
-
   this.createCells();
-
-  this.sliderInterval = setInterval(() => {
-    this.nextSlide();
-  }, 5000);
+  this.startSlider();
 }
 
+  // ngOnInit(): void {
+  //   this.createCells();
+  //   this.sliderInterval = setInterval(() => {
+  //     this.nextSlide();
+  //   }, 5000);
+  // }
 
-createCells(): void {
+  // ngOnInit(): void {
+  //   this.createCells();
+  //   this.sliderInterval = setInterval(() => {
+  //     this.nextSlide();
+  //   }, this.slideInterval);
+  // }
 
-  this.cells = [];
+  createCells(): void {
 
-  for (let col = 0; col < this.cols; col++) {
+    this.cells = [];
 
-    this.cells.push({
-      row: 0,
-      col: col
-    });
+    for (let col = 0; col < this.cols; col++) {
 
-  }
-}
+      this.cells.push({
+        row: 0,
+        col: col
+      });
 
-
-get nextSlideIndex(): number {
-
-  return (this.activeSlide + 1) % this.slides.length;
-
-}
-
-
-nextSlide(): void {
-
-  this.isAnimating = true;
-
-  setTimeout(() => {
-
-    this.activeSlide = this.nextSlideIndex;
-
-    this.isAnimating = false;
-
-  }, 2100);
-
-}
-
-
-goToSlide(index: number): void {
-
-  if (index === this.activeSlide) {
-    return;
+    }
   }
 
-  clearInterval(this.sliderInterval);
+  startSlider(): void {
+    this.sliderTimeout = setTimeout(() => {
+      this.nextSlide();
+    }, this.displayDuration);
+  }
 
-  this.isAnimating = true;
+  nextSlide(): void {
 
-  setTimeout(() => {
+    if (this.isAnimating) {
+      return;
+    }
 
-    this.activeSlide = index;
-    this.isAnimating = false;
+    this.isAnimating = true;
 
-  }, 2100);
+    // Wait for the transition to finish
+    setTimeout(() => {
 
-  this.sliderInterval = setInterval(() => {
-    this.nextSlide();
-  }, 5000);
-}
+      this.activeSlide = this.nextSlideIndex;
+      this.isAnimating = false;
 
+      // New image is now fully visible → keep it for 2 seconds
+      this.startSlider();
 
-ngOnDestroy(): void {
+    }, this.animationDuration);
+  }
 
-  clearInterval(this.sliderInterval);
+  // ngOnDestroy(): void {
+  //   clearTimeout(this.sliderTimeout);
+  // }
 
-}
+  get nextSlideIndex(): number {
+    return (this.activeSlide + 1) % this.slides.length;
+  }
 
+  // nextSlide(): void {
+  //   this.isAnimating = true;
+  //   setTimeout(() => {
+  //     this.activeSlide = this.nextSlideIndex;
+  //     this.isAnimating = false;
+  //   }, 3000);
+  // }
+
+  // nextSlide(): void {
+  //   if (this.isAnimating) {
+  //     return;
+  //   }
+
+  //   this.isAnimating = true;
+  //   setTimeout(() => {
+  //     this.activeSlide = this.nextSlideIndex;
+  //     this.isAnimating = false;
+  //   }, this.animationDuration);
+  // }
+
+  goToSlide(index: number): void {
+    if (index === this.activeSlide) {
+      return;
+    }
+    clearInterval(this.sliderInterval);
+    this.isAnimating = true;
+    setTimeout(() => {
+      this.activeSlide = index;
+      this.isAnimating = false;
+    }, 3000);
+    this.sliderInterval = setInterval(() => {
+      this.nextSlide();
+    }, 5000);
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.sliderTimeout);
+  }
 
 }
