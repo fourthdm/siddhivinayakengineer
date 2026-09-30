@@ -114,9 +114,12 @@
 <div class="main">
   <div class="container"><br>
     <div class="row">
-      <div class="col-md-5 footerlogo">
-        <img src="/assets/Newfooterlogo.png" width="70%" alt="">
-        <br><br>
+      <div class="col-md-6 footerlogo">
+        <div class="footerlogos" style="display: flex;">
+          <img src="/assets/Newfooterlogo.png" width="70%" alt="">
+          <img src="/assets/daikinlogo.png" width="40%" alt="">
+        </div>
+        <br>   
         <p>Siddhivinayak Engineering Solution Pvt.Ltd.- Pune based HVAC & MEP contractor delivering critical
           infrastructure projects across india for over 18 years.</p>
 
@@ -136,7 +139,7 @@
 
       </div><br>
 
-      <div class="col-md-2">
+      <div class="col-md-3">
         <p class="headlineservice">SOLUTIONS</p>
         <p class="services " [routerLink]="['/Air_Cooled&Water-Cooled_Chiller_Plants']">Air Cooled &
           Water-Cooled Chiller Plants</p>
@@ -146,9 +149,12 @@
         <p class="services " [routerLink]="['/FORCED_VENTILATION']">Forced Ventilation</p>
         <p class="services " [routerLink]="['/COMFORT_AIR_CONDITIONING']">Comfort Air Conditioning</p>
         <p class="services " [routerLink]="['/PRECISION_AIR_CONDITIONING']">Precision Air Conditioning</p>
+        <p class="services " [routerLink]="['/BUILDING_VENTILATION']">Building Ventilation </p>
+        <p class="services " [routerLink]="['/PRECISION_AIR_CONDITIONING']">Precision Air Conditioning</p>
+        <p class="services " [routerLink]="['/PRECISION_AIR_CONDITIONING']">Precision Air Conditioning</p>
       </div>
       <br>
-      <div class="col-md-2">
+      <!-- <div class="col-md-2">
         <p class="headlineservice">INDUSTRIES</p>
         <p class="services" [routerLink]="['/Home']" fragment="Industries">Pharmaceutical</p>
         <p class="services" [routerLink]="['/Home']" fragment="Industries"> Food & Beverage Processing</p>
@@ -156,7 +162,7 @@
         <p class="services" [routerLink]="['/Home']" fragment="Industries">Corporate Offices</p>
         <p class="services" [routerLink]="['/Home']" fragment="Industries">Commercial Buildings</p>
         <p class="services" [routerLink]="['/Home']" fragment="Industries">Industrial & Manufacturing</p>
-      </div>
+      </div> -->
       <br>
       <div class="col-md-2 Company">
         <p class="headlineservice">COMPANY</p>
@@ -167,6 +173,8 @@
         <p class="services" (click)=" scroll()" [routerLink]="['/Career']">Careers</p>
         <p class="services" (click)=" scroll()" [routerLink]="['/Culture']">Culture</p>
         <p class="services" (click)=" scroll()" [routerLink]="['/Contact']">Contact</p>
+        <br>
+
       </div>
       <br>
 
