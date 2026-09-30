@@ -324,3 +324,23 @@
     background-color: #F8FAFC;
     padding: 3%;
 }
+.carousel-indicators {
+    color: #f75d04 !important;
+}
+
+.carousel-indicators button {
+  width: 35px;
+  height: 4px;
+  border: 0;
+  border-radius: 10px;
+
+  background-color: rgba(255, 255, 255, 0.5);
+
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators button.active {
+  background-color: #F16F24;
+  width: 55px;
+}
