@@ -41,6 +41,9 @@ import { NewanimationComponent } from './pages/newanimation/newanimation.compone
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { EmersonComponent } from './casestudies/emerson/emerson.component';
 import { SolutioncardComponent } from './pages/solutioncard/solutioncard.component';
+import { BuildingventilationComponent } from './pages/buildingventilation/buildingventilation.component';
+import { AnnualmaintenceComponent } from './pages/annualmaintence/annualmaintence.component';
+import { HvacvitoutsComponent } from './pages/hvacvitouts/hvacvitouts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -77,7 +80,10 @@ import { SolutioncardComponent } from './pages/solutioncard/solutioncard.compone
     NewanimationComponent,
     AboutusComponent,
     EmersonComponent,
-    SolutioncardComponent
+    SolutioncardComponent,
+    BuildingventilationComponent,
+    AnnualmaintenceComponent,
+    HvacvitoutsComponent
   ],
   imports: [
     BrowserModule,

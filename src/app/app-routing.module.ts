@@ -25,6 +25,9 @@ import { AmanoraComponent } from './casestudies/amanora/amanora.component';
 import { SitemapComponent } from './pages/sitemap/sitemap.component';
 import { AboutusComponent } from './pages/aboutus/aboutus.component';
 import { EmersonComponent } from './casestudies/emerson/emerson.component';
+import { BuildingventilationComponent } from './pages/buildingventilation/buildingventilation.component';
+import { AnnualmaintenceComponent } from './pages/annualmaintence/annualmaintence.component';
+import { HvacvitoutsComponent } from './pages/hvacvitouts/hvacvitouts.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -46,6 +49,10 @@ const routes: Routes = [
   { path: 'FORCED_VENTILATION', component: ForcedventilationComponent },
   { path: 'COMFORT_AIR_CONDITIONING', component: ComfortairComponent },
   { path: 'PRECISION_AIR_CONDITIONING', component: PrecisionairComponent },
+
+  { path: 'BUILDING_VENTILATION', component: BuildingventilationComponent },
+  { path: 'ANNUAL_MAINTENANCE', component: AnnualmaintenceComponent },
+  { path: 'HVAC_VITOUTS_REFOFIT', component: HvacvitoutsComponent },
 
   { path: 'ResidentialProject', component: ResidentialComponent },
   { path: 'CommercialProject', component: CommercialComponent },
