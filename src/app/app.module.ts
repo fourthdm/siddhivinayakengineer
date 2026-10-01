@@ -35,6 +35,15 @@ import { CasestudiesComponent } from './pages/casestudies/casestudies.component'
 import { AmanoraComponent } from './casestudies/amanora/amanora.component';
 import { MetroComponent } from './casestudies/metro/metro.component';
 import { SitemapComponent } from './pages/sitemap/sitemap.component';
+import { HeadersComponent } from './pages/headers/headers.component';
+import { AnimationComponent } from './pages/animation/animation.component';
+import { NewanimationComponent } from './pages/newanimation/newanimation.component';
+import { AboutusComponent } from './pages/aboutus/aboutus.component';
+import { EmersonComponent } from './casestudies/emerson/emerson.component';
+import { SolutioncardComponent } from './pages/solutioncard/solutioncard.component';
+import { BuildingventilationComponent } from './pages/buildingventilation/buildingventilation.component';
+import { AnnualmaintenceComponent } from './pages/annualmaintence/annualmaintence.component';
+import { HvacvitoutsComponent } from './pages/hvacvitouts/hvacvitouts.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -65,7 +74,16 @@ import { SitemapComponent } from './pages/sitemap/sitemap.component';
     CasestudiesComponent,
     AmanoraComponent,
     MetroComponent,
-    SitemapComponent
+    SitemapComponent,
+    HeadersComponent,
+    AnimationComponent,
+    NewanimationComponent,
+    AboutusComponent,
+    EmersonComponent,
+    SolutioncardComponent,
+    BuildingventilationComponent,
+    AnnualmaintenceComponent,
+    HvacvitoutsComponent
   ],
   imports: [
     BrowserModule,

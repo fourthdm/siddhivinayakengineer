@@ -3,7 +3,87 @@
 
 
 
-<div class="container">
+<!-- <section class="hero-slider">
+    <div class="splitting" [class.animate]="isAnimating" [style.--row-total]="1" [style.--col-total]="5">
+        <div class="cell-grid">
+            <div class="cell" *ngFor="let cell of cells" [style.--row-index]="cell.row" [style.--col-index]="cell.col">
+                <div class="cell-inner" [style.background-image]=" 'url(' + slides[activeSlide].image + ')'"></div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- <section class="hero-slider">
+    <div class="splitting" [ngClass]="slides[activeSlide].animation" [class.animate]="isAnimating">
+        <div class="cell-grid">
+            <div class="cell" *ngFor="let cell of cells" [style.--col-index]="cell.col">
+                <div class="cell-inner" [style.background-image]="
+                        'url(' + slides[activeSlide].image + ')'
+                    ">
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- <section class="hero-slider">
+
+    <div class="hero-image" [style.background-image]="'url(' + slides[activeSlide].image + ')'"></div>
+
+    <div class="splitting" [ngClass]="slides[nextSlideIndex].animation" [class.animate]="isAnimating">
+        <div class="cell-grid">
+
+            <div class="cell" *ngFor="let cell of cells" [style.--col-index]="cell.col">
+                <div class="cell-inner" [style.background-image]="
+            'url(' + slides[nextSlideIndex].image + ')'
+          "></div>
+            </div>
+
+        </div>
+    </div>
+
+</section> -->
+
+<!-- <section class="hero-slider">
+
+    <div class="hero-bg current" [style.background-image]="
+            'url(' + slides[activeSlide].image + ')'
+        ">
+    </div>
+
+    <div class="hero-bg next" [class.show]="isAnimating" [style.background-image]="
+            'url(' + slides[nextSlideIndex].image + ')'
+        ">
+    </div>
+
+</section> -->
+
+<!-- <section class="hero-slider">
+
+    <div class="splitting"
+         [class.animate]="isAnimating"
+         [style.--col-total]="cols">
+
+        <div class="cell-grid">
+
+            <div class="cell"
+                 *ngFor="let cell of cells"
+                 [style.--col-index]="cell.col">
+
+                <div class="cell-inner"
+                     [style.background-image]="
+                        'url(' + slides[activeSlide].image + ')'
+                     ">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> -->
+ <div class="container">
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-9">
@@ -41,5 +121,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <br><br>

@@ -18,10 +18,10 @@
                 <p>Year of Experience</p>
 
                 <p class="h2">{{ count3 }} +</p>
-                <p>Project Delivered </p>
+                <p>Landmark projects </p>
 
-                <p class="h2">{{count4}} +</p>
-                <p>State Serverd</p>
+                <p class="h2">8.{{count4}} +</p>
+                <p>Million Sq.ft Area Airconditioned</p>
             </div>
 
             <div class="mobileview">
@@ -33,12 +33,12 @@
 
                     <div class="col-4">
                         <p class="h2">{{ count3 }} +</p>
-                        <p class="counttext">Project Delivered </p>
+                        <p class="counttext">Landmark projects </p>
                     </div><br>
 
                     <div class="col-4">
-                        <p class="h2">{{count4}} +</p>
-                        <p class="counttext">State Serverd</p>
+                        <p class="h2">8.{{count4}} +</p>
+                        <p class="counttext">Million Sq.ft Area Airconditioned</p>
                     </div><br>
                 </div>
             </div>
@@ -46,13 +46,29 @@
         </div>
         <!-- Right Side -->
         <div class="col-lg-9">
-            <div class="map-container">
-                <img src="assets/map.png" class="world-map" alt="World Map" />
-                <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
-                    [style.top.%]="location.y">
-                    <span class="tooltip">
-                        {{ location.name }}
-                    </span>
+            <div class="laptopview">
+                <div class="map-container">
+                    <img src="assets/map.png" class="world-map" alt="World Map" />
+                    <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
+                        [style.top.%]="location.y">
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: rgb(241, 111, 36);"> </i>
+                        <span class="tooltip">
+                            {{ location.name }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobileview">
+                <div class="map-container">
+                    <img src="assets/map.png" class="world-map" alt="World Map" />
+                    <div *ngFor="let location of locations" class="map-marker" [style.left.%]="location.x"
+                        [style.top.%]="location.y">
+                        <i class="fa-solid fa-location-dot" style="color: rgb(241, 111, 36);"> </i>
+                        <span class="tooltip">
+                            {{ location.name }}
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>

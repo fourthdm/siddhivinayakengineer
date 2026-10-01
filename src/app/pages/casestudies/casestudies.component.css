@@ -91,3 +91,35 @@ img {
     line-height: 28px;
     color: #F16F24;
 }
+
+
+@media(min-width: 319px) and (max-width: 767px) {
+    .headline {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 36px;
+        color: #F16F24;
+    }
+
+    .titles {
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    .title {
+        background-color: #f16f24cc;
+        color: white;
+        font-size: 15px;
+        line-break: auto;
+        line-height: 30px;
+        font-weight: 500;
+    }
+
+    .aboutbackground {
+        background-size: cover;
+        background-position: center;
+        padding: 25% 7% 2% 7%;
+    }
+
+}
