@@ -1,3 +1,10 @@
+.logoimage {
+    width: 300px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
 .dropdown-hover:hover>.dropdown-menu {
     display: inline-block;
 }
@@ -143,7 +150,7 @@
     border-bottom: 2px solid #F16F24 !important;
     /* border-left: 2px solid white; */
 
-        background: rgba(241, 111, 36, 0.08);
+    background: rgba(241, 111, 36, 0.08);
     /* Semi-transparent base */
     backdrop-filter: blur(24px) saturate(180%);
     /* iOS-style fluid blur */
@@ -204,7 +211,7 @@
     display: none;
 }
 
-@media(min-width: 319px) and (max-width: 767px)  {
+@media(min-width: 319px) and (max-width: 767px) {
     .navbardaikins {
         display: none;
     }
@@ -338,11 +345,11 @@
     /* Soft shadow for depth */
 }
 
-.navsitemaptext{
+.navsitemaptext {
     color: #161E2A;
     font-weight: 400;
 }
 
-.navsitemaptext:hover{
+.navsitemaptext:hover {
     color: #F16F24;
 }
