@@ -1688,3 +1688,12 @@ swiper-container {
     border: none !important;
     background-color: none !important;
 }
+
+.mySwiper {
+    --swiper-navigation-color: white;
+    --swiper-navigation-size: 28px;
+    --swiper-navigation-sides-offset: 0px;
+
+    --swiper-pagination-color: #F16F24;
+    --swiper-pagination-bottom: 5px;
+}

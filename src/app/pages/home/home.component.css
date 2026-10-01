@@ -2341,3 +2341,9 @@ h2 span {
             translateY(0) scale(1);
     }
 }
+
+.mySwiper {
+    --swiper-navigation-color: #F16F24;
+    --swiper-navigation-size: 30px;
+    --swiper-navigation-sides-offset: 3px;
+}
