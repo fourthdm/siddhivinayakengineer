@@ -86,7 +86,7 @@
 
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top laptopview" style="background-color: #F8FAFC;">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="/assets/Siddi_Logo.png" class="logoimage" 
+        <a aria-label="Read more." class="navbar-brand" href="#"><img src="/assets/Siddi_Logo.png" class="logoimage"
                 alt="LogoImage"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,40 +95,47 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                 <li class="nav-item">
-                    <a class="nav-link " routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }"
-                        [routerLink]="['/Home']" aria-current="page" href="" (click)="closeNavbar()">Home</a>
+                    <a aria-label="Read more." class="nav-link " routerLinkActive="active-link"
+                        [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Home']" aria-current="page" href=""
+                        (click)="closeNavbar()">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="" routerLinkActive="active-link"
+                    <a aria-label="Read more." class="nav-link " href="" routerLinkActive="active-link"
                         [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/About']" (click)="scroll()"
                         (click)="closeNavbar()">About Us</a>
                 </li>
 
                 <li class="nav-item dropdown dropdown-hover">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
+                    <a aria-label="Read more." class="nav-link dropdown-toggle " href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
                         Solution
                     </a>
                     <ul class="dropdown-menu dropdown-submenu">
-                        <li><a class="dropdown-item " href="#"
+                        <li><a aria-label="Read more." class="dropdown-item " href="#"
                                 [routerLink]="['/Air_Cooled&Water-Cooled_Chiller_Plants']">AIR COOLED & WATER-COOLED
                                 CHILLER PLANTS </a></li>
-                        <li><a class="dropdown-item" href="#" [routerLink]="['/VRVVRF_SYSTEMS']"> VRV / VRF SYSTEMS </a>
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/VRVVRF_SYSTEMS']"> VRV / VRF SYSTEMS </a>
                         </li>
-                        <li><a class="dropdown-item" href="#" [routerLink]="['/TURNKEY_CLEAN_ROOM_SOLUTION']"> TURNKEY
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/TURNKEY_CLEAN_ROOM_SOLUTION']"> TURNKEY
                                 CLEAN ROOM SOLUTION </a></li>
-                        <li><a class="dropdown-item" href="#" [routerLink]="['/EVAPORATIVE_COOLING']"> EVAPORATIVE
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/EVAPORATIVE_COOLING']"> EVAPORATIVE
                                 COOLING </a></li>
-                        <li><a class="dropdown-item" href="#" [routerLink]="['/FORCED_VENTILATION']"> FORCED VENTILATION
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/FORCED_VENTILATION']"> FORCED VENTILATION
                             </a></li>
-                        <li><a class="dropdown-item" href="#" [routerLink]="['/COMFORT_AIR_CONDITIONING']"> COMFORT AIR
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/COMFORT_AIR_CONDITIONING']"> COMFORT AIR
                                 CONDITIONING </a></li>
-                        <li><a class="dropdown-item" href="#" [routerLink]="['/PRECISION_AIR_CONDITIONING']"> PRECISION
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/PRECISION_AIR_CONDITIONING']"> PRECISION
                                 AIR CONDITIONING </a></li>
 
-                        <li><a class="dropdown-item" href="#">BUILDING VENTILATION </a></li>
-                        <li><a class="dropdown-item" href="#"> ANNUAL MAINTENANCE</a></li>
-                        <li><a class="dropdown-item" href="#">HVAC_VITOUTS_REFOFIT </a></li>
+                        <li><a aria-label="Read more." class="dropdown-item" href="#">BUILDING VENTILATION </a></li>
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"> ANNUAL MAINTENANCE</a></li>
+                        <li><a aria-label="Read more." class="dropdown-item" href="#">HVAC_VITOUTS_REFOFIT </a></li>
 
                         <!-- <li><a class="dropdown-item" href="#" [routerLink]="['/BUILDING_VENTILATION']">BUILDING
                                 VENTILATION </a></li>
@@ -140,15 +147,16 @@
                 </li>
 
                 <li class="nav-item dropdown dropdown-hover">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" routerLinkActive="active-link"
+                    <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active-link"
                         [routerLinkActiveOptions]="{ exact: true }">
                         Our Works
                     </a>
                     <ul class="dropdown-menu dropdown-submenu">
-                        <li><a class="dropdown-item" [routerLink]="['/Projects']">Projects</a>
+                        <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Projects']">Projects</a>
                         </li>
-                        <li><a class="dropdown-item" [routerLink]="['/Casestudies']">Case Studies</a>
+                        <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Casestudies']">Case
+                                Studies</a>
                         </li>
                         <!-- <li><a class="dropdown-item" [routerLink]="['/ResidentialProject']">Residential Projects</a></li> -->
                         <!-- <li><a class="dropdown-item" [routerLink]="['/IndustrialProject']">Industrial Projects</a></li> -->
@@ -157,20 +165,37 @@
                 </li>
 
                 <li class="nav-item dropdown dropdown-hover">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false" [routerLink]="['/Career']" (click)="scroll()" (click)="closeNavbar()">
+                    <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="['/Career']" (click)="scroll()"
+                        (click)="closeNavbar()">
                         Careers
                     </a>
                     <ul class="dropdown-menu dropdown-submenu">
-                        <li><a class="dropdown-item" [routerLink]="['/Culture']">Culture</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/Career']">Current Opening</a></li>
+                        <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Culture']">Culture</a>
+                        </li>
+                        <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Career']">Current
+                                Opening</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="" routerLinkActive="active-link"
-                        [routerLinkActiveOptions]="{ exact: true }" (click)="scroll()" (click)="closeNavbar()">Blog</a>
+                    <a class="nav-link" href="https://blog.svespl.in/" aria-label="Visit SVESPL Blog"
+                        (click)="openBlog($event)">
+                        Blog
+                    </a>
                 </li>
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="https://blog.svespl.in/" aria-label="Visit SVESPL Blog"
+                        (click)="$event.stopPropagation(); closeNavbar()">
+                        Blog
+                    </a>
+                </li> -->
+
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="https://blog.svespl.in/" aria-label="Read more." routerLinkActive="active-link" 
+                        [routerLinkActiveOptions]="{ exact: true }" (click)="scroll()"  (click)="closeNavbar()">Blog</a>
+                </li> -->
 
                 <!-- <li class="nav-item">
                     <a class="nav-link" href="" routerLinkActive="active-link"
@@ -179,27 +204,27 @@
                 </li> -->
 
                 <li class="nav-item">
-                    <a class="nav-link" href="" routerLinkActive="active-link"
+                    <a class="nav-link" href="" aria-label="Read more." routerLinkActive="active-link"
                         [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Contact']" (click)="scroll()"
                         (click)="closeNavbar()">Contact</a>
                 </li>
-
             </ul>
+
             <form class="d-flex">
 
                 <div class="icon">
-                    <a href="https://www.linkedin.com/company/siddhivinayakengineering" aria-label="Click on linkedin"  target="_blank"><i
-                            class="bi bi-linkedin"></i> </a>
+                    <a href="https://www.linkedin.com/company/siddhivinayakengineering" aria-label="Click on linkedin"
+                        target="_blank"><i class="bi bi-linkedin"></i> </a>
                 </div>
 
                 <div class="icon">
-                    <a href="https://www.facebook.com/profile.php?id=61569203423546"  aria-label="Click on Facebook" target="_blank"> <i
-                            class="bi bi-facebook"></i> </a>
+                    <a href="https://www.facebook.com/profile.php?id=61569203423546" aria-label="Click on Facebook"
+                        target="_blank"> <i class="bi bi-facebook"></i> </a>
                 </div>
 
                 <div class="icon">
-                    <a href="https://www.instagram.com/svespl_official/?hl=en" aria-label="Click on Instagram"  target="_blank"> <i
-                            class="bi bi-instagram"></i></a>
+                    <a href="https://www.instagram.com/svespl_official/?hl=en" aria-label="Click on Instagram"
+                        target="_blank"> <i class="bi bi-instagram"></i></a>
                 </div>
 
                 <!-- <span class="Phoneno">
@@ -233,7 +258,7 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
-                            <a aria-label="Read more."  class="nav-link" routerLinkActive="active-link"
+                            <a aria-label="Read more." class="nav-link" routerLinkActive="active-link"
                                 [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Home']" aria-current="page"
                                 href="" (click)="closeNavbars()">Home</a>
                         </li>
@@ -245,48 +270,55 @@
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" [routerLink]="['/Services']">
+                            <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" [routerLink]="['/Services']">
                                 Solution
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Air_Cooled&Water-Cooled_Chiller_Plants']"
-                                        (click)="scroll()" (click)="closeNavbars()">AIR COOLED & WATER-COOLED CHILLER
+                                <li><a aria-label="Read more." class="dropdown-item"
+                                        [routerLink]="['/Air_Cooled&Water-Cooled_Chiller_Plants']" (click)="scroll()"
+                                        (click)="closeNavbars()">AIR COOLED & WATER-COOLED CHILLER
                                         PLANTS
                                     </a></li>
-                                <li><a aria-label="Read more." class="dropdown-item" href="#" [routerLink]="['/VRVVRF_SYSTEMS']"
-                                        (click)="scroll()" (click)="closeNavbars()"> VRV / VRF SYSTEMS
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/VRVVRF_SYSTEMS']" (click)="scroll()" (click)="closeNavbars()">
+                                        VRV / VRF SYSTEMS
                                     </a></li>
-                                <li><a aria-label="Read more." class="dropdown-item" href="#" [routerLink]="['/TURNKEY_CLEAN_ROOM_SOLUTION']"
-                                        (click)="scroll()" (click)="closeNavbars()">
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/TURNKEY_CLEAN_ROOM_SOLUTION']" (click)="scroll()"
+                                        (click)="closeNavbars()">
                                         TURNKEY CLEAN ROOM SOLUTION </a></li>
-                                <li><a aria-label="Read more." class="dropdown-item" href="#" [routerLink]="['/EVAPORATIVE_COOLING']"
-                                        (click)="scroll()" (click)="closeNavbars()"> EVAPORATIVE
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/EVAPORATIVE_COOLING']" (click)="scroll()"
+                                        (click)="closeNavbars()"> EVAPORATIVE
                                         COOLING </a></li>
-                                <li><a aria-label="Read more." class="dropdown-item" href="#" [routerLink]="['/FORCED_VENTILATION']"
-                                        (click)="scroll()" (click)="closeNavbars()"> FORCED
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/FORCED_VENTILATION']" (click)="scroll()"
+                                        (click)="closeNavbars()"> FORCED
                                         VENTILATION </a></li>
-                                <li><a aria-label="Read more." class="dropdown-item" href="#" [routerLink]="['/COMFORT_AIR_CONDITIONING']"
-                                        (click)="scroll()" (click)="closeNavbars()"> COMFORT
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/COMFORT_AIR_CONDITIONING']" (click)="scroll()"
+                                        (click)="closeNavbars()"> COMFORT
                                         AIR CONDITIONING </a></li>
-                                <li><a aria-label="Read more." class="dropdown-item" href="#" [routerLink]="['/PRECISION_AIR_CONDITIONING']"
-                                        (click)="scroll()" (click)="closeNavbars()">
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/PRECISION_AIR_CONDITIONING']" (click)="scroll()"
+                                        (click)="closeNavbars()">
                                         PRECISION AIR CONDITIONING </a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown dropdown-hover">
-                            <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" routerLinkActive="active-link"
+                            <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active-link"
                                 [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Career']"
                                 (click)="scroll()" (click)="closeNavbar()">
                                 Careers
                             </a>
                             <ul class="dropdown-menu dropdown-submenu">
-                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Culture']" (click)="scroll()"
-                                        (click)="closeNavbars()">Culture</a></li>
-                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Career']" (click)="scroll()"
-                                        (click)="closeNavbars()">Current Opening</a></li>
+                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Culture']"
+                                        (click)="scroll()" (click)="closeNavbars()">Culture</a></li>
+                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Career']"
+                                        (click)="scroll()" (click)="closeNavbars()">Current Opening</a></li>
                             </ul>
                         </li>
 
@@ -297,17 +329,17 @@
                     </li> -->
 
                         <li class="nav-item dropdown">
-                            <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false" routerLinkActive="active-link"
+                            <a aria-label="Read more." class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" routerLinkActive="active-link"
                                 [routerLinkActiveOptions]="{ exact: true }" [routerLink]="['/Projects']">
                                 Our Work
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Projects']" (click)="scroll()"
-                                        (click)="closeNavbars()">Projects</a>
+                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Projects']"
+                                        (click)="scroll()" (click)="closeNavbars()">Projects</a>
                                 </li>
-                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Casestudies']" (click)="scroll()"
-                                        (click)="closeNavbars()">Case Studies</a>
+                                <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/Casestudies']"
+                                        (click)="scroll()" (click)="closeNavbars()">Case Studies</a>
                                 </li>
                                 <!-- <li><a class="dropdown-item" [routerLink]="['/ResidentialProject']">Residential Projects</a>
                             </li>

@@ -10,82 +10,45 @@ export class HeadersComponent implements OnInit, OnDestroy {
   // ==========================================
   // PRELOADER STATES
   // ==========================================
-
   startAssembly = false;
-
   logoComplete = false;
-
   showName = false;
-
   loaderFinished = false;
-
-
   // Timers
   private timers: any[] = [];
-
   ngOnInit(): void {
-
     // Prevent scrolling while animation runs
     document.body.classList.add('loader-active');
-
     this.timers.push(
-
       setTimeout(() => {
-
         this.startAssembly = true;
-
       }, 300)
-
     );
-
     this.timers.push(
-
       setTimeout(() => {
-
         this.logoComplete = true;
-
       }, 1550)
-
     );
 
-
     this.timers.push(
-
       setTimeout(() => {
-
         this.showName = true;
-
       }, 1900)
-
     );
-
 
     this.timers.push(
-
       setTimeout(() => {
-
         this.loaderFinished = true;
-
         document.body.classList.remove('loader-active');
-
       }, 3400)
-
     );
-
   }
 
-
-
   ngOnDestroy(): void {
-
     this.timers.forEach(timer => {
-
       clearTimeout(timer);
-
     });
-
     document.body.classList.remove('loader-active');
-
   }
 
   // introFinished = false;
