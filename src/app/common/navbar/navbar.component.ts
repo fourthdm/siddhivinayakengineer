@@ -38,4 +38,19 @@ export class NavbarComponent {
       offcanvas.hide();
     }
   }
+
+showLoader = false;
+
+openBlog(event: MouseEvent): void {
+  event.preventDefault();
+
+  this.closeNavbar();
+
+  this.showLoader = true;
+
+  setTimeout(() => {
+    window.location.href = 'https://blog.svespl.in/';
+  }, 1000);
+}
+
 }

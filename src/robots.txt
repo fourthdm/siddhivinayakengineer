@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Optional: Link your sitemap if you have one
+Sitemap: https://svespl.in

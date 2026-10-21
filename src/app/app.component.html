@@ -2,12 +2,20 @@
 
 
 <p class="btn-oranges ios-glass-view ">
-    <i class="bi bi-calendar2-minus"></i> <span class="text-start" [routerLink]="['/Contact']" fragment="Contactus"
+    <i class="bi bi-calendar2-minus"></i>
+     <!-- <span class="text-start" [routerLink]="['/Contact']" fragment="Contactus"
         (click)="scroll()">
         Request a Site Assessment
+    </span> -->
+   <span class="text-start">
+        <a href="https://www.svespl.in/Contact" class="a">
+            Request a Site Assessment
+        </a>
     </span>
 </p>
-<ul class="menu">
+
+
+<div class="menu">
     <p>
         <a href="https://wa.me/+919970641757?text=Hi SVESPL, I’d like to discuss a project."
             aria-label="Read more about" target="_blank">
@@ -17,7 +25,7 @@
 
         </a>
     </p>
-</ul>
+</div>
 
 <router-outlet></router-outlet>
 <app-footer></app-footer>

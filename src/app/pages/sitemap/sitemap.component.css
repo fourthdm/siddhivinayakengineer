@@ -16,12 +16,16 @@ li {
     padding: 1%;
     background-color: #F8FAFC;
 
-     background: rgba(255, 255, 255, 0.08); /* Semi-transparent base */
-  backdrop-filter: blur(24px) saturate(180%); /* iOS-style fluid blur */
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle highlight edge */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+    background: rgba(255, 255, 255, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    /* Soft shadow for depth */
 
 }
 
@@ -80,11 +84,795 @@ h1 {
 }
 
 .ios-glass-view {
-  background: rgba(255, 255, 255, 0.08); /* Semi-transparent base */
-  backdrop-filter: blur(24px) saturate(180%); /* iOS-style fluid blur */
-  -webkit-backdrop-filter: blur(24px) saturate(180%);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle highlight edge */
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12); /* Soft shadow for depth */
+    background: rgba(255, 255, 255, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+    /* Soft shadow for depth */
 }
 
+
+
+
+
+
+
+
+/* .hero-slider {
+    position: relative;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    background: #111;
+}
+
+.hero-image-wrapper {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: 100%;
+} */
+
+/* 
+
+.splitting {
+    position: absolute;
+    inset: 0;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.splitting .cell-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns:
+        repeat(var(--col-total), 1fr);
+    grid-template-rows:
+        repeat(var(--row-total), 1fr);
+}
+.splitting .cell {
+    position: relative;
+    overflow: hidden;
+    background: inherit;
+    transition:0.4s ease-in-out;
+}
+
+.splitting .cell-inner {
+    position: absolute;
+    width:calc(100% * var(--col-total));
+    height: 100%;
+    top: 0;
+    left: calc(-100% * var(--col-index));
+    background-repeat: no-repeat;
+    background-size:calc(100% * var(--col-total)) 100%;
+}
+
+
+.splitting.animate .cell:nth-child(1) {
+    transition: 0.3s ease-in-out;
+    transition-delay: 0.1s;
+    transform: translateY(10%);
+}
+
+.splitting.animate .cell:nth-child(2) {
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
+    transform:  translateY(-4%);
+}
+
+.splitting.animate .cell:nth-child(3) {
+    transition: 0.3s ease-in-out;
+    transition-delay: 0s;
+    transform: translateY(6%);
+}
+
+.splitting.animate .cell:nth-child(4) {
+    transition: 0.2s ease-in-out;
+    transition-delay: 0.15s;
+    transform:  translateY(4%);
+}
+
+.splitting.animate .cell:nth-child(5) {
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.05s;
+    transform:  translateY(-10%);
+}
+
+.splitting:not(.animate) .cell {
+    transform:translateY(0);
+    transition:  0.5s ease-in-out;
+} */
+
+
+/* 
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.splitting {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cell-grid {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+
+    width: 100%;
+    height: 100%;
+
+    gap: 0;
+}
+
+.cell {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+
+    transform: translateY(0);
+
+    transition:
+        transform 0.85s cubic-bezier(.77, 0, .18, 1);
+}
+
+.cell-inner {
+    position: absolute;
+    inset: 0;
+
+    width: 500%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    will-change: transform;
+}
+
+.cell:nth-child(1) .cell-inner {
+    transform: translateX(0%);
+}
+
+.cell:nth-child(2) .cell-inner {
+    transform: translateX(-20%);
+}
+
+.cell:nth-child(3) .cell-inner {
+    transform: translateX(-40%);
+}
+
+.cell:nth-child(4) .cell-inner {
+    transform: translateX(-60%);
+}
+
+.cell:nth-child(5) .cell-inner {
+    transform: translateX(-80%);
+}
+
+.splitting.animate .cell:nth-child(1) {
+    transform: translateY(-10%);
+    transition-delay: 0s;
+}
+
+.splitting.animate .cell:nth-child(2) {
+    transform: translateY(10%);
+    transition-delay: .08s;
+}
+
+.splitting.animate .cell:nth-child(3) {
+    transform: translateY(-10%);
+    transition-delay: .16s;
+}
+
+.splitting.animate .cell:nth-child(4) {
+    transform: translateY(10%);
+    transition-delay: .24s;
+}
+
+.splitting.animate .cell:nth-child(5) {
+    transform: translateY(-10%);
+    transition-delay: .32s;
+}
+
+.splitting:not(.animate) .cell {
+    transform: translateY(0);
+} */
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .hero-slider {
+        height: 450px;
+    }
+
+}
+/* 
+.hero-slider {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hero-bg.current {
+    z-index: 1;
+}
+
+.hero-bg.next {
+    z-index: 2;
+
+    clip-path: inset(0 100% 0 0);
+
+    transition:
+        clip-path 1.2s cubic-bezier(.77, 0, .18, 1);
+}
+
+
+.hero-bg.next.show {
+    clip-path: inset(0 0 0 0);
+}
+
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+}
+
+
+.transition-layer {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+.transition-panel {
+    position: relative;
+    overflow: hidden;
+
+    background: #fff;
+
+    transform: translateY(0);
+
+    transition:
+        transform .8s cubic-bezier(.77, 0, .18, 1);
+}
+
+
+.transition-layer.split.animate
+.transition-panel:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+.transition-layer.split.animate
+.transition-panel:nth-child(2) {
+    transform: translateY(100%);
+    transition-delay: .08s;
+}
+
+.transition-layer.split.animate
+.transition-panel:nth-child(3) {
+    transform: translateY(-100%);
+    transition-delay: .16s;
+}
+
+.transition-layer.split.animate
+.transition-panel:nth-child(4) {
+    transform: translateY(100%);
+    transition-delay: .24s;
+}
+
+.transition-layer.split.animate
+.transition-panel:nth-child(5) {
+    transform: translateY(-100%);
+    transition-delay: .32s;
+}
+
+.splitting {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cell-grid {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    width: 100%;
+    height: 100%;
+}
+
+.cell {
+    position: relative;
+    overflow: hidden;
+}
+
+.cell-inner {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: all 1s cubic-bezier(.77, 0, .18, 1);
+}
+
+.splitting.split .cell {
+    transform: translateY(0);
+    transition:
+        transform .8s cubic-bezier(.77, 0, .18, 1);
+}
+
+.splitting.split.animate .cell:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+.splitting.split.animate .cell:nth-child(2) {
+    transform: translateY(100%);
+    transition-delay: .08s;
+}
+
+.splitting.split.animate .cell:nth-child(3) {
+    transform: translateY(-100%);
+    transition-delay: .16s;
+}
+
+.splitting.split.animate .cell:nth-child(4) {
+    transform: translateY(100%);
+    transition-delay: .24s;
+}
+
+.splitting.split.animate .cell:nth-child(5) {
+    transform: translateY(-100%);
+    transition-delay: .32s;
+}
+
+
+.splitting.slide .cell-inner {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+.splitting.slide.animate .cell-inner {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.splitting.slide.animate .cell:nth-child(1) .cell-inner {
+    transition-delay: 0s;
+}
+
+.splitting.slide.animate .cell:nth-child(2) .cell-inner {
+    transition-delay: .08s;
+}
+
+.splitting.slide.animate .cell:nth-child(3) .cell-inner {
+    transition-delay: .16s;
+}
+
+.splitting.slide.animate .cell:nth-child(4) .cell-inner {
+    transition-delay: .24s;
+}
+
+.splitting.slide.animate .cell:nth-child(5) .cell-inner {
+    transition-delay: .32s;
+}
+
+
+.splitting.zoom .cell-inner {
+    transform: scale(1.18);
+    opacity: 0;
+}
+
+.splitting.zoom.animate .cell-inner {
+    transform: scale(1);
+    opacity: 1;
+    transition:
+        transform 1.4s cubic-bezier(.2, .7, .2, 1),
+        opacity .8s ease;
+}
+
+
+.splitting.diagonal .cell {
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition:
+        clip-path 1s cubic-bezier(.77, 0, .18, 1);
+}
+
+.splitting.diagonal.animate .cell {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+}
+
+.splitting.diagonal.animate .cell:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(2) {
+    transition-delay: .1s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(4) {
+    transition-delay: .3s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(5) {
+    transition-delay: .4s;
+}
+
+.splitting.reveal .cell-inner {
+    transform: scale(1.15);
+    opacity: 0;
+}
+
+.splitting.reveal.animate .cell-inner {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.splitting.reveal.animate .cell:nth-child(1) .cell-inner {
+    transition-delay: 0s;
+}
+
+.splitting.reveal.animate .cell:nth-child(2) .cell-inner {
+    transition-delay: .12s;
+}
+
+.splitting.reveal.animate .cell:nth-child(3) .cell-inner {
+    transition-delay: .24s;
+}
+
+.splitting.reveal.animate .cell:nth-child(4) .cell-inner {
+    transition-delay: .36s;
+}
+
+.splitting.reveal.animate .cell:nth-child(5) .cell-inner {
+    transition-delay: .48s;
+}
+
+
+.splitting.scale .cell-inner {
+    transform: scale(1.3);
+    opacity: 0;
+    filter: blur(8px);
+}
+
+.splitting.scale.animate .cell-inner {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+    transition:
+        transform 1.3s cubic-bezier(.16, 1, .3, 1),
+        opacity .8s ease,
+        filter 1s ease;
+} */
+
+
+.hero-slider {
+    position: relative;
+    width: auto;
+    
+    height: auto;
+    aspect-ratio: 2048 / 748;
+    max-height: 600px;
+
+    /* height: 600px; */
+    overflow: hidden;
+    background: #fff;
+}
+
+
+/* ==============================
+   CURRENT IMAGE
+============================== */
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    /* width: 100%;
+    height: 100%; */
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    z-index: 1;
+}
+
+
+/* ==============================
+   TRANSITION
+============================== */
+
+.splitting {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 2;
+
+    overflow: hidden;
+}
+
+
+/* ==============================
+   5 COLUMNS
+============================== */
+
+.cell-grid {
+    position: absolute;
+    inset: 0;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.cell {
+    position: relative;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ==============================
+   IMPORTANT:
+   ONE CONTINUOUS IMAGE
+============================== */
+
+.cell-inner {
+    position: absolute;
+
+    top: 0;
+
+    /*
+      5 columns = image width is 500%
+      of each individual column.
+    */
+    width: 500%;
+    height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+
+    /*
+      Move each cell to its correct
+      section of the SAME image.
+    */
+    left: calc(var(--col-index) * -100%);
+
+    transform: translateX(100%);
+    
+    transition:
+        transform 1s cubic-bezier(.77, 0, .18, 1),
+        opacity 1s ease;
+}
+
+/* ==============================
+   SPLIT
+============================== */
+
+.splitting.split .cell-inner {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.splitting.split.animate .cell:nth-child(1) .cell-inner {
+    transform: translateY(-100%);
+}
+
+.splitting.split.animate .cell:nth-child(2) .cell-inner {
+    transform: translateY(100%);
+    transition-delay: .08s;
+}
+
+.splitting.split.animate .cell:nth-child(3) .cell-inner {
+    transform: translateY(-100%);
+    transition-delay: .16s;
+}
+
+.splitting.split.animate .cell:nth-child(4) .cell-inner {
+    transform: translateY(100%);
+    transition-delay: .24s;
+}
+
+.splitting.split.animate .cell:nth-child(5) .cell-inner {
+    transform: translateY(-100%);
+    transition-delay: .32s;
+}
+
+/* ==============================
+   SLIDE
+============================== */
+
+.splitting.slide .cell-inner {
+    transform: translateX(100%);
+    opacity: 1;
+}
+
+.splitting.slide.animate .cell-inner {
+    transform: translateX(0);
+}
+
+.splitting.slide.animate .cell:nth-child(1) .cell-inner {
+    transition-delay: 0s;
+}
+
+.splitting.slide.animate .cell:nth-child(2) .cell-inner {
+    transition-delay: .08s;
+}
+
+.splitting.slide.animate .cell:nth-child(3) .cell-inner {
+    transition-delay: .16s;
+}
+
+.splitting.slide.animate .cell:nth-child(4) .cell-inner {
+    transition-delay: .24s;
+}
+
+.splitting.slide.animate .cell:nth-child(5) .cell-inner {
+    transition-delay: .32s;
+}
+
+/* ==============================
+   ZOOM
+============================== */
+
+.splitting.zoom .cell-inner {
+    transform: scale(1.15);
+    opacity: 0;
+}
+
+.splitting.zoom.animate .cell-inner {
+    transform: scale(1);
+    opacity: 1;
+
+    transition:
+        transform 1.3s cubic-bezier(.16, 1, .3, 1),
+        opacity .8s ease;
+}
+
+/* ==============================
+   DIAGONAL
+============================== */
+
+.splitting.diagonal .cell {
+    clip-path: polygon(
+        0 0,
+        0 0,
+        0 100%,
+        0 100%
+    );
+
+    transition:
+        clip-path 1s cubic-bezier(.77, 0, .18, 1);
+}
+
+.splitting.diagonal.animate .cell {
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 100%,
+        0 100%
+    );
+}
+
+.splitting.diagonal.animate .cell:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(2) {
+    transition-delay: .08s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(3) {
+    transition-delay: .16s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(4) {
+    transition-delay: .24s;
+}
+
+.splitting.diagonal.animate .cell:nth-child(5) {
+    transition-delay: .32s;
+}
+
+/* ==============================
+   SCALE
+============================== */
+
+.splitting.scale .cell-inner {
+    transform: scale(1.15);
+    opacity: 0;
+    filter: blur(5px);
+}
+
+.splitting.scale.animate .cell-inner {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+
+    transition:
+        transform 1.2s cubic-bezier(.16, 1, .3, 1),
+        opacity .8s ease,
+        filter 1s ease;
+}
