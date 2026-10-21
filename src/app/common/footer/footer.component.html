@@ -1,114 +1,14 @@
-<!-- <section class="hero-slider">
-
-  <div class="hero-image-wrapper">
-
-    <div
-      class="splitting"
-      [class.animate]="isAnimating"
-    >
-
-      <div
-        class="cell-grid"
-        [style.--row-total]="2"
-        [style.--col-total]="3"
-      >
-
-        <div
-          class="cell"
-          *ngFor="let cell of cells"
-          [style.--row-index]="cell.row"
-          [style.--col-index]="cell.col"
-        >
-
-          <div
-            class="cell-inner"
-            [style.background-image]="
-              'url(' + slides[activeSlide].image + ')'
-            "
-          ></div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
-  <div class="hero-overlay"></div>
-  <div class="slide-indicators">
-    <button
-      *ngFor="let slide of slides; let i = index"
-      [class.active]="i === activeSlide"
-      (click)="goToSlide(i)"
-    ></button>
-
-  </div>
-
-</section> -->
-
 <section class="hero-slider">
-
   <div class="splitting" [class.animate]="isAnimating" [style.--row-total]="1" [style.--col-total]="5">
-
     <div class="cell-grid">
-
       <div class="cell" *ngFor="let cell of cells" [style.--row-index]="cell.row" [style.--col-index]="cell.col">
-
         <div class="cell-inner" [style.background-image]="
             'url(' + slides[activeSlide].image + ')'
           "></div>
-
       </div>
-
     </div>
-
   </div>
-
-  <!-- <div class="hero-content">
-
-    <h1>
-      Integrated
-      <span>HVAC & MEP</span>
-      Solutions
-    </h1>
-
-    <p>
-      Engineering solutions designed for performance,
-      reliability and operational excellence.
-    </p>
-
-  </div> -->
-
 </section>
-
-
-<!-- <div
-  class="splitting"
-  [style.--row-total]="1"
-  [style.--col-total]="5"
->
-
-  <div class="cell-grid">
-
-    <div
-      class="cell"
-      *ngFor="let cell of cells"
-      [style.--row-index]="cell.row"
-      [style.--col-index]="cell.col"
-    >
-
-      <div
-        class="cell-inner"
-        [style.background-image]="
-          'url(' + slides[activeSlide].image + ')'
-        ">
-      </div>
-
-    </div>
-
-  </div>
-
-</div> -->
 
 
 <div class="main">
@@ -133,69 +33,37 @@
         </div>
         <div> <i class="bi bi-envelope"></i> <span class="assessmentcontent"> sales@svespl.in</span>
         </div>
-        <!-- <b><i class="bi bi-geo-alt assessmentcontent"></i> </b> Office No. 404, 4th Floor, Anand
-                    Square, Sakore Nagar, Viman Nagar, Pune, Maharashtra <br> -->
-        <!-- <b><i class="bi bi-telephone"></i> </b> +91 96041 56757 <br> -->
-        <!-- <b><i class="bi bi-envelope"></i> </b> contact@svespl.in -->
-
       </div><br>
 
       <div class="col-md-3">
         <p class="headlineservice">SOLUTIONS</p>
-        <p class="services" [routerLink]="['/Air_Cooled&Water-Cooled_Chiller_Plants']">Air Cooled &
+        <p class="services" [routerLink]="['/air-cooled-water-cooled-chiller-plants']">Air Cooled &
           Water-Cooled Chiller Plants</p>
-        <p class="services" [routerLink]="['/VRVVRF_SYSTEMS']">VRV / VRF Systems</p>
-        <p class="services" [routerLink]="['/TURNKEY_CLEAN_ROOM_SOLUTION']">Turnkey Clean Room Solution</p>
-        <p class="services" [routerLink]="['/EVAPORATIVE_COOLING']">Evaporative Cooling</p>
-        <p class="services" [routerLink]="['/FORCED_VENTILATION']">Forced Ventilation</p>
-        <p class="services" [routerLink]="['/COMFORT_AIR_CONDITIONING']">Comfort Air Conditioning</p>
-        <p class="services" [routerLink]="['/PRECISION_AIR_CONDITIONING']">Precision Air Conditioning</p>
-        <p class="services" [routerLink]="['/BUILDING_VENTILATION']">Building Ventilation </p>
-        <p class="services" [routerLink]="['/PRECISION_AIR_CONDITIONING']">Precision Air Conditioning</p>
-        <p class="services" [routerLink]="['/PRECISION_AIR_CONDITIONING']">Precision Air Conditioning</p>
+        <p class="services" [routerLink]="['/vrv-vrf-systems']">VRV / VRF Systems</p>
+        <p class="services" [routerLink]="['/turnkey-clean-room-solutions']">Turnkey Clean Room Solution</p>
+        <p class="services" [routerLink]="['/evaporative-cooling']">Evaporative Cooling</p>
+        <p class="services" [routerLink]="['/forced-ventilation']">Forced Ventilation</p>
+        <p class="services" [routerLink]="['/comfort-air-conditioning']">Comfort Air Conditioning</p>
+        <p class="services" [routerLink]="['/precision-air-conditioning']">Precision Air Conditioning</p>
+        <p class="services" [routerLink]="['/building-ventilation']">Building Ventilation </p>
+        <p class="services" [routerLink]="['/precision-air-conditioning']">Precision Air Conditioning</p>
+        <p class="services" [routerLink]="['/precision-air-conditioning']">Precision Air Conditioning</p>
       </div>
       <br>
-      <!-- <div class="col-md-2">
-        <p class="headlineservice">INDUSTRIES</p>
-        <p class="services" [routerLink]="['/Home']" fragment="Industries">Pharmaceutical</p>
-        <p class="services" [routerLink]="['/Home']" fragment="Industries"> Food & Beverage Processing</p>
-        <p class="services" [routerLink]="['/Home']" fragment="Industries">Data Centres</p>
-        <p class="services" [routerLink]="['/Home']" fragment="Industries">Corporate Offices</p>
-        <p class="services" [routerLink]="['/Home']" fragment="Industries">Commercial Buildings</p>
-        <p class="services" [routerLink]="['/Home']" fragment="Industries">Industrial & Manufacturing</p>
-      </div> -->
       <br>
       <div class="col-md-2 Company">
         <p class="headlineservice">COMPANY</p>
-        <p class="services" (click)=" scroll()" [routerLink]="['/About']">About Us</p>
-        <p class="services" (click)=" scroll()" [routerLink]="['/Projects']">Projects</p>
-        <p class="services" (click)=" scroll()" [routerLink]="['/Casestudies']">Case Studies</p>
+        <p class="services" (click)=" scroll()" [routerLink]="['/about']">About Us</p>
+        <p class="services" (click)=" scroll()" [routerLink]="['/projects']">Projects</p>
+        <p class="services" (click)=" scroll()" [routerLink]="['/case-studies']">Case Studies</p>
         <!-- <p class="services" (click)=" scroll()" [routerLink]="['/Blog']">Blog</p> -->
-        <p class="services" (click)=" scroll()" [routerLink]="['/Career']">Careers</p>
-        <p class="services" (click)=" scroll()" [routerLink]="['/Culture']">Culture</p>
-        <p class="services" (click)=" scroll()" [routerLink]="['/Contact']">Contact</p>
+        <p class="services" (click)=" scroll()" [routerLink]="['/careers']">Careers</p>
+        <p class="services" (click)=" scroll()" [routerLink]="['/culture']">Culture</p>
+        <p class="services" (click)=" scroll()" [routerLink]="['/contact']">Contact</p>
         <br>
 
       </div>
       <br>
-
-      <!-- <div class="t">
-                <div class="icons">
-                    <div class="icon">
-                        <a href="https://www.linkedin.com/company/siddhivinayakengineering" aria-label="Click on linkedin"  target="_blank"><i  class="bi bi-linkedin"></i> </a>
-                    </div>
-
-                    <div class="icon">
-                        <a href="https://www.facebook.com/profile.php?id=61569203423546" aria-label="Click on Facebook"  target="_blank"> <i
-                                class="bi bi-facebook"></i> </a>
-                    </div>
-
-                    <div class="icon">
-                        <a href="https://www.instagram.com/svespl_official/?hl=en" aria-label="Click on Instagram"  target="_blank"> <i
-                                class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
-            </div> -->
     </div>
   </div>
 

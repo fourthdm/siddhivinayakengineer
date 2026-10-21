@@ -1,9 +1,31 @@
-.logoimage {
-    /* width: 300px; */
+/* .logoimage {
     height: auto;
     max-width: 100%;
     display: block;
+} */
+
+.logoimage {
+  display: block;
+  width: 300px;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  flex-shrink: 0;
+  image-rendering: auto;
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .logoimage {
+    width: 200px;
+  }
+}
+
 
 .dropdown-hover:hover>.dropdown-menu {
     display: inline-block;
@@ -91,10 +113,7 @@
     border: 1px solid rgba(241, 111, 36, 0.2);
     /* Subtle highlight edge */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
-    /* Soft shadow for depth */
-    /* color: #F16F24;
-    font-size: 18px;
-    font-weight: 500; */
+
 }
 
 .Phoneno {
