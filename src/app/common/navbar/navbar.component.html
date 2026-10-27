@@ -28,30 +28,38 @@
                     </a>
                     <ul class="dropdown-menu dropdown-submenu">
                         <li><a aria-label="Read more." class="dropdown-item " href="#"
-                                [routerLink]="['/air-cooled-water-cooled-chiller-plants']">AIR COOLED & WATER-COOLED
-                                CHILLER PLANTS </a></li>
+                                [routerLink]="['/air-cooled-water-cooled-chiller-plants']">Air Cooled & Water-Cooled
+                                Chiller Plants </a></li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/vrv-vrf-systems']"> VRV / VRF SYSTEMS </a>
+                                [routerLink]="['/vrv-vrf-systems']"> VRV / VRF Systems </a>
                         </li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/turnkey-clean-room-solutions']"> TURNKEY
-                                CLEAN ROOM SOLUTION </a></li>
+                                [routerLink]="['/turnkey-clean-room-solutions']"> Turnkey 
+                                Clean Room Solution </a></li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/evaporative-cooling']"> EVAPORATIVE
-                                COOLING </a></li>
+                                [routerLink]="['/evaporative-cooling']"> Evaporative 
+                                Cooling </a></li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/forced-ventilation']"> FORCED VENTILATION
+                                [routerLink]="['/forced-ventilation']"> Forced Ventilation
                             </a></li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/comfort-air-conditioning']"> COMFORT AIR
-                                CONDITIONING </a></li>
+                                [routerLink]="['/comfort-air-conditioning']"> Comfort Air
+                                Conditioning</a></li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/precision-air-conditioning']"> PRECISION
-                                AIR CONDITIONING </a></li>
-
-                        <li><a aria-label="Read more." class="dropdown-item" href="#">BUILDING VENTILATION </a></li>
-                        <li><a aria-label="Read more." class="dropdown-item" href="#"> ANNUAL MAINTENANCE</a></li>
-                        <li><a aria-label="Read more." class="dropdown-item" href="#">HVAC_VITOUTS_REFOFIT </a></li>
+                                [routerLink]="['/precision-air-conditioning']"> Precision
+                                Air Conditioning </a></li>
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/building-ventilation']" (click)="scroll()" (click)="closeNavbars()">
+                                Building Ventilation </a>
+                        </li>
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/annual-maintenance']" (click)="scroll()" (click)="closeNavbars()">
+                                Annual Maintenance </a>
+                        </li>
+                        <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                [routerLink]="['/hvac-fitouts-refofit']" (click)="scroll()" (click)="closeNavbars()">
+                                HVAC Fitout Refofit</a>
+                        </li>
                     </ul>
                 </li>
 
@@ -67,7 +75,6 @@
                         <li><a aria-label="Read more." class="dropdown-item" [routerLink]="['/case-studies']">Case
                                 Studies</a>
                         </li>
-
                     </ul>
                 </li>
 
@@ -126,7 +133,8 @@
     <nav class="navbar bg-body-tertiary fixed-top" style=" background: rgba(255, 255, 255, 0.08);">
         <div class="container">
             <a class="navbar-brand" [routerLink]="['/home']">
-                <img src="/assets/Siddhivinayak_Logo.png" class="logoimage" alt="LogoImage">
+                <img src="/assets/1000584537logo.png" width="200" alt="LogoImage">
+                <!-- <img src="/assets/Siddhivinayak_Logo.png" class="logoimage" alt="LogoImage"> -->
                 <!-- <img src="/assets/Logo file_Update-01.png" class="logoimage" alt="LogoImage"> -->
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
@@ -161,33 +169,44 @@
                             <ul class="dropdown-menu">
                                 <li><a aria-label="Read more." class="dropdown-item"
                                         [routerLink]="['/air-cooled-water-cooled-chiller-plants']" (click)="scroll()"
-                                        (click)="closeNavbars()">AIR COOLED & WATER-COOLED CHILLER
-                                        PLANTS
+                                        (click)="closeNavbars()">Air Cooled & Water-Cooled Chiller 
+                                        Plants
                                     </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/vrv-vrf-systems']" (click)="scroll()" (click)="closeNavbars()">
-                                        VRV / VRF SYSTEMS
+                                        VRV / VRF Systems
                                     </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/turnkey-clean-room-solutions']" (click)="scroll()"
                                         (click)="closeNavbars()">
-                                        TURNKEY CLEAN ROOM SOLUTION </a></li>
+                                        Turnkey Clean Room Solution </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/evaporative-cooling']" (click)="scroll()"
-                                        (click)="closeNavbars()"> EVAPORATIVE
-                                        COOLING </a></li>
+                                        (click)="closeNavbars()"> Evaporative 
+                                        Cooling </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/forced-ventilation']" (click)="scroll()"
-                                        (click)="closeNavbars()"> FORCED
-                                        VENTILATION </a></li>
+                                        (click)="closeNavbars()"> Forced Ventilation </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/comfort-air-conditioning']" (click)="scroll()"
-                                        (click)="closeNavbars()"> COMFORT
-                                        AIR CONDITIONING </a></li>
+                                        (click)="closeNavbars()"> Comfort Air Conditioning </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/precision-air-conditioning']" (click)="scroll()"
                                         (click)="closeNavbars()">
-                                        PRECISION AIR CONDITIONING </a></li>
+                                        Precision Air Conditioning </a></li>
+
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/building-ventilation']" (click)="scroll()"
+                                        (click)="closeNavbars()"> Building Ventilation </a>
+                                </li>
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/annual-maintenance']" (click)="scroll()"
+                                        (click)="closeNavbars()"> Annual Maintenance </a>
+                                </li>
+                                <li><a aria-label="Read more." class="dropdown-item" href="#"
+                                        [routerLink]="['/hvac-fitouts-refofit']" (click)="scroll()"
+                                        (click)="closeNavbars()"> HVAC Fitout Refofit </a>
+                                </li>
                             </ul>
                         </li>
 

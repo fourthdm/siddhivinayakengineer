@@ -34,47 +34,73 @@ const routes: Routes = [
     path: '', component: HomeComponent, pathMatch: 'full',
     data: {
       title: 'HVAC & MEP Engineering Company in Pune | SVESPL',
-      description: 'SVESPL delivers HVAC and MEP engineering, installation and maintenance for commercial, industrial and residential projects in Pune and across India.'
+      description: 'SVESPL delivers HVAC and MEP engineering, installation and maintenance for commercial, industrial and residential projects in Pune and across India.',
+      canonical: 'https://www.svespl.in/'
     }
   },
   {
     path: 'home', component: HomeComponent,
     data: {
       title: 'HVAC & MEP Engineering Company in Pune | SVESPL',
-      description: 'SVESPL delivers HVAC and MEP engineering, installation and maintenance for commercial, industrial and residential projects in Pune and across India.'
+      description: 'SVESPL delivers HVAC and MEP engineering, installation and maintenance for commercial, industrial and residential projects in Pune and across India.',
+      canonical: 'https://www.svespl.in/home'
     }
   },
   {
     path: 'about', component: AboutusComponent,
     data: {
       title: 'About SVESPL | HVAC & MEP Experts in Pune',
-      description: 'Learn about SVESPL, an HVAC and MEP solutions provider founded in 2008, serving commercial, industrial and residential projects with engineering expertise.'
+      description: 'Learn about SVESPL, an HVAC and MEP solutions provider founded in 2008, serving commercial, industrial and residential projects with engineering expertise.',
+      canonical: 'https://www.svespl.in/about'
     }
   },
   {
     path: 'services', component: ServicesComponent,
     data: {
       title: 'HVAC, MEP & Cleanroom Services in Pune | SVESPL',
-      description: 'Explore HVAC systems, turnkey cleanrooms, cleanroom equipment, ventilation, evaporative cooling, VRV/VRF systems, design and project management.'
+      description: 'Explore HVAC systems, turnkey cleanrooms, cleanroom equipment, ventilation, evaporative cooling, VRV/VRF systems, design and project management.',
+      canonical: 'https://www.svespl.in/services'
     }
   },
-  { path: 'careers', component: CareerComponent, title: "Jobs(List)| Siddhivinayak Engineering Solutions" },
-  
+  {
+    path: 'careers', component: CareerComponent,
+    data: {
+      title: "Jobs(List)| Siddhivinayak Engineering Solutions",
+      canonical: 'https://www.svespl.in/careers'
+    }
+  },
+
   {
     path: 'contact', component: ContactComponent,
     data: {
       title: 'Contact SVESPL | HVAC Contractor in Pune',
-      description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.'
+      description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.',
+      canonical: 'https://www.svespl.in/contact'
     }
   },
-  { path: 'culture', component: CultureComponent },
-
-  { path: 'Blog', component: BlogComponent },
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'case-studies', component: CasestudiesComponent },
-
+  {
+    path: 'culture', component: CultureComponent,
+    data: {
+      canonical: 'https://www.svespl.in/culture'
+    }
+  },
+  {
+    path: 'projects', component: ProjectsComponent,
+    data: {
+      canonical: 'https://www.svespl.in/projects'
+    }
+  },
+  {
+    path: 'case-studies', component: CasestudiesComponent,
+    data: {
+      canonical: 'https://www.svespl.in/case-studies'
+    }
+  },
   {
     path: 'air-cooled-water-cooled-chiller-plants', component: AircooledComponent,
+    data: {
+      canonical: 'https://www.svespl.in/air-cooled-water-cooled-chiller-plants'
+    }
     // data: {
     //   title: 'Contact SVESPL | HVAC Contractor in Pune',
     //   description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.'
@@ -84,58 +110,86 @@ const routes: Routes = [
     path: 'vrv-vrf-systems', component: VrvComponent,
     data: {
       title: 'VRV/VRF Air Conditioning Systems | SVESPL',
-      description: 'Discover VRV and VRF air conditioning systems for flexible zone-wise temperature control, energy efficiency and HVAC solutions for varied building types.'
+      description: 'Discover VRV and VRF air conditioning systems for flexible zone-wise temperature control, energy efficiency and HVAC solutions for varied building types.',
+      canonical: 'https://www.svespl.in/vrv-vrf-systems'
     }
   },
   {
     path: 'turnkey-clean-room-solutions', component: TurnkeycleanroomComponent,
     data: {
       title: 'Turnkey Cleanroom Design & Installation | SVESPL',
-      description: 'Plan turnkey cleanroom projects with design, engineering, installation and commissioning for controlled environments tailored to your facility requirements.'
+      description: 'Plan turnkey cleanroom projects with design, engineering, installation and commissioning for controlled environments tailored to your facility requirements.',
+      canonical: 'https://www.svespl.in/turnkey-clean-room-solutions'
     }
   },
   {
     path: 'evaporative-cooling', component: EvaporativeComponent,
     data: {
       title: 'Evaporative Cooling Systems for Large Spaces | SVESPL',
-      description: 'Explore evaporative cooling systems for large spaces that provide cost-conscious cooling using water evaporation and support lower energy consumption.'
+      description: 'Explore evaporative cooling systems for large spaces that provide cost-conscious cooling using water evaporation and support lower energy consumption.',
+      canonical: 'https://www.svespl.in/evaporative-cooling'
     }
   },
   {
     path: 'forced-ventilation', component: ForcedventilationComponent,
-    // data: {
-    //   title: 'Contact SVESPL | HVAC Contractor in Pune',
-    //   description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.'
-    // }
+    data: {
+      canonical: 'https://www.svespl.in/forced-ventilation'
+    }
   },
   {
     path: 'comfort-air-conditioning', component: ComfortairComponent,
-    // data: {
-    //   title: 'Contact SVESPL | HVAC Contractor in Pune',
-    //   description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.'
-    // }
+    data: {
+      canonical: 'https://www.svespl.in/comfort-air-conditioning'
+    }
   },
   {
     path: 'precision-air-conditioning', component: PrecisionairComponent,
-    // data: {
-    //   title: 'Contact SVESPL | HVAC Contractor in Pune',
-    //   description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.'
-    // }
+    data: {
+      canonical: 'https://www.svespl.in/precision-air-conditioning'
+    }
   },
-
-  { path: 'building-ventilation', component: BuildingventilationComponent },
-  { path: 'ANNUAL_MAINTENANCE', component: AnnualmaintenceComponent },
-  { path: 'HVAC_VITOUTS_REFOFIT', component: HvacvitoutsComponent },
-
-  { path: 'ResidentialProject', component: ResidentialComponent },
-  { path: 'CommercialProject', component: CommercialComponent },
-  { path: 'IndustrialProject', component: IndustrialComponent },
-
-  { path: 'metroStationCasestudy', component: MetroComponent },
-  { path: 'amaoraCaseStudy', component: AmanoraComponent },
-  { path: 'emersonCaseStudy', component: EmersonComponent },
-
-  { path: 'sitemap', component: SitemapComponent },
+  {
+    path: 'building-ventilation', component: BuildingventilationComponent,
+    data: {
+      canonical: 'https://www.svespl.in/building-ventilation'
+    }
+  },
+  {
+    path: 'annual-maintenance', component: AnnualmaintenceComponent,
+    data: {
+      canonical: 'https://www.svespl.in/annual-maintenance'
+    }
+  },
+  {
+    path: 'hvac-fitouts-refofit', component: HvacvitoutsComponent,
+    data: {
+      canonical: 'https://www.svespl.in/hvac-fitouts-refofit'
+    }
+  },
+  {
+    path: 'metroStationCasestudy', component: MetroComponent,
+    data: {
+      canonical: 'https://www.svespl.in/metroStationCasestudy'
+    }
+  },
+  {
+    path: 'amaoraCaseStudy', component: AmanoraComponent,
+    data: {
+      canonical: 'https://www.svespl.in/amaoraCaseStudy'
+    }
+  },
+  {
+    path: 'emersonCaseStudy', component: EmersonComponent,
+    data: {
+      canonical: 'https://www.svespl.in/emersonCaseStudy'
+    }
+  },
+  {
+    path: 'sitemap', component: SitemapComponent,
+    data: {
+      canonical: 'https://www.svespl.in/sitemap'
+    }
+  },
   { path: '**', redirectTo: '' }
 ];
 

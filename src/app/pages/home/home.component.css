@@ -69,7 +69,6 @@ a {
 }
 
 .card-title {
-
     color: #F16F24;
     font-size: 23px;
 }
@@ -491,7 +490,7 @@ li {
     } */
 }
 
-@media(min-width: 390px) and (max-width: 767px) {
+@media(min-width: 319px) and (max-width: 767px) {
     .productservice {
         display: none;
     }
@@ -2346,4 +2345,8 @@ h2 span {
     --swiper-navigation-color: #F16F24;
     --swiper-navigation-size: 30px;
     --swiper-navigation-sides-offset: 3px;
+}
+
+@media(min-width: 319px) and (max-width: 767px) {
+
 }
