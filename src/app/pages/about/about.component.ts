@@ -1,4 +1,5 @@
-import { Component, ElementRef, ViewChild,ViewChildren,QueryList } from '@angular/core';
+import { Component, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
+import Swiper from 'swiper';
 
 @Component({
   selector: 'app-about',
@@ -6,6 +7,9 @@ import { Component, ElementRef, ViewChild,ViewChildren,QueryList } from '@angula
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent {
+
+  
+
 
   scrolltop = document.getElementById('scrolltop');
   rootelement = document.documentElement;
@@ -167,5 +171,11 @@ export class AboutComponent {
     link.click();
   }
 
-
+  swiper = new Swiper('.swiper', {
+    effect: 'coverflow',
+    coverflowEffect: {
+      rotate: 30,
+      slideShadows: false,
+    },
+  });
 }

@@ -1,3 +1,32 @@
+/* .logoimage {
+    height: auto;
+    max-width: 100%;
+    display: block;
+} */
+
+.logoimage {
+  display: block;
+  width: 300px;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  flex-shrink: 0;
+  image-rendering: auto;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .logoimage {
+    width: 200px;
+  }
+}
+
+
 .dropdown-hover:hover>.dropdown-menu {
     display: inline-block;
 }
@@ -15,8 +44,6 @@
     position: absolute;
     left: 100%;
     top: -7px;
-
-
     background: rgba(241, 111, 36, 0.08);
     /* Semi-transparent base */
     backdrop-filter: blur(24px) saturate(180%);
@@ -47,6 +74,10 @@
 
 .dropdown-menu>li:hover>.dropdown-submenu {
     display: block;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(241, 111, 36, 0.08) !important;
 }
 
 .btns {
@@ -82,10 +113,7 @@
     border: 1px solid rgba(241, 111, 36, 0.2);
     /* Subtle highlight edge */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
-    /* Soft shadow for depth */
-    /* color: #F16F24;
-    font-size: 18px;
-    font-weight: 500; */
+
 }
 
 .Phoneno {
@@ -142,6 +170,16 @@
     /* Active clicked color */
     border-bottom: 2px solid #F16F24 !important;
     /* border-left: 2px solid white; */
+
+    background: rgba(241, 111, 36, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(241, 111, 36, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
 }
 
 .icon {
@@ -194,7 +232,7 @@
     display: none;
 }
 
-@media(max-width:439px) {
+@media(min-width: 319px) and (max-width: 767px) {
     .navbardaikins {
         display: none;
     }
@@ -328,11 +366,11 @@
     /* Soft shadow for depth */
 }
 
-.navsitemaptext{
+.navsitemaptext {
     color: #161E2A;
     font-weight: 400;
 }
 
-.navsitemaptext:hover{
+.navsitemaptext:hover {
     color: #F16F24;
 }

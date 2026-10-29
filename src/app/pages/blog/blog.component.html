@@ -1,37 +1,11 @@
-<div class="">
-    <div class="timeline-wrapper">
+<section class="hero-section">
 
-        <h1>A Momentous Journey</h1>
+    <!-- Animated fireworks background -->
+    <canvas #fireworksCanvas class="fireworks-canvas"></canvas>
 
-        <swiper-container effect="coverflow" centered-slides="true" slides-per-view="3" loop="true" grab-cursor="true"
-            mousewheel="true" coverflow-effect-rotate="0" coverflow-effect-stretch="0" coverflow-effect-depth="400"
-            coverflow-effect-modifier="1" coverflow-effect-scale="1" coverflow-effect-slide-shadows="true">
-
-            <swiper-slide *ngFor="let card of cards">
-
-                <div class="timeline-card">
-
-                    <h2>{{card.year}}</h2>
-
-                    <p>{{card.text}}</p>
-
-                    <div class="divider"></div>
-                    <!-- <p> {{card.award}}</p>
-                    <p> <br>
-                        {{card.award1}}</p>
-                    <p> <br> {{card.award2}}</p>
-                    <p> <br>{{card.award3}}</p>
-                    <p> <br> {{card.award4}}</p> -->
-                </div>
-
-            </swiper-slide>
-            
-            <swiper-slide>
-                <p>Helo worwld</p>
-            </swiper-slide>
-
-        </swiper-container>
-
+    <!-- Your existing hero content -->
+    <div class="hero-content">
+        <h1>Wishing You a Diwali Filled with Growth, Success, and New Milestones!</h1>
     </div>
 
-</div>
+</section>
