@@ -1,4 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import confetti from 'canvas-confetti';
+interface FireworkParticle {
+  x: number;
+  y: number;
+  vx: number;
+  vy: number;
+  life: number;
+  maxLife: number;
+  color: string;
+  radius: number;
+  decay: number;
+}
 
 @Component({
   selector: 'app-blog',
@@ -6,65 +18,161 @@ import { Component } from '@angular/core';
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
-  locations = [
-    { name: 'Gujarat', x: 17, y: 48 },
-    { name: 'Rajasthan', x: 25, y: 38 },
-    { name: 'Uttar Pradesh', x: 45, y: 38 },
-    { name: 'Hydrabad', x: 40, y: 62 },
-    { name: 'Maharastra', x: 30, y: 58 },
-    { name: 'Delhi', x: 31, y: 32 },
-    { name: 'Punjab', x: 29, y: 26 },
-    { name: 'Srinagar', x: 28, y: 20 },
-    { name: 'Ladhakh', x: 35, y: 19},
-    { name: 'Himachal Pradesh', x:35, y: 25 },
-    { name: 'UttaraKhand', x:40, y: 29 },
-    { name: 'Madhya Pradesh', x: 40, y: 48 },
-    { name: 'Chhattisgarh', x: 50, y: 52 },
-    { name: 'Jharkhand', x: 59, y: 48 },
-    { name: 'Bihar', x: 60, y: 40 },
-    { name: 'Sikkim', x: 69.5, y: 36 },
-    { name: 'Arunachal Pradesh', x: 87 , y: 34 },
-    { name: 'Assam', x: 84 , y: 39 },
-    { name: 'Meghalaya', x: 79 , y: 42 },
-    { name: 'Tripura', x: 79 , y: 47 },
-    { name: 'Mizoram', x: 83 , y: 47 },
-    { name: 'Manipur', x: 86 , y: 44 },
-    { name: 'Nagaland', x: 88.5 , y: 40 },
-    { name: 'West Bengal(Kolkata)', x: 67, y: 48 },
-    { name: 'Karnataka', x:30, y:73},
-    { name: 'Odisha', x:55, y:55},
-    { name: 'Kerla', x:33, y:85},
-    { name: 'Tamil Nadu', x:38, y:83},
-    { name: 'Andhra Pradesh', x:40, y:71},
+ 
+  @ViewChild('fireworksCanvas')
+  canvasRef!: ElementRef<HTMLCanvasElement>;
+
+  private ctx!: CanvasRenderingContext2D;
+  private animationId = 0;
+  private width = 0;
+  private height = 0;
+  private lastBurst = 0;
+
+  private particles: FireworkParticle[] = [];
+
+  private colors = [
+    '#00E5FF',
+    '#FF168F',
+    '#B8FF36',
+    '#FFD700',
+    '#FFFFFF',
+    '#A855F7'
   ];
 
+  private resizeHandler = () => this.resizeCanvas();
 
-    cards = [
-    {
-      year: '2008-2011',
-      text: 'Proven Expertise & Extensive Experience. 18 Years of Industry Presence & Leadership'
-    },
-    {
-      year: '2012-2015',
-      text: 'Capability Expansion, Expanded into full MEP scope and added cleanroom and PAC competencies.'
-    },
-    {
-      year: '2016-2019',
-      text: 'Structured Growth, Fully Functional ERP, Customised Costing & Estimation Portal, Fully Equipped and advanced Diagnostic & Troubleshooting Equipments'
-    },
-    {
-      year: '2020-2024',
-      text: 'Commitment to Quality & Client Satisfaction.Structured Growth, Fully Functional ERP',
-      award: 'Outstanding VRV Sales FY 2020-21',
-      award1: 'Highest Quality and Project Management FY 2021-22',
-      award2: 'Outstanding VRV Sales FY 2021-22',
-      award3: 'Outstanding VRV Sales FY 2022-23',
-      award4: 'Outstanding VRV Sales FY 2023-24',
-    },
-    {
-      year: '2025-Present',
-      text: 'Started BrahMos Production'
-    },
-  ];
+  ngAfterViewInit(): void {
+    const canvas = this.canvasRef.nativeElement;
+    const context = canvas.getContext('2d');
 
+    if (!context) return;
+
+    this.ctx = context;
+    this.resizeCanvas();
+
+    window.addEventListener('resize', this.resizeHandler);
+
+    // Initial fireworks across the hero
+    this.createFirework(this.width * 0.15, this.height * 0.60);
+    this.createFirework(this.width * 0.34, this.height * 0.22);
+    this.createFirework(this.width * 0.68, this.height * 0.24);
+    this.createFirework(this.width * 0.86, this.height * 0.48);
+
+    this.lastBurst = performance.now();
+    this.animate();
+  }
+
+  private resizeCanvas(): void {
+    if (!this.canvasRef) return;
+
+    const canvas = this.canvasRef.nativeElement;
+    const rect = canvas.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    this.width = rect.width;
+    this.height = rect.height;
+
+    canvas.width = Math.round(this.width * dpr);
+    canvas.height = Math.round(this.height * dpr);
+
+    const context = canvas.getContext('2d');
+    if (!context) return;
+
+    context.setTransform(dpr, 0, 0, dpr, 0, 0);
+    this.ctx = context;
+  }
+
+  private createFirework(x: number, y: number): void {
+    const color = this.colors[
+      Math.floor(Math.random() * this.colors.length)
+    ];
+
+    const count = 85 + Math.floor(Math.random() * 65);
+
+    for (let i = 0; i < count; i++) {
+      const angle = (Math.PI * 2 * i) / count
+        + (Math.random() - 0.5) * 0.08;
+
+      const speed = 1.3 + Math.random() * 4.5;
+      const life = 45 + Math.random() * 45;
+
+      this.particles.push({
+        x,
+        y,
+        vx: Math.cos(angle) * speed,
+        vy: Math.sin(angle) * speed,
+        life,
+        maxLife: life,
+        color: Math.random() > 0.2
+          ? color
+          : this.colors[
+              Math.floor(Math.random() * this.colors.length)
+            ],
+        radius: 0.8 + Math.random() * 1.5,
+        decay: 0.96 + Math.random() * 0.025
+      });
+    }
+  }
+
+  private animate = (): void => {
+    this.animationId = requestAnimationFrame(this.animate);
+
+    const now = performance.now();
+
+    // Clear previous frame for sharp spark trails
+    this.ctx.clearRect(0, 0, this.width, this.height);
+
+    // Launch a new burst every 450–900 milliseconds
+    if (now - this.lastBurst > 450 + Math.random() * 450) {
+      const x = this.width * (0.06 + Math.random() * 0.88);
+      const y = this.height * (0.08 + Math.random() * 0.52);
+
+      this.createFirework(x, y);
+      this.lastBurst = now;
+    }
+
+    this.particles = this.particles.filter(p => p.life > 0);
+
+    for (const p of this.particles) {
+      const opacity = Math.max(0, p.life / p.maxLife);
+
+      // Motion and gravity
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vx *= p.decay;
+      p.vy = p.vy * p.decay + 0.025;
+      p.life--;
+
+      // Draw glowing spark
+      this.ctx.save();
+      this.ctx.globalAlpha = opacity;
+      this.ctx.strokeStyle = p.color;
+      this.ctx.fillStyle = p.color;
+      this.ctx.lineWidth = p.radius;
+      this.ctx.shadowBlur = 9;
+      this.ctx.shadowColor = p.color;
+
+      // Spark trail
+      this.ctx.beginPath();
+      this.ctx.moveTo(p.x, p.y);
+      this.ctx.lineTo(
+        p.x - p.vx * 2.8,
+        p.y - p.vy * 2.8
+      );
+      this.ctx.stroke();
+
+      // Bright spark head
+      this.ctx.beginPath();
+      this.ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      this.ctx.fill();
+
+      this.ctx.restore();
+    }
+  };
+
+  ngOnDestroy(): void {
+    cancelAnimationFrame(this.animationId);
+    window.removeEventListener('resize', this.resizeHandler);
+    this.particles = [];
+  }
 }

@@ -1,82 +1,65 @@
-.timeline-wrapper {
-    background: #efefef;
-    min-height: 100vh;
-    padding: 40px;
+
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* min-height: 500px; */
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(241, 111, 36, 0.7),
+      transparent 65%
+    ),
+    #4b3123;
 }
 
-.timeline-wrapper h1 {
-    text-align: center;
-    font-size: 45px;
-    margin-bottom: 50px;
+/* Fireworks stay behind all hero content */
+.fireworks-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
 }
 
-swiper-container {
-
-    width: 100%;
-
-    height: 700px;
-
-    overflow: visible;
+/* Keep your hero text and buttons readable */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px 6%;
+  color: #fff;
 }
 
-swiper-slide {
-
-    width: 420px;
-
-    height: 550px;
+.hero-content h1 {
+  max-width: 950px;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.timeline-card {
-
-    width: 100%;
-
-    height: 100%;
-
-    background: #F16F24;
-
-    border-radius: 15px;
-
-    color: white;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    align-items: center;
-
-    text-align: center;
-
-    padding: 40px;
-
-    box-sizing: border-box;
+.hero-content p {
+  max-width: 500px;
+  color: #b9c1d0;
+  line-height: 1.8;
 }
 
-.timeline-card h2 {
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 550px;
+  }
 
-    font-size: 40px;
+  .hero-content {
+    padding: 100px 20px 60px;
+  }
 
-    margin-bottom: 20px;
+  .hero-content h1 {
+    font-size: 30px;
+  }
 }
 
-.timeline-card p {
-
-    font-size: 16px;
-    line-height: 26px;
-}
-
-.divider {
-
-    width: 120px;
-
-    height: 2px;
-
-    background: white;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
-@media(min-width: 390px) and (max-width: 767px) {
-    
+@media (prefers-reduced-motion: reduce) {
+  .fireworks-canvas {
+    display: none;
+  }
 }
