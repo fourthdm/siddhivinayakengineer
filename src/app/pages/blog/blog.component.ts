@@ -18,7 +18,7 @@ interface FireworkParticle {
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
- 
+
   @ViewChild('fireworksCanvas')
   canvasRef!: ElementRef<HTMLCanvasElement>;
 
@@ -31,12 +31,12 @@ export class BlogComponent {
   private particles: FireworkParticle[] = [];
 
   private colors = [
-    '#00E5FF',
-    '#FF168F',
-    '#B8FF36',
-    '#FFD700',
+    '#d6b3527a',
+    '#A04039',
+    '#cab79d',
+    '#B33E3F ',
     '#FFFFFF',
-    '#A855F7'
+    '#e7bc46'
   ];
 
   private resizeHandler = () => this.resizeCanvas();
@@ -106,8 +106,8 @@ export class BlogComponent {
         color: Math.random() > 0.2
           ? color
           : this.colors[
-              Math.floor(Math.random() * this.colors.length)
-            ],
+          Math.floor(Math.random() * this.colors.length)
+          ],
         radius: 0.8 + Math.random() * 1.5,
         decay: 0.96 + Math.random() * 0.025
       });

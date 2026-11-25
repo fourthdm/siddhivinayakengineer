@@ -1,6 +1,9 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top laptopview" style="background-color: #F8FAFC;">
+    <!-- <canvas #fireworksCanvas class="fireworks-canvas"></canvas> -->
+
     <div class="container">
-        <a aria-label="Read more." class="navbar-brand" routerLink="['/home']">
+        <a aria-label="Read more." class="navbar-brand" routerLink='/home'>
+         
             <!-- <img src="/assets/1000584537logo.svg" height="75" alt="LogoImage"> -->
             <img src="/assets/Siddi_Logo.png" class="logoimage" alt="LogoImage">
         </a>
@@ -34,10 +37,10 @@
                                 [routerLink]="['/vrv-vrf-systems']"> VRV / VRF Systems </a>
                         </li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/turnkey-clean-room-solutions']"> Turnkey 
+                                [routerLink]="['/turnkey-clean-room-solutions']"> Turnkey
                                 Clean Room Solution </a></li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
-                                [routerLink]="['/evaporative-cooling']"> Evaporative 
+                                [routerLink]="['/evaporative-cooling']"> Evaporative
                                 Cooling </a></li>
                         <li><a aria-label="Read more." class="dropdown-item" href="#"
                                 [routerLink]="['/forced-ventilation']"> Forced Ventilation
@@ -130,9 +133,11 @@
 
 
 <div class="mobileview">
+
     <nav class="navbar bg-body-tertiary fixed-top" style=" background: rgba(255, 255, 255, 0.08);">
+        
         <div class="container">
-            <a class="navbar-brand" [routerLink]="['/home']">
+            <a class="navbar-brand" routerLink='/home'>
                 <img src="/assets/1000584537logo.png" width="200" alt="LogoImage">
                 <!-- <img src="/assets/Siddhivinayak_Logo.png" class="logoimage" alt="LogoImage"> -->
                 <!-- <img src="/assets/Logo file_Update-01.png" class="logoimage" alt="LogoImage"> -->
@@ -169,7 +174,7 @@
                             <ul class="dropdown-menu">
                                 <li><a aria-label="Read more." class="dropdown-item"
                                         [routerLink]="['/air-cooled-water-cooled-chiller-plants']" (click)="scroll()"
-                                        (click)="closeNavbars()">Air Cooled & Water-Cooled Chiller 
+                                        (click)="closeNavbars()">Air Cooled & Water-Cooled Chiller
                                         Plants
                                     </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
@@ -182,7 +187,7 @@
                                         Turnkey Clean Room Solution </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/evaporative-cooling']" (click)="scroll()"
-                                        (click)="closeNavbars()"> Evaporative 
+                                        (click)="closeNavbars()"> Evaporative
                                         Cooling </a></li>
                                 <li><a aria-label="Read more." class="dropdown-item" href="#"
                                         [routerLink]="['/forced-ventilation']" (click)="scroll()"
@@ -260,5 +265,4 @@
     </nav>
     <br><br><br>
     <br>
-
 </div>

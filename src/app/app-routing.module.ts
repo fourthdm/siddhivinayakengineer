@@ -31,50 +31,50 @@ import { HvacvitoutsComponent } from './pages/hvacvitouts/hvacvitouts.component'
 
 const routes: Routes = [
   {
-    path: '', component: HomeComponent, pathMatch: 'full',
+    path: '', component: HomeComponent, 
+    title: 'HVAC & MEP Engineering Company in India | SVESPL',
     data: {
-      title: 'HVAC & MEP Engineering Company in Pune | SVESPL',
-      description: 'SVESPL delivers HVAC and MEP engineering, installation and maintenance for commercial, industrial and residential projects in Pune and across India.',
+      description: 'SVESPL is an HVAC & MEP Engineering Company in India delivering industrial and commercial HVAC systems, cleanrooms, chiller plants, VRV/VRF systems and ventilation solutions.',
       canonical: 'https://www.svespl.in/'
     }
   },
   {
     path: 'home', component: HomeComponent,
+    title: 'HVAC & MEP Engineering Company in India | SVESPL',
     data: {
-      title: 'HVAC & MEP Engineering Company in Pune | SVESPL',
-      description: 'SVESPL delivers HVAC and MEP engineering, installation and maintenance for commercial, industrial and residential projects in Pune and across India.',
+      description: 'SVESPL is an HVAC & MEP Engineering Company in India delivering industrial and commercial HVAC systems, cleanrooms, chiller plants, VRV/VRF systems and ventilation solutions.',
       canonical: 'https://www.svespl.in/home'
     }
   },
   {
     path: 'about', component: AboutusComponent,
+    title: 'HVAC Engineering Company in India | About SVESPL',
     data: {
-      title: 'About SVESPL | HVAC & MEP Experts in Pune',
-      description: 'Learn about SVESPL, an HVAC and MEP solutions provider founded in 2008, serving commercial, industrial and residential projects with engineering expertise.',
+      description: 'Discover why SVESPL is an HVAC Engineering Company in India, with experience in industrial and commercial HVAC projects, MEP coordination and turnkey engineering solutions.',
       canonical: 'https://www.svespl.in/about'
     }
   },
   {
     path: 'services', component: ServicesComponent,
+    title: 'HVAC & MEP Engineering Services for Industry | SVESPL',
     data: {
-      title: 'HVAC, MEP & Cleanroom Services in Pune | SVESPL',
-      description: 'Explore HVAC systems, turnkey cleanrooms, cleanroom equipment, ventilation, evaporative cooling, VRV/VRF systems, design and project management.',
+      description: 'Explore HVAC & MEP Engineering Services by SVESPL, including industrial cooling, chiller plants, cleanroom systems, VRV/VRF installation, ventilation and engineering support.',
       canonical: 'https://www.svespl.in/services'
     }
   },
   {
     path: 'careers', component: CareerComponent,
+    title: "Jobs(List)| Siddhivinayak Engineering Solutions",
     data: {
-      title: "Jobs(List)| Siddhivinayak Engineering Solutions",
       canonical: 'https://www.svespl.in/careers'
     }
   },
 
   {
     path: 'contact', component: ContactComponent,
+    title: 'HVAC Contractor in Pune | Contact SVESPL',
     data: {
-      title: 'Contact SVESPL | HVAC Contractor in Pune',
-      description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.',
+      description: 'Contact SVESPL, an HVAC Contractor in Pune, to discuss industrial or commercial HVAC requirements, request a site assessment and plan your next engineering project.',
       canonical: 'https://www.svespl.in/contact'
     }
   },
@@ -101,31 +101,27 @@ const routes: Routes = [
     data: {
       canonical: 'https://www.svespl.in/air-cooled-water-cooled-chiller-plants'
     }
-    // data: {
-    //   title: 'Contact SVESPL | HVAC Contractor in Pune',
-    //   description: 'Contact SVESPL in Viman Nagar, Pune for HVAC and MEP project enquiries, system installation, maintenance, cleanroom solutions and project estimates.'
-    // }
   },
   {
     path: 'vrv-vrf-systems', component: VrvComponent,
+    title: 'VRV/VRF Air Conditioning Systems | SVESPL',
     data: {
-      title: 'VRV/VRF Air Conditioning Systems | SVESPL',
       description: 'Discover VRV and VRF air conditioning systems for flexible zone-wise temperature control, energy efficiency and HVAC solutions for varied building types.',
       canonical: 'https://www.svespl.in/vrv-vrf-systems'
     }
   },
   {
     path: 'turnkey-clean-room-solutions', component: TurnkeycleanroomComponent,
+    title: 'Turnkey Cleanroom Design & Installation | SVESPL',
     data: {
-      title: 'Turnkey Cleanroom Design & Installation | SVESPL',
       description: 'Plan turnkey cleanroom projects with design, engineering, installation and commissioning for controlled environments tailored to your facility requirements.',
       canonical: 'https://www.svespl.in/turnkey-clean-room-solutions'
     }
   },
   {
     path: 'evaporative-cooling', component: EvaporativeComponent,
+    title: 'Evaporative Cooling Systems for Large Spaces | SVESPL',
     data: {
-      title: 'Evaporative Cooling Systems for Large Spaces | SVESPL',
       description: 'Explore evaporative cooling systems for large spaces that provide cost-conscious cooling using water evaporation and support lower energy consumption.',
       canonical: 'https://www.svespl.in/evaporative-cooling'
     }
@@ -194,7 +190,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' })],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled', scrollPositionRestoration: 'enabled' ,   initialNavigation: 'enabledBlocking', useHash: false})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

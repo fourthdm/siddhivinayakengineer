@@ -6,8 +6,7 @@ import Swiper from 'swiper';
   styleUrls: ['./aboutus.component.css']
 })
 export class AboutusComponent {
-
-
+  
   scrolltop = document.getElementById('scrolltop');
   rootelement = document.documentElement;
 
@@ -17,7 +16,6 @@ export class AboutusComponent {
       behavior: 'smooth'
     })
   }
-
 
   scrollToSection(sectionId: string) {
 

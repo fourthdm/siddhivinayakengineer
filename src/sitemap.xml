@@ -1,90 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <url>
-       <loc>https://svespl.in/</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>1.0000</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Home</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/About</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Air_Cooled&amp;Water-Cooled_Chiller_Plants</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/VRVVRF_SYSTEMS</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/TURNKEY_CLEAN_ROOM_SOLUTION</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/EVAPORATIVE_COOLING</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/FORCED_VENTILATION</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/COMFORT_AIR_CONDITIONING</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/PRECISION_AIR_CONDITIONING</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Projects</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Casestudies</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Career</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Culture</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Contact</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/Services</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
-  <url>
-       <loc>https://svespl.in/BUILDING_VENTILATION</loc>
-       <lastmod>2026-10-19T09:21:58+00:00</lastmod>
-       <priority>0.6400</priority>
-  </url>
+<url>
+<loc>https://www.svespl.in/</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>1.0000</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/home</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/about</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/air-cooled-water-cooled-chiller-plants</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/vrv-vrf-systems</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/turnkey-clean-room-solutions</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/evaporative-cooling</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/forced-ventilation</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/comfort-air-conditioning</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/precision-air-conditioning</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/building-ventilation</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/annual-maintenance</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/hvac-fitouts-refofit</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/projects</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/case-studies</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/careers</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/culture</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/contact</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/services</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
+<url>
+<loc>https://www.svespl.in/Contact</loc>
+<lastmod>2026-10-27T09:13:53+00:00</lastmod>
+<priority>0.6400</priority>
+</url>
 </urlset>

@@ -1,16 +1,21 @@
-
 .hero-section {
   position: relative;
   isolation: isolate;
   overflow: hidden;
   /* min-height: 500px; */
   background:
+    radial-gradient(ellipse at 50% 35%,
+      rgba(233, 107, 23, 0.7),
+      transparent 65%),
+    #2b1912;
+    /* #070810; */
+  /* background:
     radial-gradient(
       ellipse at 50% 35%,
-      rgba(241, 111, 36, 0.7),
+      rgb(224, 111, 36),
       transparent 65%
     ),
-    #4b3123;
+    #31221a; */
 }
 
 /* Fireworks stay behind all hero content */
@@ -32,8 +37,8 @@
 }
 
 .hero-content h1 {
-  max-width: 950px;
-  font-size: clamp(28px, 4vw, 48px);
+  /* max-width: 950px; */
+  font-size: clamp(28px, 4vw, 32px);
   font-weight: 700;
   line-height: 1.2;
 }
@@ -45,11 +50,7 @@
 }
 
 @media (max-width: 767px) {
-  .hero-section {
-    min-height: 550px;
-  }
-
-  .hero-content {
+    .hero-content {
     padding: 100px 20px 60px;
   }
 
@@ -62,4 +63,8 @@
   .fireworks-canvas {
     display: none;
   }
+}
+
+.img{
+  width: 10%;
 }

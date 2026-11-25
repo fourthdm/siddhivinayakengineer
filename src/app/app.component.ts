@@ -15,38 +15,60 @@ import confetti from 'canvas-confetti';
 export class AppComponent {
   title = 'siddhivinayakengineer';
 
-  scrolltop = document.getElementById('scrolltop');
-  rootelement = document.documentElement;
+  // scrolltop = document.getElementById('scrolltop');
+  // rootelement = document.documentElement;
+
+  // scroll() {
+  //   this.rootelement.scrollTo({
+  //     top: 0,
+  //     behavior: 'smooth'
+  //   })
+  // }
 
   scroll() {
-    this.rootelement.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+    window.scroll({ top: 0, behavior: 'smooth' });
   }
 
-}
 
-// ngOnInit() {
-//   this.router.events.pipe(
-//     filter(event => event instanceof NavigationEnd),
-//     map(() => {
-//       let child = this.activatedRoute.firstChild;
-//       while (child?.firstChild) {
-//         child = child.firstChild;
-//       }
-//       return child?.snapshot.data;
-//     })
-//   ).subscribe(data => {
-//     if (data) {
-//       // Apply the Title to the Browser Tab
-//       if (data['title']) {
-//         this.titleService.setTitle(data['title']);
-//       }
-//       // Apply Meta Description
-//       if (data['description']) {
-//         this.metaService.updateTag({ name: 'description', content: data['description'] });
-//       }
-//     }
-//   });
-// }
+
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute,
+    private titleService: Title,
+    private metaService: Meta
+  ) { }
+
+  ngOnInit(): void {
+    this.rootelement = document.documentElement;
+
+    this.router.events
+      .pipe(filter(event => event instanceof NavigationEnd))
+      .subscribe(() => {
+
+        let route = this.activatedRoute;
+
+        while (route.firstChild) {
+          route = route.firstChild;
+        }
+
+        const title = route.snapshot.title || 'Siddhivinayakengineer';
+
+        const description =
+          route.snapshot.data['description'] ||
+          'SVESPL is an HVAC & MEP Engineering Company in India delivering industrial and commercial HVAC systems, cleanrooms, chiller plants, VRV/VRF systems and ventilation solutions.';
+
+        this.titleService.setTitle(title);
+
+        this.metaService.updateTag({
+          name: 'description',
+          content: description
+        });
+
+      });
+  }
+
+  rootelement!: HTMLElement;
+
+
+
+}

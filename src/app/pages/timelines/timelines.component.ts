@@ -15,238 +15,130 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class TimelinesComponent {
 
-  @ViewChild('timelineSwiper') timelineSwiper!: ElementRef;
+//   @ViewChild('timelineSwiper') timelineSwiper!: ElementRef;
 
-private wheelLocked = false;
+// private wheelLocked = false;
 
-ngAfterViewInit(): void {
+// ngAfterViewInit(): void {
 
-  const swiperEl = this.timelineSwiper.nativeElement;
+//   const swiperEl = this.timelineSwiper.nativeElement;
 
-  swiperEl.addEventListener(
-    'wheel',
-    (event: WheelEvent) => {
+//   swiperEl.addEventListener(
+//     'wheel',
+//     (event: WheelEvent) => {
 
-      // Ignore horizontal wheel
-      if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+//       // Ignore horizontal wheel
+//       if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+//         return;
+//       }
+
+//       // Ignore if animation is running
+//       if (this.wheelLocked) {
+//         event.preventDefault();
+//         return;
+//       }
+
+//       const swiper = swiperEl.swiper;
+
+//       if (!swiper) {
+//         return;
+//       }
+
+//       this.wheelLocked = true;
+
+//       event.preventDefault();
+
+//       if (event.deltaY > 0) {
+//         swiper.slideNext();
+//       } else {
+//         swiper.slidePrev();
+//       }
+
+//       setTimeout(() => {
+//         this.wheelLocked = false;
+//       }, 750);
+
+//     },
+//     { passive: false }
+//   );
+// }
+
+
+
+  @ViewChildren('timelineSwiper')
+  timelineSwipers!: QueryList<ElementRef>;
+
+  private wheelLocked = false;
+  private wheelHandlerMap = new Map<HTMLElement, EventListener>();
+
+  ngAfterViewInit(): void {
+
+    this.initializeTimeline();
+
+  }
+
+  initializeTimeline(): void {
+
+    if (!this.timelineSwipers || this.timelineSwipers.length === 0) {
+      return;
+    }
+
+    this.timelineSwipers.forEach((swiperRef: ElementRef) => {
+
+      const swiperEl = swiperRef.nativeElement as HTMLElement;
+
+      if (!swiperEl) {
         return;
       }
 
-      // Ignore if animation is running
-      if (this.wheelLocked) {
+      const wheelHandler = ((event: WheelEvent) => {
+
+        // Ignore horizontal wheel
+        if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+          return;
+        }
+
+        const swiper = (swiperEl as any).swiper;
+
+        if (!swiper || this.wheelLocked) {
+          event.preventDefault();
+          return;
+        }
+
         event.preventDefault();
-        return;
-      }
 
-      const swiper = swiperEl.swiper;
+        this.wheelLocked = true;
 
-      if (!swiper) {
-        return;
-      }
+        if (event.deltaY > 0) {
+          swiper.slideNext();
+        } else {
+          swiper.slidePrev();
+        }
 
-      this.wheelLocked = true;
+        setTimeout(() => {
+          this.wheelLocked = false;
+        }, 750);
 
-      event.preventDefault();
+      }) as EventListener;
 
-      if (event.deltaY > 0) {
-        swiper.slideNext();
-      } else {
-        swiper.slidePrev();
-      }
+      swiperEl.addEventListener('wheel', wheelHandler, {
+        passive: false
+      });
 
-      setTimeout(() => {
-        this.wheelLocked = false;
-      }, 750);
+      this.wheelHandlerMap.set(swiperEl, wheelHandler);
 
-    },
-    { passive: false }
-  );
-}
+    });
 
-  // @ViewChildren('card')
-  // cards!: QueryList<ElementRef>;
+  }
 
-  // positions = [
-  //   'active',
-  //   'right1',
-  //   'right2',
-  //   'right3',
-  //   'left1',
-  //   'left2'
-  // ];
+  ngOnDestroy(): void {
 
-  // ngAfterViewInit() {
-  //   this.applyClasses();
-  // }
+    this.wheelHandlerMap.forEach((handler, element) => {
+      element.removeEventListener('wheel', handler);
+    });
 
-  // @HostListener('wheel', ['$event'])
-  // onWheel(event: WheelEvent) {
+    this.wheelHandlerMap.clear();
 
-  //   event.preventDefault();
-
-  //   if (event.deltaY > 0) {
-  //     this.next();
-  //   } else {
-  //     this.prev();
-  //   }
-  // }
-
-  // next() {
-
-  //   const first = this.positions.shift();
-
-  //   if (first) {
-  //     this.positions.push(first);
-  //   }
-
-  //   this.applyClasses();
-  // }
-
-  // prev() {
-
-  //   const last = this.positions.pop();
-
-  //   if (last) {
-  //     this.positions.unshift(last);
-  //   }
-
-  //   this.applyClasses();
-  // }
-
-  // applyClasses() {
-
-  //   const cardsArray = this.cards.toArray();
-
-  //   cardsArray.forEach((card, index) => {
-
-  //     card.nativeElement.className =
-  //       'timeline-card ' + this.positions[index];
-  //   });
-  // }
-
-  // swiper = new Swiper('.swiper', {
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-  // });
-
-
-
-
-
-
-
-
-  // activeIndex = 2;
-
-  // cards = [
-  //   { year: '1996-2000' },
-  //   { year: '2001-2005' },
-  //   { year: '2006-2011' },
-  //   { year: '2012-2015' },
-  //   { year: '2016-2018' },
-  //   { year: '2019-2022' }
-  // ];
-
-  // @HostListener('wheel', ['$event'])
-  // onWheel(event: WheelEvent) {
-
-  //   if (event.deltaY > 0) {
-  //     this.next();
-  //   } else {
-  //     this.prev();
-  //   }
-  // }
-
-  // next() {
-
-  //   const first = this.cards.shift();
-
-  //   if (first) {
-  //     this.cards.push(first);
-  //   }
-  // }
-
-  // prev() {
-
-  //   const last = this.cards.pop();
-
-  //   if (last) {
-  //     this.cards.unshift(last);
-  //   }
-  // }
-
-  // getPosition(index: number) {
-
-  //   const positions = [
-  //     'left2',
-  //     'left1',
-  //     'active',
-  //     'right1',
-  //     'right2',
-  //     'hidden'
-  //   ];
-
-  //   return positions[index] || 'hidden';
-  // }
-
-
-  // activeIndex = 2;
-
-  // cards = [
-  //   { 
-  //     year: '2023',
-  //     Description:'Commenced the production of Packaged Explosives Bulk Explosives and Detonators'
-  //    },
-  //   { 
-  //     year: '2024-2025',
-  //     Description:'lorem'
-  //    },
-  //   { year: '1996-2000',
-  //     Description:'lorem'
-  //    },
-  //   { year: '2001-2005',
-  //     Description:'lorem'
-  //    },
-  //   { year: '2006-2011',
-  //     Description:'lorem'
-  //    }
-  // ];
-
-  // next() {
-  //   if (this.activeIndex < this.cards.length - 1) {
-  //     this.activeIndex++;
-  //   }
-  // }
-
-  // prev() {
-  //   if (this.activeIndex > 0) {
-  //     this.activeIndex--;
-  //   }
-  // }
-
-  // getClass(index: number) {
-
-  //   const diff = index - this.activeIndex;
-
-  //   if (diff === 0) return 'active';
-  //   if (diff === -1) return 'left1';
-  //   if (diff === -2) return 'left2';
-  //   if (diff === 1) return 'right1';
-  //   if (diff === 2) return 'right2';
-
-  //   return 'hidden';
-  // }
-  // @HostListener('wheel', ['$event'])
-  // onWheel(event: WheelEvent) {
-
-  //   if (event.deltaY > 0) {
-  //     this.next();
-  //   } else {
-  //     this.prev();
-  //   }
-  // }
-
+  }
 
 }
