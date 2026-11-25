@@ -2,6 +2,7 @@ import { Component, ElementRef, HostListener, QueryList, ViewChild, ViewChildren
 
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Swiper from 'swiper';
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -14,176 +15,130 @@ gsap.registerPlugin(ScrollTrigger);
 })
 export class TimelinesComponent {
 
-  @ViewChildren('card')
-  cards!: QueryList<ElementRef>;
+//   @ViewChild('timelineSwiper') timelineSwiper!: ElementRef;
 
-  positions = [
-    'active',
-    'right1',
-    'right2',
-    'right3',
-    'left1',
-    'left2'
-  ];
+// private wheelLocked = false;
 
-  ngAfterViewInit() {
-    this.applyClasses();
+// ngAfterViewInit(): void {
+
+//   const swiperEl = this.timelineSwiper.nativeElement;
+
+//   swiperEl.addEventListener(
+//     'wheel',
+//     (event: WheelEvent) => {
+
+//       // Ignore horizontal wheel
+//       if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+//         return;
+//       }
+
+//       // Ignore if animation is running
+//       if (this.wheelLocked) {
+//         event.preventDefault();
+//         return;
+//       }
+
+//       const swiper = swiperEl.swiper;
+
+//       if (!swiper) {
+//         return;
+//       }
+
+//       this.wheelLocked = true;
+
+//       event.preventDefault();
+
+//       if (event.deltaY > 0) {
+//         swiper.slideNext();
+//       } else {
+//         swiper.slidePrev();
+//       }
+
+//       setTimeout(() => {
+//         this.wheelLocked = false;
+//       }, 750);
+
+//     },
+//     { passive: false }
+//   );
+// }
+
+
+
+  @ViewChildren('timelineSwiper')
+  timelineSwipers!: QueryList<ElementRef>;
+
+  private wheelLocked = false;
+  private wheelHandlerMap = new Map<HTMLElement, EventListener>();
+
+  ngAfterViewInit(): void {
+
+    this.initializeTimeline();
+
   }
 
-  @HostListener('wheel', ['$event'])
-  onWheel(event: WheelEvent) {
+  initializeTimeline(): void {
 
-    event.preventDefault();
-
-    if (event.deltaY > 0) {
-      this.next();
-    } else {
-      this.prev();
+    if (!this.timelineSwipers || this.timelineSwipers.length === 0) {
+      return;
     }
-  }
 
-  next() {
+    this.timelineSwipers.forEach((swiperRef: ElementRef) => {
 
-    const first = this.positions.shift();
+      const swiperEl = swiperRef.nativeElement as HTMLElement;
 
-    if (first) {
-      this.positions.push(first);
-    }
+      if (!swiperEl) {
+        return;
+      }
 
-    this.applyClasses();
-  }
+      const wheelHandler = ((event: WheelEvent) => {
 
-  prev() {
+        // Ignore horizontal wheel
+        if (Math.abs(event.deltaY) < Math.abs(event.deltaX)) {
+          return;
+        }
 
-    const last = this.positions.pop();
+        const swiper = (swiperEl as any).swiper;
 
-    if (last) {
-      this.positions.unshift(last);
-    }
+        if (!swiper || this.wheelLocked) {
+          event.preventDefault();
+          return;
+        }
 
-    this.applyClasses();
-  }
+        event.preventDefault();
 
-  applyClasses() {
+        this.wheelLocked = true;
 
-    const cardsArray = this.cards.toArray();
+        if (event.deltaY > 0) {
+          swiper.slideNext();
+        } else {
+          swiper.slidePrev();
+        }
 
-    cardsArray.forEach((card, index) => {
+        setTimeout(() => {
+          this.wheelLocked = false;
+        }, 750);
 
-      card.nativeElement.className =
-        'timeline-card ' + this.positions[index];
+      }) as EventListener;
+
+      swiperEl.addEventListener('wheel', wheelHandler, {
+        passive: false
+      });
+
+      this.wheelHandlerMap.set(swiperEl, wheelHandler);
+
     });
+
   }
 
-  // activeIndex = 2;
+  ngOnDestroy(): void {
 
-  // cards = [
-  //   { year: '1996-2000' },
-  //   { year: '2001-2005' },
-  //   { year: '2006-2011' },
-  //   { year: '2012-2015' },
-  //   { year: '2016-2018' },
-  //   { year: '2019-2022' }
-  // ];
+    this.wheelHandlerMap.forEach((handler, element) => {
+      element.removeEventListener('wheel', handler);
+    });
 
-  // @HostListener('wheel', ['$event'])
-  // onWheel(event: WheelEvent) {
+    this.wheelHandlerMap.clear();
 
-  //   if (event.deltaY > 0) {
-  //     this.next();
-  //   } else {
-  //     this.prev();
-  //   }
-  // }
-
-  // next() {
-
-  //   const first = this.cards.shift();
-
-  //   if (first) {
-  //     this.cards.push(first);
-  //   }
-  // }
-
-  // prev() {
-
-  //   const last = this.cards.pop();
-
-  //   if (last) {
-  //     this.cards.unshift(last);
-  //   }
-  // }
-
-  // getPosition(index: number) {
-
-  //   const positions = [
-  //     'left2',
-  //     'left1',
-  //     'active',
-  //     'right1',
-  //     'right2',
-  //     'hidden'
-  //   ];
-
-  //   return positions[index] || 'hidden';
-  // }
-
-
-  // activeIndex = 2;
-
-  // cards = [
-  //   { 
-  //     year: '2023',
-  //     Description:'Commenced the production of Packaged Explosives Bulk Explosives and Detonators'
-  //    },
-  //   { 
-  //     year: '2024-2025',
-  //     Description:'lorem'
-  //    },
-  //   { year: '1996-2000',
-  //     Description:'lorem'
-  //    },
-  //   { year: '2001-2005',
-  //     Description:'lorem'
-  //    },
-  //   { year: '2006-2011',
-  //     Description:'lorem'
-  //    }
-  // ];
-
-  // next() {
-  //   if (this.activeIndex < this.cards.length - 1) {
-  //     this.activeIndex++;
-  //   }
-  // }
-
-  // prev() {
-  //   if (this.activeIndex > 0) {
-  //     this.activeIndex--;
-  //   }
-  // }
-
-  // getClass(index: number) {
-
-  //   const diff = index - this.activeIndex;
-
-  //   if (diff === 0) return 'active';
-  //   if (diff === -1) return 'left1';
-  //   if (diff === -2) return 'left2';
-  //   if (diff === 1) return 'right1';
-  //   if (diff === 2) return 'right2';
-
-  //   return 'hidden';
-  // }
-  // @HostListener('wheel', ['$event'])
-  // onWheel(event: WheelEvent) {
-
-  //   if (event.deltaY > 0) {
-  //     this.next();
-  //   } else {
-  //     this.prev();
-  //   }
-  // }
-
+  }
 
 }

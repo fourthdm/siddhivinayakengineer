@@ -1,3 +1,32 @@
+/* .logoimage {
+    height: auto;
+    max-width: 100%;
+    display: block;
+} */
+
+.logoimage {
+  display: block;
+  width: 300px;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  flex-shrink: 0;
+  image-rendering: auto;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  .logoimage {
+    width: 200px;
+  }
+}
+
+
 .dropdown-hover:hover>.dropdown-menu {
     display: inline-block;
 }
@@ -15,8 +44,6 @@
     position: absolute;
     left: 100%;
     top: -7px;
-
-
     background: rgba(241, 111, 36, 0.08);
     /* Semi-transparent base */
     backdrop-filter: blur(24px) saturate(180%);
@@ -47,6 +74,10 @@
 
 .dropdown-menu>li:hover>.dropdown-submenu {
     display: block;
+}
+
+.dropdown-item:hover{
+    background-color: rgba(241, 111, 36, 0.08) !important;
 }
 
 .btns {
@@ -82,10 +113,7 @@
     border: 1px solid rgba(241, 111, 36, 0.2);
     /* Subtle highlight edge */
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
-    /* Soft shadow for depth */
-    /* color: #F16F24;
-    font-size: 18px;
-    font-weight: 500; */
+
 }
 
 .Phoneno {
@@ -142,6 +170,16 @@
     /* Active clicked color */
     border-bottom: 2px solid #F16F24 !important;
     /* border-left: 2px solid white; */
+
+    background: rgba(241, 111, 36, 0.08);
+    /* Semi-transparent base */
+    backdrop-filter: blur(24px) saturate(180%);
+    /* iOS-style fluid blur */
+    -webkit-backdrop-filter: blur(24px) saturate(180%);
+    border-radius: 20px;
+    border: 1px solid rgba(241, 111, 36, 0.2);
+    /* Subtle highlight edge */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
 }
 
 .icon {
@@ -194,7 +232,7 @@
     display: none;
 }
 
-@media(max-width:439px) {
+@media(min-width: 319px) and (max-width: 767px) {
     .navbardaikins {
         display: none;
     }
@@ -328,11 +366,80 @@
     /* Soft shadow for depth */
 }
 
-.navsitemaptext{
+.navsitemaptext {
     color: #161E2A;
     font-weight: 400;
 }
 
-.navsitemaptext:hover{
+.navsitemaptext:hover {
     color: #F16F24;
+}
+
+
+
+
+
+.hero-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  /* min-height: 500px; */
+  background:
+    radial-gradient(
+      ellipse at 50% 35%,
+      rgba(241, 111, 36, 0.7),
+      transparent 65%
+    ),
+    #b46032;
+}
+
+/* Fireworks stay behind all hero content */
+.fireworks-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Keep your hero text and buttons readable */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px 6%;
+  color: #fff;
+}
+
+.hero-content h1 {
+  max-width: 950px;
+  font-size: clamp(28px, 4vw, 32px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero-content p {
+  max-width: 500px;
+  color: #b9c1d0;
+  line-height: 1.8;
+}
+
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 550px;
+  }
+
+  .hero-content {
+    padding: 100px 20px 60px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fireworks-canvas {
+    display: none;
+  }
 }

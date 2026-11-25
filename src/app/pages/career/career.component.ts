@@ -65,33 +65,69 @@ export class CareerComponent {
 
     const form = event.target as HTMLFormElement;
 
+    const formData = new FormData(form);
+
+    console.log('------ FORM DATA ------');
+
+    formData.forEach((value, key) => {
+      console.log(key, ':', value);
+    });
+
+    console.log('------ END FORM DATA ------');
+
     emailjs.sendForm(
-      'service_l8nxa6d',  //Service Id
-      'template_0zfhgp7',  // Template Id
+      'service_t0u3haj',
+      'template_avwlcsq',
       form,
-      'h-OgB_ZELwY6SnxLu'  //Public Key form Emailjs
-    ).then(
-      () => {
-
-        alert('Application submitted successfully');
-
-        form.reset();
-
-        this.selectedFileName = '';
-
-      },
-      (error) => {
-
-        console.log(error);
-
-        alert('Failed to send application');
-
-      }
-    );
+      'jFpw7AZ0hxo26Aybf'
+    )
+      .then(
+        (response) => {
+          console.log('SUCCESS!', response);
+          alert('Application submitted successfully');
+          form.reset();
+          this.selectedFileName = '';
+        },
+        (error) => {
+          console.error('EmailJS Error:', error);
+          alert('Failed to send application. Please try again.');
+        }
+      );
   }
+
+  // sendEmail(event: Event) {
+  //   event.preventDefault();
+  //   const form = event.target as HTMLFormElement;
+  //   emailjs.sendForm(
+  //     'service_t0u3haj',  //Service Id
+  //     'template_avwlcsq',  // Template Id
+  //     form,
+  //     'jFpw7AZ0hxo26Aybf'  //Public Key form Emailjs Hr
+  //     // 'h-OgB_ZELwY6SnxLu'  //Public Key form Emailjs
+  //   ).then(
+  //     () => {
+
+  //       alert('Application submitted successfully');
+
+  //       form.reset();
+
+  //       this.selectedFileName = '';
+
+  //     },
+  //     (error) => {
+
+  //       console.log(error);
+
+  //       alert('Failed to send application');
+
+  //     }
+  //   );
+  // }
+
+
   // selectedFileName: string = '';
 
-  // onFileSelected(event: any) {
+  // onFileSelected(event: a+ny) {
 
   //   const file = event.target.files[0];
 
@@ -110,6 +146,8 @@ export class CareerComponent {
   //     console.log('Selected File:', file);
   //   }
   // }
+
+
 
 
   // sendEmail(event: Event) {
